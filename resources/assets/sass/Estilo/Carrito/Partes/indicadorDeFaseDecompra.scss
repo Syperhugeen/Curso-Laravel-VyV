@@ -1,0 +1,80 @@
+@mixin normal{
+	border-radius: 100px;
+	padding: 10px;
+	font-family:arial;
+	background-color: $Color-Gris-CasiBlanco ;
+	border: solid 1px transparent;
+	
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px;
+	color: $Color-Gris-Claro-Para-Bordes;
+
+}
+
+@mixin show{
+	border-radius: 100px;
+	padding: 12px;
+	font-size: 18px;
+	color: white;
+	background-color:$Color-Azul-Wm ;
+	font-family:arial;
+	border: solid 1px transparent;
+	
+	width: 45px;
+	height: 45px;
+	text-align: center;
+
+}
+.contenedor-indicador-carrito{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+
+}
+
+
+.indicador-parteCompra-contenedor{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(row);
+  margin: 6px 0;
+
+}
+
+   .indicador-show{
+   	@include show;
+
+   }
+
+   .indicador-normal{
+   	@include normal;
+   }
+
+   .indicador-hecho{
+   	border-radius: 100px;
+	padding: 10px;
+	font-family:arial;
+	border: solid 1px transparent;
+	background-color: $Color-Azul-Wm;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px;
+	color: white;
+
+   }
+
+   .separador-indicador{
+   	width: 30px;
+   	height: 5px;
+   	background-color: $Color-Gris-Claro-Para-Bordes;
+   }
+
+   .separador-indicador-hecho{
+   	width: 30px;
+   	height: 5px;
+   	background-color: $Color-Azul-Wm;
+   }
+

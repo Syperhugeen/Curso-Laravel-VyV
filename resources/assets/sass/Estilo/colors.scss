@@ -1,0 +1,270 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * *    P A L E T A    d e    C O L O R E S    * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+/* COLORES INSTITUCIONALES */ 
+
+$color-1:#b3b3b3; /* institucional CLARO - principalmente para links de la nav-bar [no-hover]) - en este caso coincide con grises*/
+
+$color-2:#858585; /* institucional OSCURO - para el background de la nav-bar por ejemplo - en este caso coincide con los grises nuestros */
+
+$color-3:#4a9fff; /* principalmente para links p>a, botones especiales, y algún otro elemento gráfico: no abusar, un poco por página */
+$color-3dark:#0077fd; /* para interacciones dinámicas del color-3 como [hover] o [active] */
+$color-3light:#97c8ff; /* para interacciones dinámicas del color-3 como [hover] o [active] */
+$color-3superlight:#d3e8ff; /* para backgrounds de bloques de texto en instancia de hover) */
+
+
+
+
+
+/* COLORES GENERALES */
+
+$color-grey0:#f8f8f8; /*gris SUPER claro (solo para líneas divisoras de relevancia baja o backgrounds de bloques de texto)*/
+$color-grey1:#b3b3b3; /*gris más claro (para párrafos y otras cosas)*/
+$color-grey2:#858585; /*gris medio (para títulos por ejemplo)*/
+$color-grey3:#3b3b3b; /*gris más oscuro (para backgrounds por ejemplo)*/
+
+$color-white:white; /*usamos esto en lugar de "white" por si decidimos cambiarlo todos los blancos más adelante*/
+$color-black:black; /*misma razón, pero para el negro */
+
+
+
+
+
+/* CLASES PARA COLOREAR DESDE EL HTML (color o background) */
+
+.color-black{color:$color-black;}
+.bgcolor-black{background:$color-black;}
+
+.color-blanco{ /* luego cambiar nombre a "color-white" ? */
+  color:$color-white;
+}
+.bgcolor-blanco{ /* luego cambiar nombre a "bgcolor-white" ? */
+  background:$color-white;
+}
+
+.color-gris{ /* luego cambiar nombre a "color-grey2" ? */
+  color:$color-grey2;
+}
+.bgcolor-gris{ /* luego cambiar nombre a "bgcolor-grey2" ? */
+  background:$color-grey2;
+}
+
+.color-gris-claro{ /* luego cambiar nombre a "color-grey1" ? */
+  color:$color-grey1;
+}
+.bgcolor-gris-claro{ /* luego cambiar nombre a "bgcolor-grey1" ? */
+  background:$color-grey1;
+}
+
+.color-1{color:$color-2;}
+.bgcolor-1{background:$color-2;}
+
+.color-2{color:$color-1;}
+.bgcolor-2{background:$color-1;}
+
+.color-3{color:$color-3;}
+.bgcolor-3{background:$color-3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* BORRAR TODO ESTO QUE VIENE A CONTINUACIÓN (ojo que alguno tal vez lo usó mauri en el admin panel) */
+
+$Color-Corporativo-1:#c2c2c2;
+$Color-Corporativo-2:#c2c2c2;
+$Color-Corporativo-3:#c2c2c2;
+$Color-Corporativo-4:#c2c2c2;
+
+
+
+$institucional1:#3b3b3b;
+$institucional2:#808080;
+$institucional3:orange;
+$institucional4:#f1f1f1;
+$institucional5:#2045FF;
+
+
+$Color-Azul-Wm: #385dae;
+
+$Color-AmarilloPatitp: #F6FCC7 ;
+
+$Color-AmarilloPatitp-Claro: #FFFDE4;
+
+$Color-AmarilloLogo: #F7E903;
+
+$Color-Amarill-warning: #fff0ba;
+
+$Color-Texto-Warning:#aa8749;
+
+$Color-Verde-Google: #006621;
+
+$Color-Verde-MercadoLibre: #468C00;
+
+$Color-Verde-Claro: #03BA3D;
+
+$Color-Verde-Mas-Claro: #04c946;
+
+$Color-Verde-Super-Claro:#DFF2BF ;
+
+$Color-Verde-Success: $Color-Verde-Super-Claro;
+
+$Color-Verde-Success-Text: #4F8A10;
+
+$Color-Linkg-Google: #1a0dab;
+
+$Color-Link-MercadoLibre: #809;
+
+$Color-Azul-Texto: #06C;
+
+$Color-Azul-Texto-Mercadolibre-Preguntas: #60A0BC;
+
+$Color-Negro-Texto: #212121 ;
+
+$Color-Gris-Plata: #c2c2c2 ;
+
+$Color-Gris-Claro-Para-Bordes: #dfdfdf;
+
+$Color-Azul-Super-Claro: #CED8F6;
+
+$Color-Azul-Medio-Claro: #9BE0FE;
+
+$Color-Azul-Francia:#247AC1;
+
+$Color-Gris-Claro: #EFEEEE;
+
+$Color-Gris-CasiBlanco:#FDF9F9;
+
+$Color-Claro-Categoria-ML: #F7F7F7;
+
+$Color-texto-gris-Mercadolibre: #999999;
+
+$Color-Anaranjado-Para-Warning: #FF6A1F;
+
+$Color-Rosado-Vicky: #FF94DC;
+
+$Color-Rojo-Oferta-MercadoLibre: #900;
+
+$Color-Rojo-Cancelar: #FF0000;
+
+$Color-Rojo-Texto-Error: #B40404;
+
+$Color-Errors-BG: #FCB6B6;
+
+$Color-Rosado-Active-Cancelar-Bg:#FDB6BF ;
+
+/* /////////////Links, Titulos, Descripciones///////////////// */
+
+$Color-Links:$Color-Link-MercadoLibre ;
+$Color-Links-Hover: #2C1AFA;
+$Color-Titulos-Articulos: black;
+$Color-H1-Productos: black;
+$Color-H2-Productos-Descripcion: black;
+
+$Color-Home-Categorias-Random-Titulo: black;
+$Color-Home-Categorias-Random-Keyworld:black ;
+
+
+/*color para el contador de caracteres*/
+$Color-Contador-Caracteres: #D8F9D6;
+
+
+/*color para el head de los iconos*/
+
+$Color-Head-Font:#E3E3E3 ;
+
+/*color para el head de los back-groun iconos*/
+
+$Color-Head-Font-BackGround:#08298A ;
+
+  /* icono categoria back-groun */
+  $color-icono-categoria-background:$Color-AmarilloPatitp	;
+
+
+
+/* Super Categorias Menu Mobil */
+$color-borde-supercategor:#E7E7E7;
+
+
+
+/* Categorias Menu Mobil */
+$Color-background-active-li:$Color-Head-Font ;
+
+$Color-borde-active-li: $Color-Head-Font;
+
+$color-fondo-menu_mobil-Categorias:#EFF5FB ;
+
+
+
+
+
+
+/*ADMIN ADMIN FORMULARIOS/////////////////////////////////////////////////////*/
+
+/* El color del fondo de las etiquetas p en los FORMULARIOS
+son los titulos de la seccion */
+$Color-background-titulos: #247AC1;
+
+/* Es el color de fondo del contenedor del modulo del formulario */
+$Color-background-div_modules: #F3F3F3;
+
+/* color ver claritop de la parte de seo ejemplo */
+$Color-background-seo-ejemplo: #9DFBBC;
+
+$Color-Para-Bordes-Admin:$Color-Head-Font ;
+
+
+
+/* Colores en Articulo de Home ///////////////////////////////////////////////*/
+$Color-Carrito-Articulo: $Color-Gris-Plata ;
+$Color-unidades_vendidas: $Color-Verde-Google;
+$Color-Border-Bootom: $Color-Gris-Claro;
+
+
+/* color en categorias random de home */
+
+$Color-background-Categorias-Random:$Color-AmarilloPatitp ;
+
+
+
+
+/* carrito colores pagina */
+
+$Color-background-Carrito-Pag: $Color-Gris-Claro;
+
+$Color-Elminiar-Item: $Color-Gris-Plata ;
+
+$Color-Actualizar-Item: $Color-Gris-Plata ;
+
+$Color-Moneda-Precio: #777777 ;
+
+
+/* carrito colores desplegado */
+
+$Color-background-Carrito-desplegado: $Color-Gris-CasiBlanco;

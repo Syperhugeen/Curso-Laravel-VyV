@@ -1,0 +1,168 @@
+ .contenedor-productos-confirmacion {
+  position: relative;
+  background: $Color-Gris-Claro;
+  border: 2px solid $Color-Gris-Claro-Para-Bordes;
+  
+  margin-top: 28px;
+  @include flexbox;       
+  @include flex-direction(column);
+  @include align-items(center);
+  padding:8px;
+  margin-bottom: 25px;
+  }
+  .contenedor-productos-confirmacion:after, .contenedor-productos-confirmacion:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .contenedor-productos-confirmacion:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color:$Color-Gris-Claro ;
+    border-width: 24px;
+    margin-left: -24px;
+  }
+  .contenedor-productos-confirmacion:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: $Color-Gris-Claro-Para-Bordes;
+    border-width: 28px;
+    margin-left: -28px;
+  }
+
+
+
+.metodoPago_confirmaciom-contenedor{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  padding: 8px;
+  border-radius:4px;
+  border:2px solid $Color-Gris-Claro-Para-Bordes;
+  margin-top: 20px;
+  background-color:white;
+}
+ .confirmacio-productos-aclaracion{
+  padding:3px;
+  font-size:14px;
+  color:$Color-texto-gris-Mercadolibre;
+  
+  text-align:center;
+
+ }
+  .metodoPago_confirmaciom-TotalaPagar{
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(row);
+    
+
+  }
+    .metodoPago_confirmaciom_titulo{
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .metodoDePago_total_contenedor{
+     @include flexbox;
+     @include align-items(center);
+     @include flex-direction(row);
+     padding: 3px;
+     border-radius: 4px;
+     color: $Color-Azul-Wm;
+
+    }
+
+      .metodoDePago_total_moneda{
+        font-size: 0.8em;
+
+      }
+
+      .metodoDePago_total_importe{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-left: 3px;
+      }
+
+      .metodoDePago_total_iva{
+        font-size: 0.8em;
+        margin-left: 3px;
+      }
+
+
+  .metodoPago_confirmaciom-metodoDePago{
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(row);
+    margin-top: 5px;
+    padding:4px;
+    border-bottom:solid 2px $Color-Gris-Claro;
+  }
+
+      .metodoPago_confirmaciom-metodoDePago-img{
+        height: 32px;
+        
+        
+      }
+
+      .metodoPago_confirmaciom-metodoDePago-img-moneda{
+        height: 25px;
+        margin-right: 10px;
+        
+      }
+
+      .metodoPago_confirmaciom-metodoDePago-name{
+        font-size:12px; 
+        color: $Color-Negro-Texto;
+        padding: 5px 8px;
+        margin-left: 5px;
+        font-weight: bold;
+      }
+
+ .metodoPago_confirmaciom-form{
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    padding: 5px;
+ }
+
+   .metodoPago_confirmaciom-aclaracion-comentaria{
+     color: $Color-texto-gris-Mercadolibre;
+     font-size: 12px;
+     padding:3px;
+   }
+
+   .metodoPago_confirmaciom-aclaracion-comentaria-textarea{
+    padding:4px;
+    border-radius:4px;
+    border: solid 2px $Color-Gris-Claro;
+    max-width: 320px;
+    font-size: 12px;
+   }
+
+
+  .boton-de-confirmacion-paso1{
+    @include BotonEnviar
+    margin-top: 30px;
+  }
+
+  .boton-de-confirmacion-paso1:hover{
+    @include BotonEnviarHover;
+  }
+
+
+  .boton-de-confirmacion-pago{
+    @include BotonEnviar;
+  }
+
+  .boton-de-confirmacion-pago:hover{
+    @include BotonEnviarHover;
+  }
+
+  .metodoPago_confirmaciom-cancelar{
+    font-size: 10px;
+    color: $Color-Gris-Plata;
+  }

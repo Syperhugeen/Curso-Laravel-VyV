@@ -1,0 +1,66 @@
+////ESTILO (colores y botones precargados para evitar errores de referencias del sass)
+@import "resources/assets/sass/Estilo/colors";
+@import "resources/assets/sass/Estilo/links";
+
+
+
+
+@import "resources/assets/sass/Plugins/Plug-flex";
+//@import "resources/assets/sass/Plugins/fonts";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "resources/assets/sass/Plugins/recet";
+//@import "resources/assets/sass/Plugins/scroll";
+@import "resources/assets/sass/Plugins/animate";
+
+
+//@import "resources/assets/sass/Plugins/Plug-progresbar";
+@import "resources/assets/sass/Plugins/Plug-Guardiastyle.scss";
+@import "resources/assets/sass/Plugins/Plug-chosen";
+@import "resources/assets/sass/Plugins/Plug-Tootlipster-hoverJquery";
+@import "resources/assets/sass/Plugins/fonts-iconos";
+@import "resources/assets/sass/Plugins/Plug-ImageSelect";
+@import "resources/assets/sass/Plugins/notyCarrito";
+@import "resources/assets/sass/Plugins/clasesWarning";
+
+@import "resources/assets/sass/Plugins/Plug-ratingsPlug";
+@import "resources/assets/sass/Plugins/Plug-VentanasModals";
+@import "resources/assets/sass/Plugins/Plug-EasyAutoComplete";
+@import "resources/assets/sass/Plugins/Plug-EasyAutoComplete";
+@import "resources/assets/sass/Plugins/Plug-textAreas";
+@import "resources/assets/sass/Plugins/Plug-bxSlider";
+//@import "resources/assets/sass/Plugins/font-amazing";
+@import "resources/assets/sass/Plugins/ClasesParaCartelitosHover";
+@import "resources/assets/sass/Plugins/Plug-bootstrap-fileinput";
+
+//Auth
+@import "resources/assets/sass/Estilo/Auth/Auth_General";
+
+
+//Errores
+@import "resources/assets/sass/Estilo/Errores/Errores";
+@import "resources/assets/sass/Estilo/Errores/404";
+
+//Alerts
+@import "resources/assets/sass/Estilo/Alerts/aviso_Verifica_Email";
+@import "resources/assets/sass/Estilo/Alerts/alert_status";
+
+//Layout_Admin
+@import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/Empresa";
+@import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/principal";
+@import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/Users";
+@import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/marcas";
+@import "resources/assets/sass/Estilo/Layout_Admin/formularios/formulario_estilos";
+@import "resources/assets/sass/Estilo/Layout_Admin/Home_Entidades/home";
+
+
+////ESTILO
+@import "resources/assets/sass/Estilo/colors";
+@import "resources/assets/sass/Estilo/general";
+@import "resources/assets/sass/Estilo/links";
+@import "resources/assets/sass/Estilo/mis_recursos";
+@import "resources/assets/sass/Estilo/navbar_admin";
+@import "resources/assets/sass/Estilo/navbar_user";
+@import "resources/assets/sass/Estilo/specifics_admin";
+@import "resources/assets/sass/Estilo/specifics_user";
+@import "resources/assets/sass/Estilo/text";
+

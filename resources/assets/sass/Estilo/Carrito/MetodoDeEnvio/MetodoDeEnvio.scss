@@ -1,0 +1,142 @@
+/* algunas clases que aqui no estan, se encuentrar en carrito.scss */
+
+
+
+.metodo_envio-contenedor{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+  .metodo_envio-contenedor-opciones{
+    width: 100%;
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+  	
+  }
+
+
+
+  .Titulo-Envio_Retiras{
+    font-size: 20px;
+    margin: 15px 0px 8px 0px;
+
+  }
+
+  .Form-Envio{
+    width: 100%;
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+  }
+
+    .Envio-Label-Montevideo_Interior{
+      @include FormatoLabelEnvios;      
+      width: 49%;
+    }  
+    
+    .Label-Envio-Interior{
+      @include FormatoLabelEnvios;      
+      width: 49%;
+    }
+
+    .Label-Envio-Montevideo{
+      @include FormatoLabelEnvios;      
+      width: 49%;
+    }
+
+    .Label-Retiro-Tienda{
+      @include FormatoLabelEnvios;
+      width: 49%;
+    }
+
+      .Label-Rretiro-Tienda-contenedor-datos{
+        @include flexbox;
+        @include align-items(flex-start);
+        @include flex-direction(column);
+        padding: 5px;
+        border: solid 1px transparent;
+        background-color: $Color-Claro-Categoria-ML;
+
+      }
+
+        .Label-Retiro-Tienda-Datos{
+          font-size: 14px;
+          padding: 2px;
+          margin-top: 2px;
+          
+        }
+
+         .Label-Retiro-Tienda-Datos-Dato{
+          font-weight: normal;
+         }
+
+    .Label-Envio_Interior{
+      @include FormatoLabelEnvios;
+      width: 40%;
+    }
+
+
+      /* comunes a todos los labels */
+
+      .Label-Envio-Titulo{
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(row);
+        color:$Color-Azul-Wm;
+        font-family: $Worldmaster-Fuente;
+        
+        padding: 2px;
+        margin-bottom: 2px;
+
+
+      }
+        .Label-Envio-Titulo-Span{
+          font-size: 30px;
+          margin-right: 4px;
+          text-align: center;
+        }
+        .Label-Envio-Titulo-Titulo{
+          font-size: 16px;
+        }
+
+      .Label-Envio-Input{
+        border-radius: 4px;
+      }
+
+
+    
+
+
+
+
+
+
+
+@media (min-width: $BrackPoint-Primario){
+
+  
+
+}
+
+
+
+@media (min-width: $BrackPoint-Secundario){
+  .metodo_envio-contenedor{
+    width: 90%;
+    @include BordesContenedoresBrackPoint;
+  }
+   
+
+}  
+
+
+
+@media (min-width: $BrackPoint-Tercer){
+  
+}

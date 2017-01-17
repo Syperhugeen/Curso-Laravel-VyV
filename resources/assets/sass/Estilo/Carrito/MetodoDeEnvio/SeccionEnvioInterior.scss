@@ -1,0 +1,291 @@
+/*////////// Algunos PArtials de botones /////////////*/
+  @mixin BotonEnviar{
+    padding: 8px 10px;
+    border:solid 1px $Color-Verde-Claro;
+    border-radius: 4px;
+    color: $Color-Verde-Claro;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:$Worldmaster-Fuente; 
+    cursor: pointer;
+   }
+
+   @mixin BotonEnviarHover{
+      background-color:$Color-Verde-Claro ;
+      border:solid 1px $Color-Gris-Claro-Para-Bordes;
+      color: white;
+   }
+
+/*////////// Fin de  Algunos PArtials de botones /////////////*/
+
+.Form-Departamento{
+    width: 100%;
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+  }
+
+
+.Label-Departamento{
+  @include FormatoLabelEnvios;
+  border-color:transparent;      
+  width: 98%;
+
+}
+
+.Label-ciudad{
+  display: none;
+}
+
+.Label-ciudad__show{
+  @include FormatoLabelEnvios;
+  border-color:transparent;
+  width: 98%;
+}
+
+   .Label-Ciudad-Titulo{
+    font-size: 20px;
+    color:$Color-Azul-Wm;
+    font-family: $Worldmaster-Fuente;
+    font-weight: normal;
+    padding:4px;
+
+   }
+
+   .Label-Ciudad-Input{
+    font-size: 16px;
+    color:$Color-Azul-Wm;
+    border: solid 1px $Color-Gris-Claro-Para-Bordes; 
+    font-family: $Worldmaster-Fuente;
+    font-weight: normal;
+    padding: 5px;
+    margin: 4px 0 0 0;
+    border-radius: 4px;
+    width: 90%;
+
+   }
+
+   .Boton-Continuar-Envio_Interior{
+      display: none;
+   }
+   .Boton-Continuar-Envio_Interior__show{
+      @include BotonEnviar;
+   }
+   .Boton-Continuar-Envio_Interior__show:hover{
+      @include BotonEnviarHover;
+   }
+
+ 
+
+
+ /* La parte donde le muestro los datos del usuario y 
+ le pregunto si son correctos */
+
+  .dato-envio-contenedor{
+
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    padding: 6px;
+    border-radius:4px;
+    
+
+  }
+  .dato-envio-contenedor:hover{
+    background-color: $Color-AmarilloPatitp-Claro ; 
+  }
+
+    .dato-envio-user{
+      padding: 5px;
+      margin-top: 2px;
+      font-size: 15px;
+      border-bottom: solid 1px $Color-Gris-Claro-Para-Bordes;
+
+    }
+
+       .dato-envio-user-span{
+          font-weight: bold;
+
+       }
+    .boton-confirmar-datos{
+      @include BotonEnviar;
+
+    }
+    .boton-confirmar-datos:hover{
+      @include BotonEnviarHover;
+    }
+
+    .Form-EleccionEmpresaTranporte-Retiro{
+     width: 100%;
+     @include flexbox;
+     @include align-items(center);
+     @include flex-direction(column);
+    }
+      .contenedor-radios-Empresas_Montevideo{
+        width: 100%;
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+      }
+      .contenedor-Select-Metodo-Envio-Interiro{
+        padding: 6px;
+        margin: 3px 0;
+
+      }
+
+       .Select-Metodo-Envio-Interiro-Options{
+          font-size: 16px;
+          
+       }
+
+
+  .opciones-envio-Interior-contendor{
+     
+     display: none;
+  }
+  .opciones-envio-Interior-contendor__show{
+     width: 100%;
+     @include flexbox;
+     @include align-items(center);
+     @include flex-direction(row);
+     @include justify-content(space-between);
+  }
+
+    .label-interior-retiro_agencia{
+      @include FormatoLabelEnvios;
+      width:49%;
+    }
+
+    .label-interior-direccion{
+      @include FormatoLabelEnvios;
+      width:49%;
+    }
+
+
+
+   /*  Creo algunas partial */
+   @mixin FormateFields{
+    @include flexbox;
+    @include align-items(flex-start);
+    @include flex-direction(column);
+    padding:2px;
+    border-radius: 4px;
+    margin: 5px;
+   }
+
+
+
+
+
+    .Form-Envio-Direccion{
+      width: 100%;
+      @include flexbox;
+      @include align-items(center);
+      @include flex-direction(column);
+      background-color: $Color-AmarilloPatitp-Claro;
+    }
+
+      .Form-Envio-Direccion-SubContenedor{
+        padding: 3px 6px;
+        margin-top: 4px;
+        border: solid 1px transparent;
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        width: 100%;
+
+      }
+
+        .Form-Envio-Direccion-SubContenedor-Field-Calle{
+          @include FormateFields;
+          width:80%;
+
+        }
+
+        .Form-Envio-Direccion-SubContenedor-Field-Nuemero{
+          @include FormateFields;
+          width:30%;
+
+        }
+
+        .Form-Envio-Direccion-SubContenedor-Field-Apartamento{
+          @include FormateFields;
+          width:30%;
+
+        }
+
+        .Form-Envio-Direccion-SubContenedor-Field-Esquinas{
+          @include FormateFields;
+          width:80%;
+
+        }
+
+        
+
+          .Form-Envio-Direccion-SubContenedor-Field-Label{
+            font-family: $Worldmaster-Fuente;
+            padding:2px;
+            font-size: 12px;
+            color:$Color-Azul-Wm ;
+          }
+             .Field-Label-Sapn{
+
+              color: $Color-Gris-Plata;
+             }
+
+          .Form-Envio-Direccion-SubContenedor-Field-Input{
+            border-radius: 4px;
+            border:solid 2px $Color-Gris-Claro-Para-Bordes;
+            height: 35px;
+            width: 100%;
+            font-family: $Worldmaster-Fuente;
+            font-size: 14px;
+            
+            padding: 2px 6px;
+
+          }
+
+
+           .boton-confirmar-Listo_Direccion{
+              @include BotonEnviar;
+
+           }
+           .boton-confirmar-Listo_Direccion:hover{
+              @include BotonEnviarHover;
+           }
+
+
+        /* Form-Confirmar-Dirección-Son los usuario que ya 
+        tiene dirección en el sistema  */  
+        .Form-Confirmo-Direccion{
+           width: 100%;
+           @include flexbox;
+           @include align-items(center);
+           @include flex-direction(column);
+           
+
+        }
+
+         .boton-confirmar-direccion{
+           @include BotonEnviar;
+         }
+         .boton-confirmar-direccion:hover{
+           @include BotonEnviarHover;
+         }
+
+
+
+@media (min-width: $BrackPoint-Secundario){
+  .Label-ciudad__show{
+    width: 50%;
+  }
+   
+
+}  
+

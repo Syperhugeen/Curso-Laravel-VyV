@@ -1,0 +1,342 @@
+ .carrito-contenedor{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column);
+  width: 100%;
+  margin: 0 auto;
+ }
+
+      /* para los titulos de las columnas del carro */
+      @mixin carritotitulos{
+      font-weight: bold;
+      font-size: 12px ;
+      text-align: center;
+      overflow: hidden;
+      color: $Color-Azul-Wm;
+
+      }  
+
+      .carrito-pagina-titulo_General{
+        color: $Color-Azul-Wm;
+        text-align: center;
+        padding: 6px;
+        font-size: 20px;
+        margin-bottom: 5px;
+        @include align-self(center);
+
+      }
+      .indicador-parte-descripcion{
+       border-radius: 4px;
+       font-size: 13px;
+       width: 100%;
+       padding: 6px 7px;
+       margin-bottom: 5px;
+       background-color:$Color-Claro-Categoria-ML ;
+       font-family: $Worldmaster-Fuente;
+       color: $Color-texto-gris-Mercadolibre;
+       text-align: center;
+      }
+      .carrito-titulos{
+        width:100%;
+          @include flexbox;
+          @include align-items(center);
+          @include flex-direction(row);
+          @include justify-content(space-between);
+          padding: 5px 2px;
+          background-color: $Color-Claro-Categoria-ML;
+          border: solid 1px $Color-Gris-Claro;
+
+      }
+        
+        .c-t-articulo{
+          width: 80%;
+          margin-left: 5px;
+          @include carritotitulos;
+          
+        }
+
+        
+
+        .c-t-subtotal{
+          width: 20%;
+          @include carritotitulos;
+          
+        }
+
+      .ul-carrito{
+      	
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(column);
+        background-color: white;
+        border-radius: 4px;
+        width: 100%;
+
+      }
+        
+
+        .li-carrito{
+        	width:100%;
+          @include flexbox;
+          @include align-items(center);
+          @include flex-direction(row);
+          @include justify-content(space-between);
+          padding: 6px 1px;
+          margin-top: 4px;
+          border-radius: 4px;
+          border: solid 1px transparent; 
+          border-top : solid 1px $Color-background-Carrito-Pag;
+        }
+        .carrito-img_otrosdatos{
+          @include flexbox;
+          @include align-items(center);
+          @include flex-direction(row);
+          width: 80%;
+          border-right:solid 1px $Color-Gris-Claro-Para-Bordes; 
+        }
+        
+           .li-carrito-img{
+              max-width: 65px;
+              max-height: 65px;
+              padding: 3px;
+              margin-right: 3px;
+              border-radius: 4px;
+              background-color: white;
+           }
+
+           .li-carrito-agrupa-Titulo_Moneda_Precio_Cantidad{
+              @include flexbox;
+              @include align-items(flex-start);
+              @include flex-direction(column);
+              
+              
+
+           }
+             .li-carrito-a-name{              
+              margin-left: 5px; 
+              
+             }
+             .li-carrito-name{
+                font-size: 12px;
+             }
+
+             .li-carrito-agrupa_precio_moneda_cantidad{
+                @include flexbox;
+                @include align-items(center);
+                @include flex-direction(row);
+                border-radius: 4px;
+                border:solid 1px transparent;
+                background-color: $Color-Gris-CasiBlanco;
+                margin-top: 2px;
+             }
+             .li-carrito-agrupa_precio_moneda_cantidad:hover{
+                
+                background-color: $Color-AmarilloPatitp-Claro;
+             }
+
+           
+                 .li-carrito-agrupa-Precio_moneda{
+                   @include flexbox;
+                   @include align-items(center);
+                   @include flex-direction(row);
+                   margin-top: 2px; 
+
+                   
+                   
+                 }    
+                     .li-carrito-moneda{
+                     
+                      font-size: 10px;
+                      
+                      color:$Color-Moneda-Precio;
+                      padding:1px;
+                     }
+
+                     .li-carrito-precio{
+                      
+                      font-size: 16px;
+                      
+                      font-weight: bold;
+                      color:$Color-Moneda-Precio ;
+                      padding:1px;
+                     }
+
+                 .li-carrito-cantidad{
+                  
+                  font-size: 10px;
+                  @include flexbox;
+                  @include align-items(center);
+                  @include flex-direction(row);
+                  margin-left:8px;
+                  
+                 }
+
+                  .li-carrito-cantidad-input{
+                    padding: 5px 1px;
+                    font-size: 18px;
+                    width: 40px;
+                    text-align: center;
+                    border:solid 1px $Color-Gris-Claro-Para-Bordes;
+                    height: 36px;
+                  }
+                  
+                  .li-carrito-cantidad-span{
+                    
+                    font-size: 20px;
+                    padding: 8px 8px;
+                    cursor:pointer;
+                    border-radius:4px;
+                    border: solid 1px transparent;
+                    color: $Color-Actualizar-Item ;
+                  }
+
+                  .li-carrito-cantidad-span:active{
+                    background-color: $Color-AmarilloPatitp;
+                  }
+
+           .li-carrito-subtotal{
+            width: 20%;
+            font-size: 14px;
+            text-align: center;
+            color:$Color-Azul-Wm;
+            font-weight: 600;
+            
+            
+           }
+
+           .li-carrito-eliminar-a{
+            
+            @include flexbox;
+            @include flex-direction(column);
+            @include align-items(center);
+            border: solid 1px transparent;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 20px;
+            color: $Color-Elminiar-Item;
+            padding: 8px 8px;
+            margin-left:2px;
+            
+            
+           }
+           .li-carrito-eliminar-a:active{
+            border-color: $Color-Rojo-Cancelar;
+            background-color: $Color-Rosado-Active-Cancelar-Bg;
+            
+           }
+
+           .li-carrito-eliminar-a:hover{
+            color: $Color-Rojo-Cancelar;
+           }
+  
+  /* totales */
+  .Totales-Contenedor{
+        width: 100%;
+        @include flexbox;
+        @include align-items(flex-end);
+        @include flex-direction(column);
+        
+  }
+
+   .Totales-Contenedor-Secundario{
+    padding:6px;
+    margin: 5px 1px;
+    border: solid 1px $Color-Gris-Claro-Para-Bordes;
+    background-color: $Color-Claro-Categoria-ML;
+
+   }
+
+     .Totales-SubContenedor{
+       padding: 5px;
+       margin-top: 3px;
+       border-radius: 4px;
+
+     }
+
+          .Totales-Span-1{
+            
+            font-size: 12px;
+
+          }
+
+          .Totales-Span-2{
+            color: $Color-Azul-Wm;
+            font-weight: bold;
+            font-size: 18px;
+          }
+
+
+             
+
+
+
+
+
+@media (min-width: $BrackPoint-Primario){
+
+  
+  .li-carrito-img{
+              max-width: 75px;
+              max-height: 75px;
+              margin-right: 4px;
+              
+  }
+  .li-carrito-name{
+    font-size: 14px;
+  }
+
+
+}
+
+
+
+@media (min-width: $BrackPoint-Secundario){
+  .carrito-contenedor{
+    width: 90%;
+    @include BordesContenedoresBrackPoint;
+    
+  }
+
+  .carrito-pagina-titulo_General{
+        font-size: 22px;
+  }
+   
+    .li-carrito{
+          padding: 8px;
+    }
+    .li-carrito:hover{
+      border: solid 1px $Color-background-Carrito-Pag; 
+    }
+    .li-carrito-img{
+              max-width: 85px;
+              max-height: 85px;
+              margin-right: 6px;
+              
+   }  
+
+    
+
+    
+
+}  
+
+
+
+@media (min-width: $BrackPoint-Tercer){
+  .carrito-pagina-titulo_General{
+        font-size: 24px;
+  }
+
+
+
+
+  .li-carrito-name{
+    font-size: 16px;
+    }
+  .li-carrito-img{
+              max-width: 95px;
+              max-height: 95px;
+              margin-right: 8px;
+              
+   } 
+}

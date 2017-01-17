@@ -1,0 +1,148 @@
+
+/*--------------------------------------------------------------------------------*/
+/* * * * *    C L A S E S   P A R A    L I N K S    Y    B O T O N E S    * * * * */
+/*--------------------------------------------------------------------------------*/
+
+
+
+/* E S T I L I Z A N D O   C O M P O R T A M I E N T O S   D E   H I P E R V Í N C U L O S */
+
+/*para que el cursor se transforme en el dedito al pasar sobre links
+y para quitar el subrayado de los links*/
+a, a p, a h1, a h2, a h3, a h4, a h5, a h6 {
+  	cursor:pointer;
+	text-decoration: none;
+	outline:none;
+}
+a, a>p{
+	text-decoration:none;
+  	outline:none;
+	color:$color-3;
+}
+a:hover, a:focus, a>p:hover, a>p:focus{
+  	text-decoration:none;
+  	outline:none;
+  	color:$color-3light;
+}
+/* NOTA PARA MÍ MISMO: tal vez cambie el nombre de este archivo a "botones.scss" y me llevo las propiedades
+escritas previamente para el archivo "text.scss" */
+
+
+
+
+
+/* L I N K s  A N I M A T I O N S */
+/* no sé si poner las animaciones de translate acá o en "mis_recursos.scss"
+creo que mejor en mis_recursos, síp. */
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* * * * * * * - - - - - - -                           B O T O N E S                                - - - - - - -  * * * * * * * */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+/*--- B O T Ó N   P R I M A R I O  |  COLOR-3 ---*/
+.btn-primary {
+  color: $color-white;
+  background-color: $color-3;
+  border-color: $color-3;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: $color-white;
+  background-color: $color-3light;
+  border-color: $color-3light;
+  outline-width: 1px;
+  outline-offset: 4px;
+  outline-style: dotted;
+}
+.btn-primary:hover {
+  color: $color-white;
+  background-color: $color-3light;
+  border-color: $color-3light;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: $color-white;
+  background-color: $color-3dark;
+  border-color: $color-3;
+  outline:none;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: $color-white;
+  background-color: $color-3dark;
+  border-color: $color-3;
+  outline:none;
+}
+
+
+
+
+/*--- B O T Ó N  d e  F O R M U L A R I O  p a r a  A D J U N T A R  A R C H I V O ---*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+
+
+/*---  B O T Ó N E S  d e   M A U R I  ---*/
+@mixin Boton-Normal($bk: $Color-Azul-Wm, $color:white )
+{
+  background-color: $bk;
+  color:$color ;
+  padding: 10px 14px;
+  font-size: 20px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  margin: 15px auto;
+  display: table;
+  cursor:pointer;
+}
+
+
+@mixin Boton-Chico($bk: $Color-Azul-Wm, $color:white )
+{
+  background-color: $bk;
+  color:$color ;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: arial;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  margin: 15px auto;
+  display: table;
+  cursor:pointer;  
+}

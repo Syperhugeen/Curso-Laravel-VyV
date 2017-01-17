@@ -1,0 +1,385 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ *	C L A S E S   E S P E C Í F I C A S            *
+ *	P A R A   D I F E R E N T E S   P Á G I N A S  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+
+
+
+
+/*--- H O M E
+(tiene una banda de cosas la Home,
+pero eso es porque no optimicé la escritura de código)---*/
+
+.home-header{
+}
+
+/*carrusel*/
+.img-carousel{
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.carousel-caption>h3{
+    color:$color-white;
+    }
+.carousel-caption>p{
+    color:$color-white;
+    text-align:center;
+    }
+@media (max-width:767px){
+  .img-carousel{
+    min-width:200%;
+    min-height:200%;
+    width:auto;
+    height:auto;
+  }
+}
+
+/*título principal de Bienvenida*/
+.section-wrapper-welcome{
+  padding-top:40px;
+}
+.home-contact-info{
+  margin-top:20px;
+  padding:20px;
+  border:1px solid $color-grey0;
+  border-radius:4px;
+}
+
+
+/*cositas de Bienvenidos*/
+.chevron-saltarin{
+  color:$color-3;
+}
+
+
+/*globitos*/
+.contenedor-home-globitos{
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+  padding: 40px 0;
+  width: 100%;
+ }
+
+  .globito{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+    color:$color-white;
+    background-color:$color-3;
+    font-size:200%;
+    margin:5px;
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(row);
+    @include justify-content(center);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    }
+
+  .globito:hover{
+    background-color:$color-3light;
+    -webkit-transform: translate(0, -10%);
+    -moz-transform: translate(0, -10%);
+    transform: translate(0, -10%);
+	 }
+
+   @media (max-width: 767px){.globito{
+    width:50px;
+    height:50px;
+    font-size:100%;
+    }}
+
+   @media (min-width: 768px) and (max-width: 991px){.globito{
+    width:75px;
+    height:75px;
+    font-size:150%;
+    }}
+
+
+
+/*cuadraditos (solo para xs y sm)*/
+.contenedor-home-cuadraditos{
+  padding: 0 0;
+  margin-top:0;
+  margin-bottom:0;
+}
+  .cuadradito{
+    height:140px;
+    border:1px solid $color-white;
+    color:$color-white;
+    background-color:$color-3;
+    vertical-align:center;
+    text-align:center;
+  }
+  .cuadradito:hover{
+    background-color:$color-3light;
+  }
+  div.cuadradito>h2{
+    color:$color-white;
+  }
+  div.cuadradito>p{
+    color:$color-white;
+    text-align:center;
+  }
+
+
+
+
+/*últimos proyectos y últimas noticias*/
+
+/*título de cada sección interior del Home,
+por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
+.home-section-title{
+  color:$color-grey1;
+  text-align:right;
+  font-family:Pioret;
+  border-bottom:1px solid $color-grey1;
+}
+
+/*el contenedor que contiene a todos los items*/
+.home-section-display{
+  padding:10px;
+}
+
+  /*el contenedor de cada item individual*/
+  .home-section-display-item{
+    cursor:pointer;
+    border-radius:8px;
+    padding:20px;
+    -webkit-transition: transform .3s ease;
+    -moz-transition: transform .3s ease;
+    transition: transform .3s ease;
+  }
+
+  .home-section-display-description-wrapper1{
+    height:40px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+    .home-section-display-description-wrapper2{
+    height:120px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .home-section-display-ampliar{
+    text-align:right;
+    color:$color-grey1;
+    position:absolute;
+    bottom:-12px;
+    right:15px;
+  }
+  a>.home-section-display-item:hover .home-section-display-ampliar{
+    color:$color-3;
+  }
+  @media (max-width:767px){
+    .home-section-display-ampliar{bottom:-32px;}
+    .home-section-display-description-wrapper1{height:80px;}
+  }
+
+  /*línea divisora entre cada item individual*/
+  .home-section-display-divider {
+    margin:4px 20px;
+    width:100%;
+    color:$color-grey0;
+  }
+
+  /*efecto hover de cada item individual*/
+  a>.home-section-display-item:hover{
+    cursor:pointer;
+    background-color:$color-grey0;
+    -webkit-transform: translate(20px, 0);
+    -moz-transform: translate(20px, 0);
+    transform: translate(20px, 0);
+  }
+
+  /*imagen de cada item individual*/
+  img.my-media-object{
+    width: 200px;
+    height: 200px;
+  }
+  @media (max-width:767px){img.my-media-object{
+    margin-bottom:10px;}
+  }
+  /*media-body es el texto de contenido de cada item individual*/
+  .my-media-body{
+    min-height:200px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- A C E R C A   D E   V & V  ---*/
+
+.empresa-individual{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.empresa-individual:hover{
+    -webkit-transform: translate(0, -20px);
+  -moz-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+.empresa-individual:hover h3{
+  color:$color-3;
+}
+/*---Acerda de V&V - sección de envío de currículum ---*/
+.section-special-2{
+  background: $color-white url("../../imagenes/Img/equipo.jpg") no-repeat left;
+  background-size:cover;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/*--- S E R V I C I O S ---*/
+
+.servicio-individual{
+  border-bottom:1px solid $color-grey0;
+  padding-bottom:10px;
+  margin-bottom:20px;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.servicio-individual:hover{
+  -webkit-transform: translate(0, -20px);
+  -moz-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+}
+.section-special-1{
+  color:$color-white;
+  background: $color-3 url("../../imagenes/Img/presupuesto_background.jpg") no-repeat center;
+  background-size:cover;
+}
+.boton-presupuesto{
+  padding-bottom:20px;
+}
+.metodo-individual{
+  border-bottom:1px solid $color-grey0;
+  padding-bottom:10px;
+  margin-bottom:20px;
+}
+div.metodo-individual>h3{
+  margin-top:0px;
+}
+div.servicio-individual>h4>span.glyphicon{
+  color:$color-3;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/*--- P U B L I C A C I O N E S (Noticias) ---*/
+
+/*---para destacar una frase de una noticia, que luego se repetirá en el texto de la misma---*/
+.noticia-encabezado{
+  color:$color-grey2;
+  text-align:right;
+  vertical-align: middle;
+}
+.noticia-comillas{
+  color:$color-grey1;
+  font-family:Pioret;
+}
+
+
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+/*--- F O O T E R ---*/
+
+.footer-p-destacado{
+  letter-spacing: 8px;
+}
+.footer-p-izquierda{
+  color:$color-grey1;
+  text-align:right;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+.footer-p-derecha{
+  color:$color-grey1;
+  text-align:left;
+  padding-left: 20px;
+}
+
+@media (max-width: 991px){
+.footer-p-izquierda,
+.footer-p-derecha {
+  text-align:center;
+  padding-right: 0;
+  padding-left: 0;
+}
+.footer-col-derecha{
+  border-top:1px solid $color-grey2;
+  padding-top:20px;
+}}
+@media (min-width: 992px){
+.footer-col-derecha{
+  border-left:2px solid $color-grey2;
+  padding-top:0;
+}}
+
+.bg-footer{
+background-color: $color-grey3;
+}

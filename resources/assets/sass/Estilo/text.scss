@@ -1,0 +1,104 @@
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * *   G L O B A L    T E X T   S E T T I N G S   * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+
+
+/* I M P O R T I N G  t h e  F O N T S */
+@font-face {
+    font-family: Pioret;
+    src: url(../fonts/poiret.ttf);}
+
+
+
+
+
+/* E S T I L O   D E   T E X T O   N O R M A L */
+
+p {
+  color:$color-grey1;
+  text-align:justify;
+  white-space: pre-wrap;
+}
+h1 { /*usar para título único por página*/
+color:$color-grey1;
+}
+h2 { /*usar para títulos de las dif. secciones de cada página*/
+color:$color-grey1;
+}
+h3 { /*usar para títulos de cada bloque de párrafo*/
+color:$color-grey2;
+}
+h4 { /*usar para párrafos cortos de alta relevancia*/
+color:$color-grey2;
+}
+h5 { /*usar para items o nombres puntuales que no son textos largos*/
+color:$color-grey1;
+}
+h6 { /*usar para algún texto especial, de tamaño menor que los p*/
+color:$color-grey1;
+}
+
+/*para que el cursor no se transforme en selector de texto*/
+p, h1, h2, h3, h4, h5, h6 {
+  	cursor:default;
+  	text-decoration: none;
+  /*probando lo siguiente, a ver si arregla las "r" feas*/
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+
+
+/* M I S   C L A S E S   P E R S O N A L I Z A D A S  (categorías de texto que se repetirán) */
+
+.page-header > h1 {
+  font-family:Pioret;
+  font-size:60px;
+}
+.home-title-welcome{ /*solo para V&V, borrar para otros*/
+  margin-top:0px;
+  font-family:Pioret;
+  font-size:60px;
+}
+
+
+
+
+
+
+/* R E S P O N S I V E - @media settings */
+@media (max-width:767px){
+	p{font-size:12px;}
+	h1{font-size:28px;}
+	h2{font-size:24px;}
+	h3{font-size:18px;}
+	h4{font-size:14px;}
+	h5{font-size:12px;}
+	h6{font-size:10px;}
+	.page-header > h1 {font-size:36px;}
+	.home-title-welcome{font-size:36px;} /* esta línea solo para V&V, borrar para otros*/
+}
+
+
+
+
+
+
+
+/* Q U É  E S   E S T O ?   N I   I D E A */
+textarea{ /* para qué era esto mauri??? */
+  word-break: break-all;
+}
+label{ /* para qué era esto mauri??? */
+	color:$color-black;
+}

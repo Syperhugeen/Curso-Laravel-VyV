@@ -1,0 +1,266 @@
+
+.Form-Metodo-Pago-Moneda{
+  @include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    width:100%;
+
+}
+
+
+.orden_contenedor-seleccion-moneda{
+	@include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    width:100%;
+
+}
+
+ .Sub-Contenedor-Eleccion-Moneda{
+ 	@include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    padding:3px;
+    border-radius: 4px;
+    border: solid 2px $Color-Gris-Claro-Para-Bordes;
+    width: 100%;
+    font-weight:normal;
+    cursor:pointer;
+    margin-top:5px;
+ }
+
+ .Sub-Contenedor-Eleccion-Moneda:hover{
+ 	border-color:$Color-Azul-Wm;
+ 	background-color: $Color-AmarilloPatitp-Claro;
+ }
+
+  .Sub-Contenedor-Titulo-Moneda{
+  	padding: 4px;
+  	font-size: 14px;
+	  border-radius:4px;
+	  border: solid 1px $Color-Verde-Mas-Claro;
+	  text-align: center;
+    background-color: $Color-Azul-Wm;
+    color: white;
+  }
+  
+  .orden-subcontenedor-Interno{
+  	@include flexbox;
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    padding: 2px;
+    
+    width:100%;
+
+  }
+
+    .linea-coparativa-cotizaciones{
+    	@include flexbox;
+        @include align-items(center);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        padding: 2px;
+        width:100%;
+        border: solid 1px $Color-Gris-CasiBlanco; 
+    }
+
+     .cotizaciones-subtotal{
+     	font-size: 12px;
+     }
+      .cotizaciones-subtotal-Moneda{
+      	font-weight: bold;
+      }
+
+     .cotizaciones-igual{
+     	background-color:$Color-Gris-CasiBlanco;
+     	padding: 2px;
+     	font-size: 12px;
+     	border-radius: 4px;
+     }
+
+       .cotizaciones-igual-span{
+       	font-weight: bold;
+       }
+
+
+     
+
+    .moneda-contenedor-input{
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        padding: 2px;
+        width:100%;
+        border: solid 1px $Color-Gris-CasiBlanco;
+    }
+            .moneda-titulo-dolares{
+             background-image: url("../../Monedas/Dolares.jpg") !important;
+             background-position: 50% 50%;
+             width: 75px;
+             height: 35px;
+             padding: 4px;
+             border-radius:4px; 
+             }
+
+             .moneda-titulo-pesos{
+             background-image: url("../../Monedas/Pesos.jpg") !important;
+             background-position: 50% 50%;
+             width: 75px;
+             height: 35px;
+             padding: 4px;
+             border-radius:4px; 
+             }
+
+
+            .Total-en-Moneda-Convertido{
+            
+            @include flexbox;
+              @include align-items(flex-end);
+              @include flex-direction(row);
+              padding: 4px;
+              background-color: $Color-Gris-CasiBlanco;
+              border-radius: 4px;
+              border:solid 1px transparent;
+              font-size: 12px;
+
+           }  
+             .Total-Total{
+              color: $Color-Azul-Wm;
+              font-weight: bold;
+              
+
+             }
+
+             .Total-Moneda{
+              color: $Color-Azul-Wm;
+              font-weight: bold;
+              margin-left: 4px;
+
+             }
+
+             .Total-importe{
+              color: $Color-Azul-Wm;
+              font-size: 16px;
+              font-weight: bold;
+              margin-left: 3px;
+
+             }
+
+             .Total-Iva_inc{
+               font-size: 10px;
+               margin-left: 2px;
+             }
+
+           .input-moneda{
+            margin:1;
+            padding: 3px;
+           }
+
+
+   .aclaracion-cotizacion{
+    border:solid 1px $Color-Gris-Claro-Para-Bordes;
+    padding: 6px;
+    margin: 15px 0;
+    background-color: $Color-AmarilloPatitp-Claro;
+    color: $Color-texto-gris-Mercadolibre;
+    font-size: 12px;
+
+   }
+   .boton-de-confirmacion-moneda{
+    display: none;
+   }
+
+   .boton-de-confirmacion-moneda__show{
+     @include BotonEnviar;
+   }
+
+   .boton-de-confirmacion-moneda__show:hover{
+    @include BotonEnviarHover;
+   }
+
+ @media (min-width: $BrackPoint-Primario){
+
+ 	
+    .Sub-Contenedor-Eleccion-Moneda{
+ 	
+    @include align-items(center);
+    @include flex-direction(column);
+    width: 49.5%;
+    margin:0;
+ }
+}
+
+@media (min-width: $BrackPoint-Secundario){
+
+  .orden_contenedor-seleccion-moneda{
+    @include flexbox;
+    @include align-items(center);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    width:100%;
+   }
+
+}
+
+@media (min-width: $BrackPoint-Tercer){
+
+  .Sub-Contenedor-Titulo-Moneda{
+    padding: 6px;
+    font-size: 18px;
+    border: solid 1px transparent;
+  }
+
+    .cotizaciones-subtotal{
+      font-size: 16px;
+     }
+      .cotizaciones-subtotal-Moneda{
+        font-weight: bold;
+      }
+
+     .cotizaciones-igual{
+      background-color:$Color-Gris-CasiBlanco;
+      padding: 2px;
+      font-size: 16px;
+      border-radius: 4px;
+     }
+
+       .cotizaciones-igual-span{
+        font-weight: bold;
+       }
+
+    .Total-en-Moneda-Convertido{
+           
+              border:solid 1px $Color-Gris-Claro-Para-Bordes;
+              font-size: 14px;
+
+           }  
+             .Total-Total{
+              color: $Color-Azul-Wm;
+              font-weight: bold;
+              
+
+             }
+
+             .Total-Moneda{
+              color: $Color-Azul-Wm;
+              font-weight: bold;
+              margin-left: 4px;
+
+             }
+
+             .Total-importe{
+              font-size: 18px;
+             }
+
+             .Total-Iva_inc{
+               font-size: 11px;
+             }
+
+ 
+
+
+
+
+ }      

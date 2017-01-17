@@ -1,0 +1,45 @@
+         
+.Select-Metodo-Envio-Montevideo-Barrio{
+
+}
+
+           .boton-confirmar-Listo_Barrio{
+              @include BotonEnviar;
+              display: none;
+
+           }
+           .boton-confirmar-Listo_Barrio:hover{
+              @include BotonEnviarHover;
+           }
+
+           
+/* es el label de eleccion de empresas de transportes
+para el caso de Montevideo */
+.Label-Empresa-Transporte-Montevideo{
+
+@include FormatoLabelEnvios;      
+width: 49%;
+}
+           
+
+
+
+/* la seccion donde acepta el costo del envio en Montevideo */
+.Acepta-Costo-Envio-Montevideo-Contenedor{
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background-color:$Color-Gris-CasiBlanco;
+  font-size: 18px;
+}
+
+  .Acepta-Costo-Envio-Span-Precio{
+    color: black;
+    font-weight: bold;
+  }
+
+  .Acepta-Costo-Envio-Span-Iva{
+    font-size: 14px;
+    color:black;
+  }
+

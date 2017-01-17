@@ -1,0 +1,49 @@
+.Helper-Fuente-Bold{
+	font-weight: bold;
+}
+
+.Helper-Fuente-Aumenta{
+	font-size: 1.2em;
+}
+
+.Helper-Fuente-Reduce{
+	font-size: 0.8em;
+}
+
+.Helper-Fuente-Clara{
+  color: $Color-texto-gris-Mercadolibre;
+}
+
+.Helper-OrdenarHijos-Row{
+    @include flexbox;       
+    @include flex-direction(row);
+    @include align-items(center);
+    
+}
+
+.Helper-OrdenarHijos-columna{
+    @include flexbox;       
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(space-between);
+}
+
+
+
+
+@mixin boton-formato-normal {
+       padding: 10px 18px;
+       background-color: $Color-Azul-Wm;
+       border-radius: 4px;
+       border: solid 2px transparent;
+       color:$Color-Claro-Categoria-ML;
+       font-family:$Menu-Derecho-Font ;
+       font-size: 16px;               
+       margin-top: 15px;
+       margin-bottom: 10px;
+       text-align: center;
+}
+
+@mixin boton-formato-normal-hover{
+     background-color: $Color-background-titulos;
+}

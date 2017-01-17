@@ -1,0 +1,75 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ *		N A V I G A T I O N   B A R     (ADMIN)      *
+ *        (la famosa "columna" de Mauri)           *
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+ .admin-columna-contenedor{
+  width: 200px;
+  padding: 5px 6px;
+  border: solid 1px transparent;
+  border-right-color: $Color-Gris-Claro;  
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(column); 
+  background-color: $color-grey3;
+  min-height: 100vh;
+  position: fixed;
+}
+
+.admin-header-logo{
+    height: 55px;
+    margin:35px 3px;
+    
+  }
+
+  .admin-columna-ul{
+     width: 100%;
+     margin-top: 40px;
+  }
+
+   .admin-columna-li{
+    width: 100%;
+    padding:5px;
+    font: arial;
+    font-size: 14px;
+    color: $color-grey2;
+    margin-top: 2px;
+    text-decoration: none;
+    list-style: none;  
+   }
+
+
+   .admin-columna-li:not(.Helper-Class-Active):focus,
+   .admin-columna-li:not(.Helper-Class-Active):hover{
+  color: $color-white;
+  -webkit-transform: translate(5px, 0);
+  -moz-transform: translate(5px, 0);
+  transform: translate(5px, 0);
+   }
+
+
+.Helper-Class-Active{
+  color: $color-3;
+  text-shadow: 0 0 5px $color-3dark, 0 0 10px $color-3dark;
+}
+
+      .admin-boton-registrar{
+        padding: 8px;
+        background-color:$Color-Azul-Wm;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+      }
+a>.link-go-to-web{
+color:$color-grey2;
+letter-spacing:3px;
+border-top: 1px solid $color-grey2;
+margin-top:18px;
+padding-top:12px;
+
+}
+a>.link-go-to-web:hover,
+a>.link-go-to-web:focus{
+color:$color-white;
+  }
+

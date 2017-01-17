@@ -1,0 +1,77 @@
+.metodo_pago-contenedor{
+	 @include flexbox;
+     @include align-items(center);
+     @include flex-direction(column);
+     width: 100%;
+     margin: 2 auto;
+}
+
+.MdP_SubContenedor{
+	@include flexbox;
+  	@include align-items(center);
+  	@include flex-direction(row);
+  	@include justify-content(space-around);
+  	width: 100%;
+  	margin: 0 auto;
+
+}
+
+ .MdP_AgrupadoPorTipo{
+ 	@include flexbox;
+  	@include align-items(center);
+  	@include flex-direction(column);
+  	
+  	padding: 5px;
+	border-radius:4px;
+	background-color: $Color-Gris-CasiBlanco;
+ }
+
+	  .MdP_AgrupadoPorTipo_Titulo{
+	  	font-family: $Worldmaster-Fuente;
+		font-size: 16px;
+		padding: 3px;
+		border-radius:4px;
+		border: solid 1px $Color-Verde-Mas-Claro;
+		text-align: center;
+	  }
+
+	  .MdP_AgrupadoPorTipo_opcione{
+	  	padding: 2px;
+	  }
+
+			 .Label-MetodoPago{
+			 	@include flexbox;
+  				@include align-items(center);
+  				@include flex-direction(column);
+  				width: 100%;
+  				border-radius:4px;
+  				border: solid 1px $Color-Gris-Claro-Para-Bordes;
+  				padding: 5px;
+  				margin-top: 5px;
+          cursor: pointer;
+  				
+
+			 }
+
+			  .Label-MetodoPago-img{
+			  	height: 60px;
+			  }
+
+			  .Label-MetodoPago-Titulo{
+			  	font-family: $Worldmaster-Fuente;
+			  	font-size: 14px;
+
+			  }
+
+			  .Label-MetodoPago-Input{
+
+			  }
+
+
+@media (min-width: $BrackPoint-Secundario){
+  .metodo_pago-contenedor{
+    width: 90%;
+    @include BordesContenedoresBrackPoint;
+    
+  }
+}
