@@ -50,6 +50,7 @@ elixir(function(mix) {
         'mis-file_input.js',
         'Plug-smooth_scroll.js',
         'Plug-wow.js',
+        'mis-ajax.js',
         'fin.js']);
 
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');

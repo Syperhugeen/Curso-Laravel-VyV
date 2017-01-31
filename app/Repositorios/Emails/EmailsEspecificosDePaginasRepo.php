@@ -45,9 +45,16 @@ class EmailsEspecificosDePaginasRepo
 
                      $m->from($email, $nombre);
 
+                     
+
+                     if($archivo != null)
+                     {
+
+
                      $m->attach($archivo->getRealPath(),[
                                 'as'   => $archivo->getClientOriginalName(), 
                                 'mime' => $archivo->getMimeType()]);
+                     }
 
                      $m->to( $this->getEmpresa()
                                   ->email, 

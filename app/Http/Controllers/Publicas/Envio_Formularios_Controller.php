@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Repositorios\Emails\EmailsRepo;
 use App\Repositorios\Emails\EmailsEspecificosDePaginasRepo;;
 use App\Managers\envio_solicitud_trabajo_manager;
+use App\Managers\envio_contacto_manager;
 
 
 
@@ -32,7 +33,7 @@ class Envio_Formularios_Controller extends Controller
     public function post_contacto_form(Request $Request)
     {
         $entidad = '';
-        $manager = new envio_solicitud_trabajo_manager($entidad,$Request->all());
+        $manager = new envio_contacto_manager($entidad,$Request->all());
 
 
         if ($manager->isValid())
@@ -58,6 +59,39 @@ class Envio_Formularios_Controller extends Controller
         $manager = new envio_solicitud_trabajo_manager($entidad,$Request->all());
 
 
+        //si la peticion es por ajax
+        if($Request->ajax())
+        {
+            
+            
+              if ($manager->isValid())
+              {
+                
+                //envio el email de la solciitud de trabajo
+                $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
+
+               return response()->json(
+                [ 
+                    'validation'  => true,
+                    'mensaje'     => 'Solicitud de trabajo enviada correctamente. En breve nos contactaremos con usted.',
+                                       
+                ]
+               );     
+              }
+              else
+              {
+                return response()->json(
+                [ 
+                    'validation'  => false,
+                    'mensaje'     => 'Verifica lo siguiente:'. $manager->getErrors(),
+                                       
+                ]
+               );  
+
+              }  
+         }
+
+        // si no es ajax
         if ($manager->isValid())
         {
          

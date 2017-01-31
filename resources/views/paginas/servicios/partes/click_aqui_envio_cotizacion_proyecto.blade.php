@@ -11,10 +11,12 @@
             <h4 class="modal-title" id="myModalLabel">Formulario de solicitud de cotización</h4>
           </div>
           <div class="modal-body">
+
+            
             @include('formularios.solicitud_presupuesto_form')
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>              
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>             
           </div>
         </div>
       </div>            

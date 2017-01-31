@@ -16,8 +16,7 @@ class envio_solicitud_trabajo_manager extends ManagerBase
     $rules = [
       'name'      => 'required',
       'email'     => 'required|email',
-      'mensaje'   => 'required',
-      'file'      => 'required'
+      'mensaje'   => 'required'
              ];
 
     return $rules;

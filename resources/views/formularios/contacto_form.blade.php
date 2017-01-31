@@ -1,4 +1,5 @@
-
+{{-- donve va el mensaje --}}
+<div id="notify-mensaje"></div>
 
   {!! Form::open(             ['route' => 'post_contacto_form',
                             'method'   => 'post',

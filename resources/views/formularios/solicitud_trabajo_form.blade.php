@@ -1,5 +1,8 @@
+{{-- donve va el mensaje --}}
+<div id="notify-mensaje" style="width: 100%; padding: 6px;"></div>
+
 {!! Form::open(             ['route'   => 'post_envio_solicitud_trabajo_form',
-                            'method'   => 'post',
+                            'method'   => 'POST',
                             'files'    =>  true,
                             'id'       => 'solicitud-trabajo-form'
                             ])               !!}
@@ -76,7 +79,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <input type="submit" class="btn btn-primary btn-lg btn-send" value="Enviar">
+                <input type="submit" id="Envio-de-form" class="btn btn-primary btn-lg btn-send" value="Enviar" >
             </div>
         </div>
 
