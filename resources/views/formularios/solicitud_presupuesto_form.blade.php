@@ -76,7 +76,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <input type="submit" class="btn btn-primary btn-lg btn-send" value="Solicitar presupuesto" id="Envio-de-form">
+                <input type="submit" class="btn btn-primary btn-lg btn-send" value="Solicitar presupuesto" id="Envio-de-form-solicitud-presupuesto">
             </div>
         </div>
 

@@ -63,7 +63,7 @@
                 
             </div>
             <div class="col-md-12">
-                <input type="submit" id="Envio-de-form" class="btn btn-primary btn-lg btn-send" value="Enviar">
+                <input type="submit" id="Envio-de-form-contacto" class="btn btn-primary btn-lg btn-send" value="Enviar">
             </div>
         </div>
 
