@@ -35,12 +35,44 @@ class Envio_Formularios_Controller extends Controller
         $entidad = '';
         $manager = new envio_contacto_manager($entidad,$Request->all());
 
+        //si la peticion es por ajax
+        if($Request->ajax())
+        {
+            
+            
+              if ($manager->isValid())
+              {
+                
+                //envio el email de la solciitud de trabajo
+                $this->EmailsRepo->EnvioEmailDeContacto($Request);
+
+               return response()->json(
+                [ 
+                    'validation'  => true,
+                    'mensaje'     => 'Solicitud de contacto enviada con exíto.',
+                                       
+                ]
+               );     
+              }
+              else
+              {
+                return response()->json(
+                [ 
+                    'validation'  => false,
+                    'mensaje'     => 'Verifica lo siguiente:'. $manager->getErrors(),
+                                       
+                ]
+               );  
+
+              }  
+         }
+
 
         if ($manager->isValid())
         {
          
          //envio el email de la contacto
-         $this->EmailsRepo->EnvioEmailDeContacto();
+         $this->EmailsRepo->EnvioEmailDeContacto($Request);
 
          return redirect()->route('get_home')
                           ->with('alert' , 'Solicitud de contacto enviada con exíto.');      
@@ -110,6 +142,38 @@ class Envio_Formularios_Controller extends Controller
         
         $entidad = '';
         $manager = new envio_solicitud_trabajo_manager($entidad,$Request->all());
+
+        //si la peticion es por ajax
+        if($Request->ajax())
+        {
+            
+            
+              if ($manager->isValid())
+              {
+                
+                //envio el email de la solciitud de trabajo
+                $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
+
+               return response()->json(
+                [ 
+                    'validation'  => true,
+                    'mensaje'     => 'Solicitud de cotización de proyecto enviada correctamente. En breve nos contactaremos con usted. ',
+                                       
+                ]
+               );     
+              }
+              else
+              {
+                return response()->json(
+                [ 
+                    'validation'  => false,
+                    'mensaje'     => 'Verifica lo siguiente:'. $manager->getErrors(),
+                                       
+                ]
+               );  
+
+              }  
+         }
 
 
         if ($manager->isValid())

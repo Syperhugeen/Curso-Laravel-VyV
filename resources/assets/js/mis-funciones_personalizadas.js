@@ -12,5 +12,8 @@ function DispararForm($ElementoQueDispara,$FormADisparar)
    var form  = $FormADisparar ;  
    form.submit();
   });
+
+
+  
 }
 

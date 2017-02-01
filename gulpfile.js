@@ -50,6 +50,8 @@ elixir(function(mix) {
         'mis-file_input.js',
         'Plug-smooth_scroll.js',
         'Plug-wow.js',
+        'mis-funciones-alertas.js',
+        'mis-funciones-personalizadas-ajax.js',
         'mis-ajax.js',
         'fin.js']);
 
