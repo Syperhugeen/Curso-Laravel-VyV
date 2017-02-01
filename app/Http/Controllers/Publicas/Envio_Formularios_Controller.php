@@ -76,10 +76,7 @@ class Envio_Formularios_Controller extends Controller
 
          return redirect()->route('get_home')
                           ->with('alert' , 'Solicitud de contacto enviada con exíto.');      
-        }  
-
-
-        
+        }          
         
         return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }

@@ -74,7 +74,7 @@ class EmailsRepo
          Mail::send('emails.solicitud_contacto' ,
 
                    //con esta funcion le envia los datos a la vista.
-                   compact('nombre' , '$email','mensaje','telefono')       ,
+                   compact('nombre' , 'email','mensaje','telefono')       ,
                    function($m) use ($nombre,$email) 
                    {
 
