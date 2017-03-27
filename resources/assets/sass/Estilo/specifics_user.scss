@@ -275,8 +275,9 @@ por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
 
 .servicio-individual{
   border-bottom:1px solid $color-grey0;
-  padding-bottom:10px;
+  padding-bottom:20px;
   margin-bottom:20px;
+  padding-left: 100px;
 
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -287,6 +288,10 @@ por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
   -moz-transform: translate(0, -20px);
   transform: translate(0, -20px);
 }
+@media (max-width:767px){
+  .servicio-individual{
+  padding-left: 20px;
+}}
 .section-special-1{
   color:$color-white;
   background: $color-3 url("../../imagenes/Img/presupuesto_background.jpg") no-repeat center;
@@ -308,7 +313,20 @@ div.servicio-individual>h4>span.glyphicon{
 }
 
 
-
+.servicios-tipos {
+}
+.servicios-tipos h3{
+  padding-bottom:20px;
+}
+#section-servicios .col-sm-12.servicio-individual h4,
+#section-servicios .col-sm-12.servicio-individual p {
+  padding-left: 20px;
+}
+#section-servicios .servicios-tipos img {
+  width:100px;
+  height:auto;
+  margin:20px;
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

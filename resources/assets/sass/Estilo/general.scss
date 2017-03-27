@@ -68,8 +68,8 @@ para que el contenido comience luego de la Navbar y no se pierda nada detrás de
 /*---WRAPPER para envolver cada sección dentro de cada página; esta clase se le adjudica
 al container-fluid que adentro contiene los rows y las columns que agregan los márgenes laterales---*/
 .section-wrapper{ /*envolvente de cada sección de cada página*/
-  padding-top:40px;
-  padding-bottom:40px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 .section-special{ /*cambiar a ".section-special-3" como el color que usará de background*/
@@ -83,10 +83,10 @@ al container-fluid que adentro contiene los rows y las columns que agregan los m
 
 /*---para agregarle espaciado entre rows o items acorde a mi criterio---*/
 .space-top{
-  padding-top:40px;
+  padding-top:30px;
 }
 .space-bottom{
-  padding-bottom:40px;
+  padding-bottom:30px;
 }
 
 

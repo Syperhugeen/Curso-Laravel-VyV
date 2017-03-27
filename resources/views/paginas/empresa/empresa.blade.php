@@ -97,6 +97,10 @@
       			<h4 class="color-blanco">Contamos con experiencia en los diversos métodos constructivos y continuamos capacitándonos permanentemente.</h4>
       		</div>
 
+          <div class="col-md-6">
+            <a href="{{route('get_pagina_servicios')}}"><p class="color-blanco mi-float-right"><small><span class="glyphicon glyphicon-triangle-right"></span> ver servicios y métodos</small></p></a>
+          </div>
+
       	</div>
 
 

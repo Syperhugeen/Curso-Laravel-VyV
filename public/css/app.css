@@ -12226,8 +12226,8 @@ body {
 al container-fluid que adentro contiene los rows y las columns que agregan los márgenes laterales---*/
 .section-wrapper {
   /*envolvente de cada sección de cada página*/
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .section-special {
   /*cambiar a ".section-special-3" como el color que usará de background*/
@@ -12241,10 +12241,10 @@ al container-fluid que adentro contiene los rows y las columns que agregan los m
 
 /*---para agregarle espaciado entre rows o items acorde a mi criterio---*/
 .space-top {
-  padding-top: 40px; }
+  padding-top: 30px; }
 
 .space-bottom {
-  padding-bottom: 40px; }
+  padding-bottom: 30px; }
 
 /* P E R S O N I F I C A N D O   E L E M E N T O S */
 /*---CENTRAR UNA COLUMNA dentro de un row---*/
@@ -13079,12 +13079,17 @@ img.my-media-object {
 /*--- S E R V I C I O S ---*/
 .servicio-individual {
   border-bottom: 1px solid #f8f8f8;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  padding-left: 100px;
   transition: all .3s ease; }
 
 .servicio-individual:hover {
   transform: translate(0, -20px); }
+
+@media (max-width: 767px) {
+  .servicio-individual {
+    padding-left: 20px; } }
 
 .section-special-1 {
   color: white;
@@ -13104,6 +13109,18 @@ div.metodo-individual > h3 {
 
 div.servicio-individual > h4 > span.glyphicon {
   color: #4a9fff; }
+
+.servicios-tipos h3 {
+  padding-bottom: 20px; }
+
+#section-servicios .col-sm-12.servicio-individual h4,
+#section-servicios .col-sm-12.servicio-individual p {
+  padding-left: 20px; }
+
+#section-servicios .servicios-tipos img {
+  width: 100px;
+  height: auto;
+  margin: 20px; }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -13205,7 +13222,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .page-header {
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   overflow: hidden; }
 
 @media (max-width: 767px) {
