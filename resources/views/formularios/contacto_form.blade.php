@@ -16,9 +16,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">                    
-                    {!! Form::label('name', 'Nombre') !!}
+                    {!! Form::label('name', 'Nombre *') !!}
                     {!! Form::text('name', null ,['class'       => 'form-control',
-                                                  'placeholder' => 'Escribe tu nombre aquí *' ,
+                                                  'placeholder' => 'Escribe tu nombre aquí ' ,
                                                   'required'    => 'required',
                                                   'data-error'  => 'Por favor, ingresa tu nombre.']) !!}
                 <div class="help-block with-errors"></div>    
@@ -29,9 +29,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">                    
-                    {!! Form::label('email', 'Email') !!}
+                    {!! Form::label('email', 'Email *') !!}
                     {!! Form::text('email', null ,['class'       => 'form-control',
-                                                  'placeholder' => 'Escribe tu dirección de correo aquí *' ,
+                                                  'placeholder' => 'Escribe tu dirección de correo aquí ' ,
                                                   'required'    => 'required',
                                                   'data-error'  => 'Por favor, ingresa una dirección de correo válida.']) !!}
                 <div class="help-block with-errors"></div>   
@@ -54,7 +54,7 @@
                 <div class="form-group"> 
                     {!! Form::label('mensaje', 'Mensaje *') !!}
                     {!! Form::textarea('mensaje', null ,['class'       => 'form-control',
-                                                         'placeholder' => 'Escribe tu consulta aquí *', 
+                                                         'placeholder' => 'Escribe tu consulta aquí ', 
                                                          'rows'        => '4',
                                                          'required'    => 'required',
                                                          'data-error'  => 'Por favor, escribe un mensaje.' ]) !!}

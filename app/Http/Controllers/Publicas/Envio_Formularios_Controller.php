@@ -56,10 +56,12 @@ class Envio_Formularios_Controller extends Controller
               }
               else
               {
+
+
                 return response()->json(
                 [ 
                     'validation'  => false,
-                    'mensaje'     => 'Verifica lo siguiente:'. $manager->getErrors(),
+                    'mensaje'     => 'Verifica lo siguiente:'. $errores,
                                        
                 ]
                );  
@@ -76,7 +78,18 @@ class Envio_Formularios_Controller extends Controller
 
          return redirect()->route('get_home')
                           ->with('alert' , 'Solicitud de contacto enviada con exíto.');      
-        }          
+        }  
+
+        // convierto los errores en array
+                $errores = $manager->getErrors();
+                 
+                $cadena  = $errores;  
+                
+                foreach ($errores as $error)
+                {
+                  $cadena = $error;
+                }
+                dd($cadena);   
         
         return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
