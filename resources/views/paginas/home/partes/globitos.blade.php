@@ -3,37 +3,37 @@
 
     <a href="{{route('get_pagina_empresa')}}">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Quienes somos">
-    <span class="glyphicon glyphicon-user"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-acerca.png">
     </div>
     </a>
 
     <a href="{{route('get_pagina_servicios')}}#section-metodos">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Métodos de construcción">
-    <span class="glyphicon glyphicon-cog"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-metodos.png">
     </div>
         </a>
 
     <a href="{{route('get_pagina_servicios')}}">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Servicios que ofrecemos">
-    <span class="glyphicon glyphicon-list-alt"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-servicios.png">
     </div>
     </a>
 
     <a href="{{route('get_pagina_proyecto_listado')}}">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Portfolio de proyectos">
-    <span class="glyphicon glyphicon-folder-open"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-proyectos.png">
     </div>
     </a>
 
     <a href="{{route('get_pagina_noticias_listado')}}">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Publicaciones interesantes">
-    <span class="glyphicon glyphicon-bullhorn"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-publicaciones.png">
     </div>
     </a>
 
     <a href="{{route('get_pagina_contacto')}}">
     <div class="globito" data-toggle="tooltip" data-placement="top" title="Contáctanos">
-    <span class="glyphicon glyphicon-resize-small"></span>
+    <img class="img-responsive" src="imagenes/Img/home-icon-contacto.png">
     </div>
     </a>
 
@@ -45,37 +45,37 @@
 
     <a href="{{route('get_pagina_empresa')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-user"></span></h2><p>Quienes somos</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-acerca.png"><p>Quienes somos</p>
     </div>
     </a>
 
     <a href="{{route('get_pagina_servicios')}}#section-metodos">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-cog"></span></h2><p>Métodos de construcción</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-metodos.png"><p>Métodos de construcción</p>
     </div>
     </a>
 
     <a href="{{route('get_pagina_servicios')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-list-alt"></span></h2><p>Servicios que ofrecemos</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-servicios.png"><p>Servicios que ofrecemos</p>
     </div>
     </a>
 
     <a href="{{route('get_pagina_proyecto_listado')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-folder-open"></span></h2><p>Portfolio de proyectos</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-proyectos.png"><p>Portfolio de proyectos</p>
     </div>
     </a>
 
     <a href="{{route('get_pagina_noticias_listado')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-bullhorn"></span></h2><p>Publicaciones interesantes</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-publicaciones.png"><p>Publicaciones interesantes</p>
     </div>
     </a>
 
     <a href="{{route('get_pagina_contacto')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
-    <h2><span class="glyphicon glyphicon-resize-small"></span></h2><p>Contáctanos</p>
+    <img class="img-responsive" src="imagenes/Img/home-icon-contacto.png"><p>Contáctanos</p>
     </div>
     </a>
 

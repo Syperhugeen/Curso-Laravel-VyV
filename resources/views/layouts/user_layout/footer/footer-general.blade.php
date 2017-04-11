@@ -8,7 +8,7 @@
 
 
       <div class="col-md-6">
-        <p class="footer-p-izquierda footer-p-destacado"><strong>V&amp;V</strong>INGENIERÍA <span class="glyphicon glyphicon-copyright-mark"></span>2016</p>
+        <p class="footer-p-izquierda footer-p-destacado">VEIGA VENTOS INGENIERÍA <span class="glyphicon glyphicon-copyright-mark"></span>2016</p>
         <p class="footer-p-izquierda">Diseño de interfaz y desarrollo web: Ernesto Calvo</p>
       </div>
 

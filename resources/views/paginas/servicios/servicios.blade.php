@@ -40,7 +40,7 @@
 
 	      		<div class="col-sm-12 servicio-individual">
 	      			<div class="servicios-tipos">
-						<img src="imagenes/Img/servicios-direccion_de_obras.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Servicios de Ing. Civil Estructural</h3>
+						<img src="imagenes/Img/services-icons-1.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Servicios de Ing. Civil Estructural</h3>
 	      			</div>
 	      			<h4><span class="glyphicon glyphicon-ok-circle"></span> Diseño estructural</h4>
 	      			<p>Diseñamos, calculamos y realizamos las verificaciones de la estructura que desee.</p>
@@ -52,7 +52,7 @@
 
 	      		<div class="col-sm-12 servicio-individual">
 	      			<div class="servicios-tipos">
-						<img src="imagenes/Img/servicios-direccion_de_obras.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Gestión de proyectos</h3>
+						<img src="imagenes/Img/services-icons-2.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Realización y Gestión de Proyectos</h3>
 	      			</div>
 	      			<h4 style="text-align:justify"><span class="glyphicon glyphicon-ok-circle"></span> En V&amp;V trabajamos y operamos conjuntamente con estudios de Arquitectura que cuentan con profesionales de alto nivel, para realizar proyectos que satisfagan al cliente de la mejor manera y complementan nuestros Servicios de Ingeniería.</h4>
 	      		</div>
@@ -63,7 +63,7 @@
 
 	      		<div class="col-sm-12 servicio-individual">
 	      			<div class="servicios-tipos">
-						<img src="imagenes/Img/servicios-direccion_de_obras.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Construcción</h3>
+						<img src="imagenes/Img/services-icons-3.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Construcción</h3>
 	      			</div>
 	      			<h4 style="text-align:justify"><span class="glyphicon glyphicon-ok-circle"></span> Construimos obras de todo tipo, con mano de obra capacitada y confiable. Construcciones seguras y con excelentes terminaciones.</h4>
 	      			<h4><span class="glyphicon glyphicon-ok-circle"></span> Reparaciones y recuperaciones</h4>
@@ -72,7 +72,7 @@
 
 	      		<div class="col-sm-12 servicio-individual">
 	      			<div class="servicios-tipos">
-						<img src="imagenes/Img/servicios-direccion_de_obras.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Dirección de obras</h3>
+						<img src="imagenes/Img/services-icons-4.png"><h3><span class="glyphicon glyphicon-triangle-right"></span>Dirección de Obras</h3>
 	      			</div>
 	      			<h4 style="text-align:justify"><span class="glyphicon glyphicon-ok-circle"></span> Puede optar por contratar V&V para la dirección de su obra, ya que contamos con profesionales capacitados para llevar adelante su construcción y garantizar la eficiencia y la más correcta ejecución.</h4>
 	      		</div>

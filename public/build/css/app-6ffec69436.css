@@ -12969,21 +12969,17 @@ pero eso es porque no optimicé la escritura de código)---*/
   margin-bottom: 0; }
 
 .cuadradito {
-  height: 140px;
   border: 1px solid white;
-  color: white;
-  background-color: #4a9fff;
+  color: #4a9fff;
+  background-color: white;
   vertical-align: center;
   text-align: center; }
 
-.cuadradito:hover {
-  background-color: #97c8ff; }
-
 div.cuadradito > h2 {
-  color: white; }
+  color: #4a9fff; }
 
 div.cuadradito > p {
-  color: white;
+  color: #4a9fff;
   text-align: center; }
 
 /*últimos proyectos y últimas noticias*/
@@ -13078,14 +13074,12 @@ img.my-media-object {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*--- S E R V I C I O S ---*/
 .servicio-individual {
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #b3b3b3;
   padding-bottom: 20px;
   margin-bottom: 20px;
   padding-left: 100px;
-  transition: all .3s ease; }
-
-.servicio-individual:hover {
-  transform: translate(0, -20px); }
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
 @media (max-width: 767px) {
   .servicio-individual {
@@ -13100,7 +13094,7 @@ img.my-media-object {
   padding-bottom: 20px; }
 
 .metodo-individual {
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #b3b3b3;
   padding-bottom: 10px;
   margin-bottom: 20px; }
 
@@ -13111,16 +13105,20 @@ div.servicio-individual > h4 > span.glyphicon {
   color: #4a9fff; }
 
 .servicios-tipos h3 {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  color: #3b3b3b; }
 
 #section-servicios .col-sm-12.servicio-individual h4,
 #section-servicios .col-sm-12.servicio-individual p {
   padding-left: 20px; }
 
 #section-servicios .servicios-tipos img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 270px;
   margin: 20px; }
+
+.metodo-individual h3 {
+  color: #3b3b3b; }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

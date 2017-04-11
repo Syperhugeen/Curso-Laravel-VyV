@@ -116,21 +116,17 @@ pero eso es porque no optimicé la escritura de código)---*/
   margin-bottom:0;
 }
   .cuadradito{
-    height:140px;
     border:1px solid $color-white;
-    color:$color-white;
-    background-color:$color-3;
+    color:$color-3;
+    background-color:$color-white;
     vertical-align:center;
     text-align:center;
   }
-  .cuadradito:hover{
-    background-color:$color-3light;
-  }
   div.cuadradito>h2{
-    color:$color-white;
+    color:$color-3;
   }
   div.cuadradito>p{
-    color:$color-white;
+    color:$color-3;
     text-align:center;
   }
 
@@ -274,19 +270,12 @@ por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
 /*--- S E R V I C I O S ---*/
 
 .servicio-individual{
-  border-bottom:1px solid $color-grey0;
+  border-bottom:1px solid $color-grey1;
   padding-bottom:20px;
   margin-bottom:20px;
   padding-left: 100px;
-
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-.servicio-individual:hover{
-  -webkit-transform: translate(0, -20px);
-  -moz-transform: translate(0, -20px);
-  transform: translate(0, -20px);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media (max-width:767px){
   .servicio-individual{
@@ -301,7 +290,7 @@ por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
   padding-bottom:20px;
 }
 .metodo-individual{
-  border-bottom:1px solid $color-grey0;
+  border-bottom:1px solid $color-grey1;
   padding-bottom:10px;
   margin-bottom:20px;
 }
@@ -317,17 +306,20 @@ div.servicio-individual>h4>span.glyphicon{
 }
 .servicios-tipos h3{
   padding-bottom:20px;
+  color:$color-grey3;
 }
 #section-servicios .col-sm-12.servicio-individual h4,
 #section-servicios .col-sm-12.servicio-individual p {
   padding-left: 20px;
 }
 #section-servicios .servicios-tipos img {
-  width:100px;
-  height:auto;
+  width:auto;
+  height:270px;
   margin:20px;
 }
-
+.metodo-individual h3 {
+  color:$color-grey3;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
