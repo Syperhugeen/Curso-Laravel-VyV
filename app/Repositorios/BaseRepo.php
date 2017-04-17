@@ -183,11 +183,10 @@ abstract class BaseRepo
     }
 
     public function set_datos_de_img($file, $Entidad,$nombre_de_la_propiedad,$id_de_la_propiedad,$request,$LugarDondeSeAloja)
-    {
-       if($request->input($nombre_de_la_propiedad) != '')
-       { 
-       
-          $Imagen = $Entidad;    
+    {          
+          $Imagen = $Entidad;  
+
+          dd($Entidad)  ;
 
           //nombre de la calve foraña y su valor  
           $Imagen->$nombre_de_la_propiedad = $id_de_la_propiedad;
@@ -200,9 +199,7 @@ abstract class BaseRepo
 
           $this->setImagenMultiples($Imagen,$file,'img',$LugarDondeSeAloja, $Imagen->id,'.png'); 
 
-          $Imagen->save();  
-
-        }
+          $Imagen->save();          
 
       }
 
