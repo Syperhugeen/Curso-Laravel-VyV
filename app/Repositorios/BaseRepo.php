@@ -197,7 +197,6 @@ abstract class BaseRepo
           //guardo  
           $Imagen->save();
 
-          dd($Entidad)  ;
 
           $this->setImagenMultiples($Imagen,$file,'img',$LugarDondeSeAloja, $Imagen->id,'.png'); 
 
