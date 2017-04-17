@@ -27,7 +27,7 @@
    <div class="admin-entidad-titulo">Editar Proyecto {{$proyecto->name}}</div>
  </div>
  
-   @include('admin.proyectos.partes.parte_imagenes_adicionales')
+   
  
 
  </div>
@@ -52,6 +52,16 @@
             {!! Form::select('estado',['si' => 'Activo',
                                        'no' => 'Desactivar'] , null )          !!}
          </div>
+        </div>
+      </div>
+
+
+      {{-- datos imagenes --}}
+      <div class="contenedor-grupo-datos">
+        <div class="contenedor-grupo-datos-titulo"> Imágenes</div>
+        <div class="contenedor-formulario-label-fiel"> 
+          @include('admin.proyectos.partes.parte_imagenes_adicionales')                      
+          @include('admin.proyectos.formularios_partes.datos_imagenes')
         </div>
       </div>
 
