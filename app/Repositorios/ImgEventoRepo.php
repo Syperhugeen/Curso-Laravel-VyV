@@ -22,6 +22,8 @@ class ImgEventoRepo extends BaseRepo
   {
     $imagen = $this->find($id_img);
 
+    dd($imagen);
+
     $imagen_pricipal = $this->get_imagen_principal_de_entidad_especifica('evento_id',$imagen->evento_id) ;  
 
     $this->cambio_a_imagen_principal_desde_base_repo($imagen_pricipal,$imagen);
