@@ -22,7 +22,7 @@ class ImgEventoRepo extends BaseRepo
   {
     $imagen = $this->find($id_img);
 
-    dd($imagen);
+    
 
     $imagen_pricipal = $this->get_imagen_principal_de_entidad_especifica('evento_id',$imagen->evento_id) ;  
 
