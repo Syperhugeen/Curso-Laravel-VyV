@@ -91,10 +91,20 @@ class Admin_Proyectos_Controllers extends Controller
     $Proyecto = $this->ProyectoRepo->find($id);
 
     $Propiedades = ['name','description','estado','fecha','ubicacion','metodo_de_construccion','autores'];
-      
-    $this->ProyectoRepo->setEntidadDato($Proyecto,$Request,$Propiedades); 
+    
 
-    $this->ProyectoRepo->setImagen($Proyecto,$Request,'img','ProyectoImagenPrincipal/',$Proyecto->id ,'.png'); 
+    $manager = new crear_proyecto_admin_manager(null, $Request->all());
+
+      //valido la data
+      if ($manager->isValid())
+      {
+       $this->ProyectoRepo->setEntidadDato($Proyecto,$Request,$Propiedades); 
+
+       //utilzo la funciona creada en el controlador para subir la imagen
+       $this->set_admin_proyectos_img($Proyecto->id, $Request);  
+
+       return redirect()->route('get_admin_proyectos')->with('alert', 'Proyecto Creado Correctamente');       
+      }  
 
     return redirect()->route('get_admin_proyectos')->with('alert', 'Proyecto Editado Correctamente');  
   }
