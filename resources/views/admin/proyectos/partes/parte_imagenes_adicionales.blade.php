@@ -6,7 +6,7 @@
       <img class="admin-entidad-proyecto-img-adicionales" src="{{$img->url_img}}">
       <a href="{{route('delete_admin_proyectos_img',$img->id)}}" class="icono-eleminar-imagen"><span class="icon-clear" ></span></a>
       @if($img->foto_principal != 'si')
-        <a href="{{route('establecer_como_imagen_principal',$img->id)}}" class="icono-establecer-imagen" title="Establecer como imagen principal">
+        <a href="{{route('establecer_como_imagen_proyecto_principal',$img->id)}}" class="icono-establecer-imagen" title="Establecer como imagen principal">
          <span class="glyphicon glyphicon-star-empty" ></span>
         </a>
       @else
