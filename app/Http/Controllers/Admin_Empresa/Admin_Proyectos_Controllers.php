@@ -102,9 +102,7 @@ class Admin_Proyectos_Controllers extends Controller
 
      //verifico si la pocion 0 es diferente de null, significa que el array no esta vacio
       if($files[0] != null )
-      {   
-
-        dd($files);     
+      {  
 
         foreach($files as $file)
         { 
