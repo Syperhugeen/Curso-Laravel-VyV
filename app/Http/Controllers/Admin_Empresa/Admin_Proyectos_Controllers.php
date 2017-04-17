@@ -104,7 +104,7 @@ class Admin_Proyectos_Controllers extends Controller
 
         foreach($files as $file)
         { 
-          $this->ImgProyectoRepo->set_datos_de_img($file,$this->ImgProyectoRepo->getEntidad(),'proyecto_id',$id_proyecto,$Request,'ProyectosImagenesAdicionales/' );
+          $this->ImgProyectoRepo->set_datos_de_img($file,$this->ImgProyectoRepo->getEntidad(),'proyecto_id',$id,$Request,'ProyectosImagenesAdicionales/' );
         }
         
       }
