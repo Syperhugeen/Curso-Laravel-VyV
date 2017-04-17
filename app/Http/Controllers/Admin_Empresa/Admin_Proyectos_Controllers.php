@@ -98,6 +98,8 @@ class Admin_Proyectos_Controllers extends Controller
      //imagenes
      $files = $Request->file('img');
 
+     dd($files);
+
      //verifico si la pocion 0 es diferente de null, significa que el array no esta vacio
       if($files[0] != null )
       {        
