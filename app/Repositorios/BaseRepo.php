@@ -186,7 +186,7 @@ abstract class BaseRepo
     {          
           $Imagen = $Entidad;  
 
-          dd($Entidad)  ;
+
 
           //nombre de la calve foraña y su valor  
           $Imagen->$nombre_de_la_propiedad = $id_de_la_propiedad;
@@ -196,6 +196,8 @@ abstract class BaseRepo
 
           //guardo  
           $Imagen->save();
+
+          dd($Entidad)  ;
 
           $this->setImagenMultiples($Imagen,$file,'img',$LugarDondeSeAloja, $Imagen->id,'.png'); 
 
