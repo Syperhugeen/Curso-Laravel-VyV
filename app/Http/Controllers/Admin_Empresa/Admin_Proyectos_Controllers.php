@@ -143,9 +143,24 @@ class Admin_Proyectos_Controllers extends Controller
   //elimino img adicional
   public function delete_admin_proyectos_img($id_img)
   {
-      $this->ImgProyectoRepo->destroy_entidad($id_img);
+      $imagen = $this->ImgProyectoRepo->find($id_img); 
 
-      return redirect()->back()->with('alert-rojo', 'Imagen Eliminada');
+      $proyecto = $this->ProyectoRepo->find($imagen->proyecto_id);
+
+      //me fijo si hay mas imagenes
+      if($proyecto->imagenesproyecto->count() > 1)
+      {
+        $this->ImgProyectoRepo->destroy_entidad($id_img);
+
+        return redirect()->back()->with('alert-rojo', 'Imagen Eliminada');
+      }
+      else
+      {
+        return redirect()->back()->with('alert-rojo', 'No puedes elminiar porque es la única');
+      }  
+
+
+      
   }
 
   //fijo como imagen principal 
