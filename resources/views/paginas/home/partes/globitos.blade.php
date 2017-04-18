@@ -54,7 +54,8 @@
     <img class="img-responsive" src="imagenes/Img/home-icon-metodos.png"><p>Métodos de construcción</p>
     </div>
     </a>
-
+</div>
+<div class="row">
     <a href="{{route('get_pagina_servicios')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
     <img class="img-responsive" src="imagenes/Img/home-icon-servicios.png"><p>Servicios que ofrecemos</p>
@@ -66,7 +67,8 @@
     <img class="img-responsive" src="imagenes/Img/home-icon-proyectos.png"><p>Portfolio de proyectos</p>
     </div>
     </a>
-
+</div>
+<div class="row">
     <a href="{{route('get_pagina_noticias_listado')}}">
     <div class="col-xs-6 col-sm-4 cuadradito">
     <img class="img-responsive" src="imagenes/Img/home-icon-publicaciones.png"><p>Publicaciones interesantes</p>
