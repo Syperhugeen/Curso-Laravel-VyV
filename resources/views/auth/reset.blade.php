@@ -10,7 +10,7 @@
 @stop
 
 @section('MetaRobot')
- NOINDEX,FOLLOW
+ NOINDEX,NOFOLLOW
 @stop
 
 
