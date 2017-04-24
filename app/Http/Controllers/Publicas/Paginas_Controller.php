@@ -53,7 +53,7 @@ class Paginas_Controller extends Controller
     //Noticias
     public function get_pagina_noticias_listado(Request $Request)
     {
-        $Noticias = $this->NoticiasRepo->getEntidadActivasPaginadas($Request,2);
+        $Noticias = $this->NoticiasRepo->getEntidadActivasPaginadas($Request,6);
 
         return view('paginas.noticias.noticias_listado',compact('Noticias'));
     }
@@ -71,7 +71,7 @@ class Paginas_Controller extends Controller
     //Proyectos
     public function get_pagina_proyecto_listado(Request $Request)
     {
-        $Proyectos = $this->ProyectoRepo->getEntidadActivasPaginadas($Request,3) ;
+        $Proyectos = $this->ProyectoRepo->getEntidadActivasPaginadas($Request,6) ;
         return view('paginas.proyecto.proyecto_listado', compact('Proyectos'));
     }
 
