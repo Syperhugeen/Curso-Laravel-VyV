@@ -129,8 +129,11 @@ pero eso es porque no optimicé la escritura de código)---*/
     color:$color-3;
     text-align:center;
   }
-
-
+   @media (max-width: 767px){.cuadradito{
+    max-width:200px;
+    max-height:200px;
+    font-size:100%;
+    }}
 
 
 /*últimos proyectos y últimas noticias*/

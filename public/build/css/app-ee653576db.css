@@ -12982,6 +12982,12 @@ div.cuadradito > p {
   color: #4a9fff;
   text-align: center; }
 
+@media (max-width: 767px) {
+  .cuadradito {
+    max-width: 200px;
+    max-height: 200px;
+    font-size: 100%; } }
+
 /*últimos proyectos y últimas noticias*/
 /*título de cada sección interior del Home,
 por ejemplo ULTIMOS PROYECTOS y ULTIMOS ARTICULOS*/
