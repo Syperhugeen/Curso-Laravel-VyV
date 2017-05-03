@@ -12872,9 +12872,7 @@ pero eso es porque no optimicé la escritura de código)---*/
 /*carrusel*/
 .img-carousel {
   top: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto; }
 
 .carousel-caption > h3 {
@@ -12886,9 +12884,7 @@ pero eso es porque no optimicé la escritura de código)---*/
 
 @media (max-width: 767px) {
   .img-carousel {
-    min-width: 200%;
-    min-height: 200%;
-    width: auto;
+    width: 100%;
     height: auto; } }
 
 /*título principal de Bienvenida*/
