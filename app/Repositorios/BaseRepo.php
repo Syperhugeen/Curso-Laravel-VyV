@@ -58,7 +58,7 @@ abstract class BaseRepo
       return $this->entidad
                   ->name($request->get('name')) 
                   ->active()               
-                  ->orderBy('id','desc')
+                  ->orderBy('updated_at','desc')
                   ->paginate($paginacion);
     }
 
