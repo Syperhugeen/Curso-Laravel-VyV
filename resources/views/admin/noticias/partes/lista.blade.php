@@ -1,4 +1,4 @@
-<div class="admin-marca-lista-contenedor">
+<div class='dmin-marca-lista-contenedor @if($marca->estado != "si") helper-Warning @endif'>
    
    <img class="admin-marca-img" src="{{url()}}/imagenes/{{$marca->img}}">
   

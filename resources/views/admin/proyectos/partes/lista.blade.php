@@ -1,4 +1,4 @@
-<div class="admin-marca-lista-contenedor">
+<div class='admin-marca-lista-contenedor @if($proyecto->estado != "si") helper-Warning @endif'>
    
    <img class="admin-marca-img" src="{{$proyecto->url_img}}">
   
