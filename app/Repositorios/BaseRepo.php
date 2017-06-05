@@ -106,6 +106,34 @@ abstract class BaseRepo
   
     }
 
+    /**
+     * Ultima entidades modificadas
+     */
+    public function getUltimasEntidadesModificadasRegistradasRandomActive($request,$cantidad)
+    {
+      $cantidad_de_entidades =  $this->entidad->active()->get()->count();
+
+      if($cantidad_de_entidades >= $cantidad)
+      {
+        $entidades = $this->entidad
+                          ->name($request->get('name'))                
+                          ->active()
+                          ->orderBy('updated_at','DESC')
+                          ->take($cantidad)
+                          ->get();
+      }
+      else
+      {
+        $entidades = $this->entidad
+                          ->name($request->get('name'))                
+                          ->active()
+                          ->orderBy('updated_at','DESC')
+                          ->get();
+      }  
+
+      return $entidades;
+    }
+
      
 
     /**
