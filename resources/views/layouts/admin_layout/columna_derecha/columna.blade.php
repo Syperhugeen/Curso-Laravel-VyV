@@ -14,6 +14,6 @@
      <a href="{{route('get_admin_noticias')}}"><li class="admin-columna-li"><span class="icon-drafts"></span> Noticias</li></a>
  </ul>
  
-<a href="{{route('get_home')}}"><p class="link-go-to-web"><small>www.vvingenieria.com</small></p></a>
+<a href="{{route('get_home')}}"><p class="link-go-to-web"><small>www.veigaventos.com</small></p></a>
 
 </div>
