@@ -1,6 +1,6 @@
 {{-- donve va el mensaje --}}
 <div id="notify-mensaje"></div>
-  {!! Form::open(             ['route' => 'post_envio_solicitud_trabajo_form',
+  {!! Form::open(             ['route' => 'post_envio_solicitud_cotizacion_proyecto_form',
                             'method'   => 'post',
                             'files'    => true,
                             'id'       => 'solicitud-de-presupuesto-form'

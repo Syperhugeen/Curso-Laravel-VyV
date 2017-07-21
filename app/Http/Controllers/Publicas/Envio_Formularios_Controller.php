@@ -112,13 +112,12 @@ class Envio_Formularios_Controller extends Controller
                 //envio el email de la solciitud de trabajo
                 $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
 
-               return response()->json(
+                return response()->json(
                 [ 
                     'validation'  => true,
                     'mensaje'     => 'Solicitud de trabajo enviada correctamente. En breve nos contactaremos con usted.',
                                        
-                ]
-               );     
+                ]);     
               }
               else
               {
@@ -127,8 +126,7 @@ class Envio_Formularios_Controller extends Controller
                     'validation'  => false,
                     'mensaje'     => 'Verifica lo siguiente:'. $manager->getErrors(),
                                        
-                ]
-               );  
+                ]);  
 
               }  
          }
@@ -147,6 +145,9 @@ class Envio_Formularios_Controller extends Controller
         return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
 
+    /**
+     * solicitud de cotizacion
+     */
     public function post_envio_solicitud_cotizacion_proyecto_form(Request $Request)
     {
         
@@ -161,16 +162,15 @@ class Envio_Formularios_Controller extends Controller
               if ($manager->isValid())
               {
                 
-                //envio el email de la solciitud de trabajo
-                $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
+               //envio el email de la solciitud de trabajo
+               $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeCotizacion($Request);
 
                return response()->json(
                 [ 
                     'validation'  => true,
                     'mensaje'     => 'Solicitud de cotización de proyecto enviada correctamente. En breve nos contactaremos con usted. ',
                                        
-                ]
-               );     
+                ]);     
               }
               else
               {

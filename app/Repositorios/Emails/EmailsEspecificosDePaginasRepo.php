@@ -36,6 +36,8 @@ class EmailsEspecificosDePaginasRepo
                 $archivo  = $Request->file('file');
                 $telefono = $Request->get('telefono');
 
+                
+
          Mail::send('emails.solicitud_trabajo' ,                    
 
                    //con esta funcion le envia los datos a la vista.
