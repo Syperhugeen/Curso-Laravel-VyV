@@ -13,7 +13,7 @@
     <META name="robots" content="@yield('MetaRobot')">
 
 
-
+    @include('layouts.user_layout.analitics.codigo')
 
 
     <script>
