@@ -75,3 +75,16 @@
               .admin-boton-editar:hover{
                 background-color: $Color-Verde-Claro;
               }
+
+
+ .contenedor-aclaraciones{
+  padding:5px;
+  margin-bottom: 10px;
+  background-color:$Color-Gris-Claro-Para-Bordes;
+  list-style: none;
+ }            
+   .linea-de-aclaración{
+    margin-bottom: 3px;
+    font-size: 10px;
+
+   } 
