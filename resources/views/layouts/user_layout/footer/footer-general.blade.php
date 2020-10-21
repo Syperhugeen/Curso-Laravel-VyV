@@ -9,7 +9,7 @@
 
       <div class="col-md-6">
         <p class="footer-p-izquierda footer-p-destacado">VEIGA VENTOS INGENIERÍA <span class="glyphicon glyphicon-copyright-mark"></span>2016</p>
-        <p class="footer-p-izquierda">Diseño de interfaz y desarrollo web: Ernesto Calvo</p>
+        <p class="footer-p-izquierda">Diseño de interfaz <a href="https://www.simbiontecreativo.com/">Ernesto Calvo</a>  |  Desarrollo web  <a href="https://mauricio.mwebs.com.uy/">Mauricio Costanzo</a>   </p>
       </div>
 
 
