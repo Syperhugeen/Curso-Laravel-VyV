@@ -5,6 +5,7 @@ namespace App\Entidades;
 use Illuminate\Database\Eloquent\Model;
 use App\Entidades\ImgHome;
 use App\Entidades\ImgProyecto;
+use App\Helpers\HelpersGenerales;
 
 
 
@@ -92,9 +93,9 @@ class Proyecto extends Model
     }
 
     public function getDescriptionParrafoAttribute()
-    {
-         
-         $text =  htmlentities($this->description);
+    {         
+         $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares(($this->description);
+
          return   $text;  
     }
 

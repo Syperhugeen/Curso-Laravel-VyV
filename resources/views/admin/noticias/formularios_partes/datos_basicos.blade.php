@@ -10,6 +10,7 @@
 
 <div class="formulario-label-fiel">
   {!! Form::label('description', 'Descripción', array('class' => 'formulario-label ')) !!}
+  @include('admin.noticias.partes.aclaracion_etiquetas')
   {!! Form::textarea('description', null ,['class' => 'formulario-field']) !!}
 </div>
 

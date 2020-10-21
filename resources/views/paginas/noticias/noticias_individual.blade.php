@@ -43,17 +43,12 @@
       	<!--primera parte (foto a la izquierda y texto a la derecha)-->
       	<div class="row space-bottom">
       		<div class="col-md-12">
-      			<p>{{$Noticia->description}}</p>
+      			<p>{!!$Noticia->description_ajustada!!}</p>
       		</div>
       	</div>
 
        
-        	<!--otra imagen de la noticia-->
-        	<div class="row space-bottom">
-  	      	<div class="col-md-12">
-  			    	<img class="img-responsive img-rounded" src="">
-  	      	</div>
-        	</div>
+        
        
 
         @if($Noticia->url_video != NULL)
