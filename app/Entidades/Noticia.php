@@ -67,7 +67,7 @@ class Noticia extends Model
 
     public function getDescriptionAjustadaAttribute()
     {         
-         $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares(($this->description);
+         $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares($this->description);
 
          return   $text;  
     }
