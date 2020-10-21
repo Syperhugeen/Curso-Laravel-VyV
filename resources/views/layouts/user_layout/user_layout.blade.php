@@ -67,8 +67,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/all.js')}}"></script>    
-     <!-- activate WOW.js (ya está cargada al principio del html code) --> 
-    <script> new WOW().init(); </script>
+   
 
   </body>
 </html>   
