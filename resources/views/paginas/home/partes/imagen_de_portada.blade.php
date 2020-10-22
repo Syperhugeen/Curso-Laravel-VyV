@@ -14,7 +14,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img class="img-carousel" src="imagenes/Portadas/veigaventos-portada-1.jpg" alt="Ingeniería Civil">
+      <img class="img-carousel" src="imagenes/Portadas/veigaventos-portada-1.jpeg" alt="Ingeniería Civil">
     </div>
     <div class="item active">
       <img class="img-carousel" src="imagenes/Img/metodo1.jpg" alt="Ingeniería Civil">
