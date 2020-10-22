@@ -2,7 +2,7 @@
 {{-- contenedor de la parte completa de publicaciones en la home --}}
 
   {{-- titulo de seccion --}}
- <h2 class="home-section-title">ÚLTIMAS PUBLICACIONES</h2>
+ <h2 class="home-section-title">PUBLICACIONES</h2>
 
 
 {{-- contiene hasta dos proyectos como máximo --}}
