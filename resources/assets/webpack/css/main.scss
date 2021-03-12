@@ -1,0 +1,57 @@
+@import './boostrap/customBoostrap.scss';
+
+@import './components/item.scss';
+@import './components/blog.scss';
+@import './breakpoints/breakpoints.scss';
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media (min-width: $md) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+
+.decoracionHeaders {
+  position: relative;
+}
+.decoracionHeaders::after {
+  content: '';
+  background: lighten($secondary, 35%);
+  width: 100%;
+  height: 44%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: -2;
+}
+
+p,
+li {
+  font-weight: regular;
+  line-height: 1.6;
+  width: 100%;
+  font-size: 1.3em;
+  color: #847a7a !important;
+}
+
+li,
+ul {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
