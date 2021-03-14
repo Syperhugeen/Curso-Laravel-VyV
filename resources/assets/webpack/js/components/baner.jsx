@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Typewriter from 'typewriter-effect';
 import Data from '../config/data';
 
-import Foto from '../../img/Javier/javier-mangini-radio.jpg';
+import Foto from '../../img/Home/v-y-v-steel-framing.jpg';
 
 const Baner = () => (
   <section className="w-100 py-5">
     <div className="container d-flex flex-column align-items-center">
       <h1 className="mb-5 text-center decoracionHeaders text-wrap">
-        Javier Mangini psicólogo en Montevideo
+        Estudio de ingeniería experto en Steel Framing en Uruguay
       </h1>
       <div className="col-12 row mx-0 align-items-center  ">
         <div className="col-12 col-lg-6  px-2 mb-4 mb-lg-0">
@@ -23,45 +24,31 @@ const Baner = () => (
         </div>
         <div className="col-12 col-lg-6 px-2">
           <p>
-            Soy licenciado en psicología, psicoanalista y ex docente de la
-            UdelaR.
+            Somo expertos en realizar{' '}
+            <strong> proyectos en Steel Framing</strong> y además{' '}
+            <strong>tenemos planes de formación enfocados</strong> a arquitectos e ingenieros 
+            en los cuales compartimos las buenas prácticas y procedimientos a la hora de construir con Stell Framing.
             {` `}
-            <b className="text-bold">
-              Doy consultas privadas en el centro de Montevideo o por video
-              llamadas.
-            </b>
-          </p>
-          <p>
-            Si sentís que algo no funciona bien en tu vida, que necesitás un
-            cambio o estás afrontando una situación difícil, déjame acompañarte.
           </p>
 
-          <p>
-            <strong>
-              Es bueno que sepas que no utilizo una única metodología para
-              entenderte y ayudarte
-            </strong>
-            . Como cada persona es única, la forma de ayudar también tiene que
-            serlo.
-          </p>
-          <p>
-            Mi principal objetivo es poder ofrecerte una terapia personalizada
-            que se adapte a tus necesidades.
-          </p>
-          <h3 className="">
+          <h3 className="mb-4">
             <Typewriter
               options={{
-                strings: [
-                  '¿Querés hablar conmigo?',
-                  `Llamame o enviame un mensaje a mi celular ${Data.cellphone}`,
-                  `${Data.cellphone}`,
-                  `${Data.cellphone}`,
-                ],
+                strings: ['¿Tenés un proyecto para cotizar?'],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h3>
+
+          <Link
+            exact
+            to="/contactar"
+            className="btn btn-primary btn-lg text-uppercase"
+          >
+            Contactanos
+          </Link>
+          <p className="my-4">¡Sin compromiso!</p>
         </div>
       </div>
     </div>

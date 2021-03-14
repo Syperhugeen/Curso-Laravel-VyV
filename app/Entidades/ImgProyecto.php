@@ -4,13 +4,9 @@ namespace App\Entidades;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-
-
 class ImgProyecto extends Model
 {
-
-    protected $table ='imgs_proyectos';
+    protected $table = 'imgs_proyectos';
 
     /**
      * The attributes that are mass assignable.
@@ -19,11 +15,10 @@ class ImgProyecto extends Model
      */
     protected $fillable = ['name', 'description'];
 
-    
     public function getUrlImgAttribute()
     {
-        
-        return url().'/imagenes/'.$this->img;
+
+        return 'https://www.veigaventos.com/imagenes/' . $this->img;
     }
-    
+
 }

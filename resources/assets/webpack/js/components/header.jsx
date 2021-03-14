@@ -1,34 +1,66 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../../img/Javier/javier-psicologo-cuadrado.jpg';
+import { Link, NavLink } from 'react-router-dom';
+import Logo from '../../img/logo-v-y-v-ingenieria.png';
 
 const Header = (props) => (
   <header id="header-nav" className="w-100 py-2 shadow-sm ">
     <div className="container d-flex flex-column align-items-center">
       <div className="col-12  row mx-0 align-items-center">
-        <div className="col-3 col-md-2  col-lg-1 d-flex flex-column align-items-center justify-content-center ">
+        <div className="col-4 col-md-3  col-lg-2 d-flex flex-column align-items-center justify-content-center ">
           <Link to="/">
             <img
               src={Logo}
-              alt="Foto de Javier"
-              className="img-fluid rounded-circle"
+              alt="Logo de V & V ingeniería. Veiga y Ventos"
+              className="img-fluid "
             />
           </Link>
         </div>
-        <div className="col-9 col-md-10 col-lg-7">
-          <h1 className="h5 mb-0"> Psicólogo Javier Mangini </h1>
-          <p className="mb-0">
-            <small>
-              <strong>Montevideo-Uruguay</strong>
-            </small>
-          </p>
-        </div>
-        <div className="col-12 col-lg-4 mt-2 mt-lg-0">
-          <Link to="/contactar">
-            <div className="btn btn-primary btn-lg  w-100 text-uppercase">
-              Contactar
-            </div>
-          </Link>
+
+        <div class="col-8  col-md-9 col-lg-10 d-flex flex-column align-items-end">
+        <nav className="d-flex align-items-center">
+         
+          <div className="">
+            <NavLink
+              exact
+              to="/sobre-v-y-v"
+              className="nav-class"
+              activeClassName="nav-active-class"
+              exact
+            >
+              Sobre v&v
+            </NavLink>
+          </div>
+          <div className="">
+            <NavLink
+              exact
+              to="/"
+              className="nav-class"
+              activeClassName="nav-active-class"
+            >
+              Inicio
+            </NavLink>
+          </div>
+          <div className="">
+            <NavLink
+              exact
+              to="/servicios"
+              className="nav-class"
+              activeClassName="nav-active-class"
+            >
+              Servicios
+            </NavLink>
+          </div>
+          <div className="px-2">
+            <Link
+              exact
+              to="/contactar"
+              className="btn btn-primary btn-lg text-uppercase"
+              
+            >
+              cotizar proyecto
+            </Link>
+          </div>
+        </nav>
         </div>
       </div>
     </div>

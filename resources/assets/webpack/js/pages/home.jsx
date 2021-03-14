@@ -21,9 +21,9 @@ const Home = () => {
         const componente = (
           <SectionBlog cantidad="4" evitarIds="''">
             {' '}
-            <h2 className="mb-5 text-center ">Mi blog</h2>
+            <h2 className="mb-5 text-center ">Por qué contarte si te lo podemos mostrar </h2>
             <p className="col-12 text-center mb-5">
-              Artículos que pueden ayudarte mientras te decidís a contactarme
+              Mirá nuestros últimos proyectos realizados.
             </p>
           </SectionBlog>
         );

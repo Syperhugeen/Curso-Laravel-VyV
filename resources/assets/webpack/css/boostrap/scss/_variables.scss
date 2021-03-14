@@ -19,7 +19,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black: #000 !default;
+$black:#3b3b3b !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -241,9 +241,9 @@ $line-height-sm: 1.5 !default;
 $border-width: 1px !default;
 $border-color: $gray-300 !default;
 
-$border-radius: 0.25rem !default;
-$border-radius-lg: 0.3rem !default;
-$border-radius-sm: 0.2rem !default;
+$border-radius:0 !default;
+$border-radius-lg: 0 !default;
+$border-radius-sm: 0 !default;
 
 $rounded-pill: 50rem !default;
 
@@ -305,7 +305,7 @@ $headings-margin-bottom: $spacer / 2 !default;
 $headings-font-family: $font-family-base !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: null !default;
+$headings-color: $black !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;

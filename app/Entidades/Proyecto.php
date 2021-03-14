@@ -2,18 +2,13 @@
 
 namespace App\Entidades;
 
-use Illuminate\Database\Eloquent\Model;
-use App\Entidades\ImgHome;
 use App\Entidades\ImgProyecto;
 use App\Helpers\HelpersGenerales;
-
-
-
+use Illuminate\Database\Eloquent\Model;
 
 class Proyecto extends Model
 {
-
-    protected $table ='proyectos';
+    protected $table = 'proyectos';
 
     /**
      * The attributes that are mass assignable.
@@ -21,38 +16,29 @@ class Proyecto extends Model
      * @var array
      */
     protected $fillable = ['name', 'description'];
-
-
+    protected $appends  = ['url_img', 'description_parrafo', 'route'];
 
     public function imagenesproyecto()
     {
-      return $this->hasMany(ImgProyecto::class,'proyecto_id','id')->where('estado','si');
+        return $this->hasMany(ImgProyecto::class, 'proyecto_id', 'id')->where('estado', 'si');
     }
 
-    
     /**
      * PAra busqueda por nombre
      */
     public function scopeName($query, $name)
     {
-        //si el paramatre(campo busqueda) esta vacio ejecutamos el codigo
-        /// trim() se utiliza para eliminar los espacios.
-        ////Like se usa para busqueda incompletas
-        /////%% es para los espacios adelante y atras
-        if (trim($name) !="")
-        {                        
-           $query->where('name', "LIKE","%$name%"); 
+
+        if (trim($name) != "") {
+            $query->where('name', "LIKE", "%$name%");
         }
-        
     }
 
     public function scopeActive($query)
     {
-                               
-           $query->where('estado', "si"); 
-                
-    }
 
+        $query->where('estado', "si");
+    }
 
     public function getUrlImgAttribute()
     {
@@ -60,45 +46,33 @@ class Proyecto extends Model
         $imagenesProyectos = $this->imagenesproyecto;
 
         //veo si hay alguna que tenga el atributo
-        $cantidad_imagenes = $imagenesProyectos->where('foto_principal','si')->count();
+        $cantidad_imagenes = $imagenesProyectos->where('foto_principal', 'si')->count();
 
-        if($cantidad_imagenes === 1)
-        {
-            $imagen_principal = $imagenesProyectos->where('foto_principal','si')->first();
-            
+        if ($cantidad_imagenes === 1) {
+            $imagen_principal = $imagenesProyectos->where('foto_principal', 'si')->first();
 
             return $imagen_principal->url_img;
-        }
-        elseif($cantidad_imagenes === 0)
-        {
-            $imagen = $imagenesProyectos->first();
+        } elseif ($cantidad_imagenes === 0) {
+            $imagen                 = $imagenesProyectos->first();
             $imagen->foto_principal = 'si';
             $imagen->save();
 
             return $imagen->url_img;
-        }   
-        else
-        {
-            return url().'/imagenes/'.$this->img;
-        }    
-        
-        
+        } else {
+            return 'https://www.veigaventos.com/imagenes/' . $this->img;
+        }
     }
-
 
     public function getRouteAttribute()
     {
-        
+
         return route('get_pagina_proyecto_individual', [str_replace(" ", "_", $this->name), $this->id]);
     }
 
     public function getDescriptionParrafoAttribute()
-    {         
-         $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares($this->description);
+    {
+        $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares($this->description);
 
-         return   $text;  
+        return $text;
     }
-
-     
-    
 }

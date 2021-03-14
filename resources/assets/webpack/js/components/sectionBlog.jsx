@@ -26,9 +26,7 @@ const SectionBlog = (props) => {
 
     const CANTIDAD = props.cantidad;
 
-    return fetch(
-      `https://psicologojaviermangini.com.uy/get_blogs_ids?ids=${idsYaUsados}&cantidad=${CANTIDAD}`
-    )
+    return fetch(`/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`)
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);

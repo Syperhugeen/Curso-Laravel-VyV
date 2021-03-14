@@ -2,7 +2,7 @@ const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { GenerateSW } = require('workbox-webpack-plugin');
+
 
 const PATHS = {
   src: path.join(__dirname, 'resources/assets/webpack/'),
@@ -89,6 +89,6 @@ module.exports = {
       filename: 'css/[id].[contenthash].css',
       chunkFilename: 'css/[id].[contenthash].css',
     }),
-    new GenerateSW(),
+    
   ],
 };
