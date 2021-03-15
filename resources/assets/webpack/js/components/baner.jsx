@@ -5,9 +5,28 @@ import Typewriter from 'typewriter-effect';
 import Data from '../config/data';
 
 import Foto from '../../img/Home/v-y-v-steel-framing.jpg';
+import Portada1 from '../../img/Home/construccion-con-steel-framing-2.jpg';
+import Portada2 from '../../img/Home/construccion-con-steel-framing.jpg';
+import ReactBootstrapCarousel from 'react-bootstrap-carousel';
 
 const Baner = () => (
-  <section className="w-100 py-5">
+  <section className="w-100 pb-5">
+    <ReactBootstrapCarousel
+      autoplay={true}
+      pauseOnVisibility={true}
+      slideshowSpeed={2000}
+      version={4}
+    >
+      <div style={{ height: 400 }}>
+        <img style={{ width: '100%' }} src={Portada1} />
+        <div className="carousel-caption">Image</div>
+      </div>
+      <div style={{ height: 400 }}>
+        <img style={{ width: '100%' }} src={Portada2} />
+        <div className="carousel-caption">Image</div>
+      </div>
+    </ReactBootstrapCarousel>
+
     <div className="container d-flex flex-column align-items-center">
       <h1 className="mb-5 text-center decoracionHeaders text-wrap">
         Estudio de ingeniería experto en Steel Framing en Uruguay
@@ -26,8 +45,9 @@ const Baner = () => (
           <p>
             Somo expertos en realizar{' '}
             <strong> proyectos en Steel Framing</strong> y además{' '}
-            <strong>tenemos planes de formación enfocados</strong> a arquitectos e ingenieros 
-            en los cuales compartimos las buenas prácticas y procedimientos a la hora de construir con Stell Framing.
+            <strong>tenemos planes de formación enfocados</strong> a arquitectos
+            e ingenieros en los cuales compartimos las buenas prácticas y
+            procedimientos a la hora de construir con Stell Framing.
             {` `}
           </p>
 

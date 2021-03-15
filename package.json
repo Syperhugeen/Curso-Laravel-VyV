@@ -50,6 +50,7 @@
     "html-react-parser": "^1.2.4",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
+    "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-loading-skeleton": "^2.1.1",
