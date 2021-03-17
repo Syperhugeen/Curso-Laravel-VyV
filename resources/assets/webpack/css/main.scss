@@ -2,16 +2,17 @@
 
 @import './components/item.scss';
 @import './components/blog.scss';
-@import './breakpoints/breakpoints.scss';
 
 h1 {
   font-weight: bold;
   font-size: 2.5rem;
+  color: $body-color;
 }
 
 h2 {
   font-weight: bold;
   font-size: 2rem;
+  color: $body-color;
 }
 
 @media (min-width: $md) {
@@ -54,26 +55,4 @@ ul {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-
-.nav-class{
-  
-  padding: 6px 6px;  
-  text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-  color: $text-gray;
-  
-}
-.nav-class:hover{
-   
-  text-decoration: none;
-  color:$primary;
-}
-
-.nav-active-class{
-  
-  color:$primary;
-  
 }

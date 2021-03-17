@@ -2,34 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Typewriter from 'typewriter-effect';
+import Slider from '../components/slider';
 import Data from '../config/data';
 
 import Foto from '../../img/Home/v-y-v-steel-framing.jpg';
-import Portada1 from '../../img/Home/construccion-con-steel-framing-2.jpg';
-import Portada2 from '../../img/Home/construccion-con-steel-framing.jpg';
-import ReactBootstrapCarousel from 'react-bootstrap-carousel';
 
 const Baner = () => (
   <section className="w-100 pb-5">
-    <ReactBootstrapCarousel
-      autoplay={true}
-      pauseOnVisibility={true}
-      slideshowSpeed={2000}
-      version={4}
-    >
-      <div style={{ height: 400 }}>
-        <img style={{ width: '100%' }} src={Portada1} />
-        <div className="carousel-caption">Image</div>
-      </div>
-      <div style={{ height: 400 }}>
-        <img style={{ width: '100%' }} src={Portada2} />
-        <div className="carousel-caption">Image</div>
-      </div>
-    </ReactBootstrapCarousel>
-
+    <Slider />
     <div className="container d-flex flex-column align-items-center">
-      <h1 className="mb-5 text-center decoracionHeaders text-wrap">
-        Estudio de ingeniería experto en Steel Framing en Uruguay
+      <h1 className="my-5 text-center decoracionHeaders text-wrap">
+        Estudio de ingeniería experto en Steel Framing
       </h1>
       <div className="col-12 row mx-0 align-items-center  ">
         <div className="col-12 col-lg-6  px-2 mb-4 mb-lg-0">

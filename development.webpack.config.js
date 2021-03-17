@@ -3,7 +3,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-
 const PATHS = {
   src: path.join(__dirname, 'resources/assets/webpack/'),
 };
@@ -22,21 +21,14 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'public2/'),
+    path: path.resolve(__dirname, 'public/'),
     filename: 'js/[name].[contenthash].js',
     chunkFilename: 'js/[id].[chunkhash].js',
     publicPath: '/',
   },
   mode: 'development',
   devServer: {
-    historyApiFallback: true,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-      'Access-Control-Allow-Headers':
-        'X-Requested-With, content-type, Authorization',
-      https: true,
-    },
+    contentBase: './public',
   },
 
   module: {
@@ -89,6 +81,5 @@ module.exports = {
       filename: 'css/[id].[contenthash].css',
       chunkFilename: 'css/[id].[contenthash].css',
     }),
-    
   ],
 };

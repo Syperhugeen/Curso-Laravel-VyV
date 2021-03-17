@@ -17,7 +17,7 @@ const item = (props) => {
   const [description, setDescription] = useState(props.description);
 
   return (
-    <div className="col-12 col-md-6 col-lg-4 mb-4 ">
+    <div className="col-12 col-lg-6 mb-4 ">
       <div
         onClick={() => {
           setAbierto((abierto = !abierto));

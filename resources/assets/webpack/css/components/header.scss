@@ -1,0 +1,40 @@
+@import './../templateDeColores/colores.scss';
+
+$HEADER_ALTURA: 60px;
+$BORDE_GROSOR: 4px;
+
+.header {
+  height: $HEADER_ALTURA;
+}
+
+.header-logo-img {
+  height: $HEADER_ALTURA;
+  width: auto;
+  padding: 5px 0;
+}
+
+.nav-class-wraper {
+}
+
+.nav-class {
+  padding: 0 6px;
+  text-transform: uppercase;
+
+  text-align: center;
+  color: $text-gray;
+  height: 100%;
+  line-height: $HEADER_ALTURA - $BORDE_GROSOR;
+
+  border-top: solid $BORDE_GROSOR transparent;
+  border-bottom: solid $BORDE_GROSOR transparent;
+}
+.nav-class:hover {
+  text-decoration: none;
+  color: $primary;
+  border-top: solid $BORDE_GROSOR $primary;
+}
+
+.nav-active-class {
+  border-top: solid $BORDE_GROSOR $primary;
+  color: $primary;
+}
