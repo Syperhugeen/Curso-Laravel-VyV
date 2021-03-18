@@ -17,18 +17,8 @@ const Header = (props) => (
           </Link>
         </div>
 
-        <div className="col-8  col-md-9 col-lg-10 d-flex flex-column align-items-end h-100">
+        <div className="d-none d-lg-flex col-8  col-md-9 col-lg-10 flex-column align-items-end h-100">
           <nav className="d-flex align-items-center h-100">
-            <NavLink
-              exact
-              to="/sobre-v-y-v"
-              className="nav-class"
-              activeClassName="nav-active-class"
-              exact
-            >
-              Sobre v&v
-            </NavLink>
-
             <NavLink
               exact
               to="/"
@@ -37,7 +27,6 @@ const Header = (props) => (
             >
               Inicio
             </NavLink>
-
             <NavLink
               exact
               to="/servicios"
@@ -45,6 +34,24 @@ const Header = (props) => (
               activeClassName="nav-active-class"
             >
               Servicios
+            </NavLink>
+            <NavLink
+              exact
+              to="/proyectos"
+              className="nav-class"
+              activeClassName="nav-active-class"
+              exact
+            >
+              Proyectos
+            </NavLink>
+            <NavLink
+              exact
+              to="/sobre-v-y-v"
+              className="nav-class"
+              activeClassName="nav-active-class"
+              exact
+            >
+              Sobre v&v
             </NavLink>
 
             <div className="px-2">

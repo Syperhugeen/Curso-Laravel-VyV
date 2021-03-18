@@ -1,38 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
-import Logo from '../../img/Javier/javier-psicologo-cuadrado.jpg';
+import Logo from '../../img/Iconos/presupuesto.png';
 
 const BanerContacto = (props) => (
-  <div className="w-100 py-5 bg-light">
-    <div className="container shadow-sm py-4 bg-white py-lg-2">
-      <div className="row align-items-center justify-content-around">
-        <div className="col-3 mb-4 mb-lg-0 col-lg-1 d-flex flex-column align-items-center justify-content-center px-1">
-          <img
-            src={Logo}
-            alt="Foto de Javier"
-            className="img-fluid rounded-circle"
-          />
-        </div>
-        <div className="col-12 col-lg-5 mb-4 mb-lg-0">
-          <h3 className="text-center mb-0">
-            <Typewriter
-              options={{
-                strings: [props.text1],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h3>
-          <h5 className="text-center mb-0">{props.text2}</h5>
-        </div>
-
-        <div className="col-12 col-lg-3 mb-2 mb-lg-0">
-          <Link to="/contactar">
-            <div className="btn btn-outline-primary btn-lg  w-100 text-uppercase">
-              Contactar
+  <div className="w-100 py-5 bg-dark">
+    <div className="container py-4 p-lg-2">
+      <div className="row mx-0 justify-content-center">
+        <div className="col-12 col-lg-10 text-left align-self-center text-intro p-lg-4">
+          <div className="row  align-items-center  justify-content-center mx-0">
+            <div className=" col-12 col-lg-2 d-flex flex-column align-items-center mb-4 mt-5 mt-lg-0 mb-lg-0 p-1">
+              <div className="col-5 col-lg-8">
+                <img
+                  src={Logo}
+                  alt="Icono de presupuesto"
+                  className="img-fluid"
+                />
+              </div>
             </div>
-          </Link>
+            <div className=" col-12 col-lg-6 p-1 mb-2 mb-lg-0">
+              <h2 className="h2 text-secondary  mb-1 text-center text-lg-left">
+                Cotizá tu proyecto ahora
+              </h2>
+              <p className="text-secondary  mb-0 mb-lg-0 text-center text-lg-left">
+                Sin compromisos. Te hacemos la cotización en un tiempo record.
+              </p>
+            </div>
+            <div className="col-12 col-lg-4">
+              <Link to="/contactar">
+                <div className="btn btn-outline-primary btn-lg  w-100 text-uppercase">
+                  Cotizar proyecto
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

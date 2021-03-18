@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
-import { FaMobileAlt, FaWhatsapp, FaEnvelopeOpenText } from 'react-icons/fa';
+import {
+  FaMobileAlt,
+  FaWhatsapp,
+  FaEnvelopeOpenText,
+  FaPhone,
+} from 'react-icons/fa';
 import DefaultLayout from '../components/layout';
 import FormularioContacto from '../components/formularioContacto';
 import Data from '../config/data';
+import ContactoTeam from '../components/contactoTeam';
 
 const Contacto = () => {
   useEffect(() => {
@@ -16,26 +22,34 @@ const Contacto = () => {
     <DefaultLayout>
       <div className="container">
         <h1 className=" text-center my-5">¿Hablamos?</h1>
-        <h2 className="h2 text-center my-5">
-          Podés contactarte conmigo de 3 maneras diferentes.
+        <p className="text-center mb-4">
+          Hay un equipo listo para <strong>cotizar tu proyecto</strong> o para
+          atender cualquier consulta.
+        </p>
+        <div className="w-100 d-flex flex-column align-items-center mb-4">
+          {<ContactoTeam />}
+        </div>
+        <h2 className="h2 text-center mb-5">
+          Podés contactarte de 3 maneras diferentes.
         </h2>
 
         <ol>
           <li className="mb-4">
-            {' Llamame ahora mismo a mi celular '}
-            {<FaMobileAlt />}
-
+            {' Llamá al '}
+            {<FaPhone />}
+            <strong>{` ${Data.phone}`}</strong>o al {<FaMobileAlt />}{' '}
             <strong>{` ${Data.cellphone}`}</strong>
-            {`. Ten en cuenta que si no te atiendo es porque estoy en una consulta. Te
-          devolveré el llamado ni bien pueda. `}
+            {`. Atendemos de  `}
+            <strong>{` ${Data.business_hours}`}</strong>
+            {`. `}
           </li>
 
           <li className="mb-4">
-            {' Enviame un mensaje de texto a mi celular '}
+            {' Enviá un mensaje de texto al'}
             {<FaMobileAlt />}
 
             <strong>{` ${Data.cellphone}`}</strong>
-            {`.  o por Whatsapp tocando
+            {`  o por Whatsapp tocando
           este botón `}
             <a href={Data.whatsapp_link} className="btn btn-success">
               {` Enviar mensaje por whatsapp `}
@@ -44,7 +58,7 @@ const Contacto = () => {
           </li>
 
           <li className="mb-4">
-            {' Enviame un email '}
+            {' Enviá un email '}
             {<FaEnvelopeOpenText />}
             {' a '}
             <strong>{` ${Data.email}`}</strong>

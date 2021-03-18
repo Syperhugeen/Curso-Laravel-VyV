@@ -21,7 +21,12 @@ const Home = () => {
         const componente = (
           <SectionBlog cantidad="4" evitarIds="''">
             {' '}
-            <h2 className="mb-5 text-center ">Por qué contarte si te lo podemos mostrar </h2>
+            <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+              <strong>Proyectos</strong>
+            </div>
+            <h2 className="mb-5 text-center ">
+              Por qué contarte si te lo podemos mostrar{' '}
+            </h2>
             <p className="col-12 text-center mb-5">
               Mirá nuestros últimos proyectos realizados.
             </p>
@@ -46,7 +51,6 @@ const Home = () => {
   }, [goingUp]);
 
   useEffect(() => {
-   
     // Update the document title using the browser API
     document.title = `Psicólogo en Montevideo Javier Mangini`;
   });

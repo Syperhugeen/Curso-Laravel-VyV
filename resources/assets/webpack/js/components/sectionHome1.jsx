@@ -7,8 +7,12 @@ const sectionHome1 = () => (
     <div className="container">
       <div className="row   ">
         <div className="col-12 d-flex flex-column align-items-center my-3 ">
+          <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+            <strong>¿Qué hacemos?</strong>
+          </div>
           <h2 className="mb-5 text-center text-wrap">
-            Nuestros principales servicios son
+            Diseño, consultaría y planificaciçon de proyectos de ingeniería
+            civil.
           </h2>
         </div>
 

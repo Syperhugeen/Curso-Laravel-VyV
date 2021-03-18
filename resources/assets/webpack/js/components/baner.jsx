@@ -5,13 +5,13 @@ import Typewriter from 'typewriter-effect';
 import Slider from '../components/slider';
 import Data from '../config/data';
 
-import Foto from '../../img/Home/v-y-v-steel-framing.jpg';
+import Foto from '../../img/Home/steel-framing-v-y-v.jpg';
 
 const Baner = () => (
   <section className="w-100 pb-5">
     <Slider />
     <div className="container d-flex flex-column align-items-center">
-      <h1 className="my-5 text-center decoracionHeaders text-wrap">
+      <h1 className="my-5 text-center  text-wrap">
         Estudio de ingeniería experto en Steel Framing
       </h1>
       <div className="col-12 row mx-0 align-items-center  ">
@@ -33,25 +33,6 @@ const Baner = () => (
             procedimientos a la hora de construir con Stell Framing.
             {` `}
           </p>
-
-          <h3 className="mb-4">
-            <Typewriter
-              options={{
-                strings: ['¿Tenés un proyecto para cotizar?'],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h3>
-
-          <Link
-            exact
-            to="/contactar"
-            className="btn btn-primary btn-lg text-uppercase"
-          >
-            Contactanos
-          </Link>
-          <p className="my-4">¡Sin compromiso!</p>
         </div>
       </div>
     </div>

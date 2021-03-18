@@ -10,15 +10,18 @@ const Footer = () => (
         <div className="row">
           <nav className="row mx-0 col-12 col-lg-12">
             <div className=" col-12 col-md-4 mb-3 ">
-              <Link className="btn btn-outline-primary   w-100" to="/sobre-mi">
+              <Link
+                className="btn btn-outline-primary   w-100"
+                to="/sobre-v-y-v"
+              >
                 {' '}
-                ¿Quién es Javier Mangini?
+                Sobre V & V
               </Link>
             </div>
             <div className=" col-12 col-md-4  mb-3">
-              <Link className="btn btn-outline-primary   w-100" to="/blog">
+              <Link className="btn btn-outline-primary   w-100" to="/proyectos">
                 {' '}
-                Blog
+                Proyectos
               </Link>
             </div>
             <div className=" col-12 col-md-4  mb-3">
@@ -34,23 +37,6 @@ const Footer = () => (
               >
                 {' '}
                 {`Whatsapp `} <FaWhatsapp />
-              </a>
-            </div>
-            <div className=" col-12 col-md-4  mb-3">
-              <a
-                className="btn btn-outline-primary   w-100"
-                href={Data.instagram_link}
-              >
-                {' '}
-                {`Instagram `} <FaInstagram />
-              </a>
-            </div>
-            <div className=" col-12 col-md-4  mb-3">
-              <a
-                className="btn btn-outline-primary   w-100"
-                href={Data.facebook_link}
-              >
-                {`Facebook `} <FaFacebookSquare />
               </a>
             </div>
           </nav>

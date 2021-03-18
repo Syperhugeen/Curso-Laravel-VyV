@@ -17,8 +17,8 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <ErrorWrapper>
           <Route exact path="/contactar" component={Contacto} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/sobre-mi" component={SobreMi} />
+          <Route exact path="/proyectos" component={Blog} />
+          <Route exact path="/sobre-v-y-v" component={SobreMi} />
           <Route
             exact
             path="/Publicacion/:name/:id"
