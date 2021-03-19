@@ -8,7 +8,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
 
 const PATHS = {
-  src: path.join(__dirname, 'resources/'),
+  src: path.join(__dirname, 'resources/assets/webpack/'),
 };
 
 module.exports = {

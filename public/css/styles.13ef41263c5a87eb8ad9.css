@@ -1,84 +1,6 @@
 /* react-boostrap-carousel.css*/
 @charset "UTF-8";
 
-.carousel .carousel-inner .item {
-  overflow: hidden;
-}
-
-.carousel-control.right {
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.0001)),
-    to(rgba(0, 0, 0, 0))
-  );
-}
-
-.carousel-control.left {
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.0001)),
-    to(rgba(0, 0, 0, 0))
-  );
-}
-
-.carousel-control.right:hover {
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0.0001) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.0001)),
-    to(rgba(0, 0, 0, 0.5))
-  );
-}
-
-.carousel-control.left:hover {
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.0001) 100%
-  );
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(0, 0, 0, 0.5)),
-    to(rgba(0, 0, 0, 0.0001))
-  );
-}
-
-.carousel-control {
-  width: 50px;
-  cursor: pointer;
-}
-
-.carousel-indicators .active {
-  background-color: #000;
-}
-
-.carousel-indicators li {
-  background-color: #747272;
-  border: 0px solid;
-}
-
 @font-face {
   font-family: "react-bootstrap-carousel";
   src: url(data:application/vnd.ms-fontobject;base64,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);
@@ -90,18 +12,5 @@
       format("svg");
   font-weight: normal;
   font-style: normal;
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: "react-bootstrap-carousel" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
