@@ -13,7 +13,7 @@ const Slider = () => {
         autoplay={false}
         pauseOnVisibility={true}
         slideshowSpeed={2000}
-        version={4}
+        version={3}
         indicators={true}
       >
         <div>
