@@ -4,6 +4,7 @@ import Portada1 from '../../img/Home/construccion-con-steel-framing-2.jpg';
 import Portada2 from '../../img/Home/construccion-con-steel-framing.jpg';
 
 import ReactBootstrapCarousel from 'react-bootstrap-carousel';
+import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 
 const Slider = () => {
   return (
