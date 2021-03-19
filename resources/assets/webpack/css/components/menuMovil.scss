@@ -1,0 +1,47 @@
+@import './../templateDeColores/colores.scss';
+
+$BORDE_GROSOR: 4px;
+
+.boton-menu-flotante-contenedor {
+  position: fixed;
+
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 100%;
+  padding: 10px;
+  border: solid 2px $primary;
+  background-color: $body-color;
+}
+
+.boton-menu-flotante-boton {
+  font-size: 25px;
+  color: $text-gray;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.nav-class-menu-movil {
+  padding: 0 0 0 16px;
+  text-transform: uppercase;
+
+  text-align: center;
+  color: $text-gray;
+  height: 100%;
+  font-size: 25px;
+  border-left: solid $BORDE_GROSOR transparent;
+  border-right: solid $BORDE_GROSOR transparent;
+  margin-bottom: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nav-class-menu-movil:hover {
+  text-decoration: none;
+  color: $primary;
+  border-left: solid $BORDE_GROSOR $primary;
+}
+
+.nav-active-class-menu-movil {
+  border-left: solid $BORDE_GROSOR $primary;
+  color: $primary;
+}

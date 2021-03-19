@@ -11,7 +11,7 @@ const sectionHome1 = () => (
             <strong>¿Qué hacemos?</strong>
           </div>
           <h2 className="mb-5 text-center text-wrap">
-            Diseño, consultaría y planificaciçon de proyectos de ingeniería
+            Diseño, consultaría y planificación de proyectos de ingeniería
             civil.
           </h2>
         </div>

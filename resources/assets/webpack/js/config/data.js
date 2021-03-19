@@ -1,5 +1,5 @@
 const Data = {
-  name: 'Veiga Ventos Ingeniería',
+  name: 'Veiga Ventos ingeniería',
   email: 'info@veigaventos.com',
   phone: '(+598) 27169244  ',
   cellphone: '+598 98188129  ',

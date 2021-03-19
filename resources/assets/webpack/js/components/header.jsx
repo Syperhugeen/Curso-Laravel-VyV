@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
 import '../../css/components/header.scss';
+import MenuMovil from '../components/menuMovil';
 
 const Header = (props) => (
   <header id="header-nav" className="w-100 header  shadow-sm ">
     <div className="container d-flex flex-column align-items-center h-100">
-      <div className="col-12  row mx-0 align-items-center h-100">
+      <div className="col-12  row mx-0 align-items-center h-100 ">
         <div className="col-4 col-md-3  col-lg-2 d-flex flex-column align-items-center justify-content-center ">
           <Link to="/">
             <img
@@ -17,43 +18,44 @@ const Header = (props) => (
           </Link>
         </div>
 
-        <div className="d-none d-lg-flex col-8  col-md-9 col-lg-10 flex-column align-items-end h-100">
-          <nav className="d-flex align-items-center h-100">
-            <NavLink
-              exact
-              to="/"
-              className="nav-class"
-              activeClassName="nav-active-class"
-            >
-              Inicio
-            </NavLink>
-            <NavLink
-              exact
-              to="/servicios"
-              className="nav-class"
-              activeClassName="nav-active-class"
-            >
-              Servicios
-            </NavLink>
-            <NavLink
-              exact
-              to="/proyectos"
-              className="nav-class"
-              activeClassName="nav-active-class"
-              exact
-            >
-              Proyectos
-            </NavLink>
-            <NavLink
-              exact
-              to="/sobre-v-y-v"
-              className="nav-class"
-              activeClassName="nav-active-class"
-              exact
-            >
-              Sobre v&v
-            </NavLink>
-
+        <div className=" col-8  col-md-9 col-lg-10 d-flex flex-column justify-content-center align-items-end h-100">
+          <span className="d-flex align-items-center ">
+            <nav className="d-none d-lg-flex align-items-center h-100">
+              <NavLink
+                exact
+                to="/"
+                className="nav-class"
+                activeClassName="nav-active-class"
+              >
+                Inicio
+              </NavLink>
+              <NavLink
+                exact
+                to="/servicios"
+                className="nav-class"
+                activeClassName="nav-active-class"
+              >
+                Servicios
+              </NavLink>
+              <NavLink
+                exact
+                to="/proyectos"
+                className="nav-class"
+                activeClassName="nav-active-class"
+                exact
+              >
+                Proyectos
+              </NavLink>
+              <NavLink
+                exact
+                to="/sobre-v-y-v"
+                className="nav-class"
+                activeClassName="nav-active-class"
+                exact
+              >
+                Sobre v&v
+              </NavLink>
+            </nav>
             <div className="px-2">
               <Link
                 exact
@@ -63,10 +65,11 @@ const Header = (props) => (
                 cotizar proyecto
               </Link>
             </div>
-          </nav>
+          </span>
         </div>
       </div>
     </div>
+    {<MenuMovil />}
   </header>
 );
 

@@ -23,7 +23,7 @@ $BORDE_GROSOR: 4px;
   text-align: center;
   color: $text-gray;
   height: 100%;
-  line-height: $HEADER_ALTURA - $BORDE_GROSOR;
+  line-height: $HEADER_ALTURA - 2 * $BORDE_GROSOR;
 
   border-top: solid $BORDE_GROSOR transparent;
   border-bottom: solid $BORDE_GROSOR transparent;
