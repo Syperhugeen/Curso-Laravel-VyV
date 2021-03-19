@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Typewriter from 'typewriter-effect';
 import Slider from '../components/slider';
+
 import Data from '../config/data';
 
 import Foto from '../../img/Home/steel-framing-v-y-v.jpg';
