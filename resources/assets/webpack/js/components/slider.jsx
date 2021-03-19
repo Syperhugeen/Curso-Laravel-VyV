@@ -3,7 +3,6 @@ import React from 'react';
 import Portada1 from '../../img/Home/construccion-con-steel-framing-2.jpg';
 import Portada2 from '../../img/Home/construccion-con-steel-framing.jpg';
 
-import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 import ReactBootstrapCarousel from 'react-bootstrap-carousel';
 
 const Slider = () => {
