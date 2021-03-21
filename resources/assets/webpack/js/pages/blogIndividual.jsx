@@ -71,12 +71,12 @@ const BlogIndividual = () => {
               <div className="p-2 mb-5 shadow-sm ">
                 <img
                   className="img-fluid mb-5"
-                  src={blog.url_img_portada}
+                  src={blog.url_img}
                   alt={`Foto de ${blog.name}`}
                 />
                 <div
                   className="p-2 p-lg-5 d-flex flex-column align-items-center"
-                  dangerouslySetInnerHTML={{ __html: blog.contenido_render }}
+                  dangerouslySetInnerHTML={{ __html: blog.description_parrafo }}
                 />
               </div>
             </div>
