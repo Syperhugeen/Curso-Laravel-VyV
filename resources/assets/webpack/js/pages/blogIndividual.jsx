@@ -5,6 +5,12 @@ import Skeleton from 'react-loading-skeleton';
 import DefaultLayout from '../components/layout';
 import SectionBlog from '../components/sectionBlog';
 import Data from '../config/data';
+import {
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaHammer,
+  FaIdBadge,
+} from 'react-icons/fa';
 
 const BlogIndividual = () => {
   const Id = useParams().id;
@@ -74,6 +80,41 @@ const BlogIndividual = () => {
                   src={blog.url_img}
                   alt={`Foto de ${blog.name}`}
                 />
+
+                <div className="row justify-content-center">
+                  <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
+                    <span className="text-primary">
+                    <FaCalendarAlt/> 
+                    </span>
+                    
+                   {`  ${blog.fecha} `}
+                  </div>
+                  <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
+                    <span className="text-primary">
+                    <FaMapMarkerAlt/> 
+                    </span>
+                    
+                   {`  ${blog.ubicacion} `}
+                  </div>
+                  <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
+                    <span className="text-primary">
+                    <FaHammer/> 
+                    </span>
+                    
+                   {`  ${blog.metodo_de_construccion} `}
+                  </div>
+                  <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
+                    <span className="text-primary">
+                    <FaIdBadge/> 
+                    </span>
+                    
+                   {`  ${blog.autores} `}
+                  </div>
+
+
+
+                </div>
+
                 <div
                   className="p-2 p-lg-5 d-flex flex-column align-items-center"
                   dangerouslySetInnerHTML={{ __html: blog.description_parrafo }}
