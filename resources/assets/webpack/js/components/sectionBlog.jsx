@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import Blog from './blog';
-import Dara from '../config/data';
+import Data from '../config/data';
 
 const SectionBlog = (props) => {
   const [loading, setLoading] = useState(false);
