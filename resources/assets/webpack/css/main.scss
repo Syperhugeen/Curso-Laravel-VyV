@@ -6,13 +6,13 @@
 h1 {
   font-weight: bold;
   font-size: 2.5rem;
-  color:$text-gray;
+  color:$text-black;
 }
 
 h2 {
   font-weight: bold;
   font-size: 2rem;
-  color: $text-gray;
+  color: $text-black;
 }
 
 @media (min-width: $md) {
@@ -30,7 +30,7 @@ h2 {
 }
 .decoracionHeaders::after {
   content: '';
-  background: lighten($secondary, 35%);
+  background: lighten($primary, 35%);
   width: 100%;
   height: 44%;
   position: absolute;

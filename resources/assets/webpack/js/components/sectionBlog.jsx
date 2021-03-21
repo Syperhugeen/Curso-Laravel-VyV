@@ -55,7 +55,7 @@ const SectionBlog = (props) => {
 
   return (
     <section className="w-100 py-5">
-      <div className="container d-flex flex-column align-items-center">
+      <div className="container d-flex flex-column align-items-center my-5">
         {props.children}
 
         <div className="row">{blogsYaIterados}</div>

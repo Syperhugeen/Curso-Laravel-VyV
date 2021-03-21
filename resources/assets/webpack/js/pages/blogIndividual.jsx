@@ -81,7 +81,7 @@ const BlogIndividual = () => {
                   alt={`Foto de ${blog.name}`}
                 />
 
-                <div className="row justify-content-center">
+                <div className="row justify-content-center mx-0">
                   <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
                     <span className="text-primary">
                     <FaCalendarAlt/> 
