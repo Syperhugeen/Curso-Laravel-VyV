@@ -16,3 +16,8 @@ Route::get('get_trabajos_ajax', [
     'uses' => 'Publicas\Paginas_Controller@get_trabajos_ajax',
     'as'   => 'get_trabajos_ajax']
 );
+
+Route::get('get_projecto_individual_ajax', [
+    'uses' => 'Publicas\Paginas_Controller@get_projecto_individual_ajax',
+    'as'   => 'get_projecto_individual_ajax']
+);

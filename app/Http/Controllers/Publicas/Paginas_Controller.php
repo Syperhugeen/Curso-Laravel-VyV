@@ -100,6 +100,19 @@ class Paginas_Controller extends Controller
 
         $Proyecto = $this->ProyectoRepo->find($id);
 
-        return view('paginas.proyecto.proyecto_individual', compact('Proyecto'));
+        // vieja // return view('paginas.proyecto.proyecto_individual', compact('Proyecto'));
+
+        $Data = [
+            'title'       => $Proyecto->name,
+            'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
+            'og_img'      => $Proyecto->url_img,
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
+    }
+
+    public function get_projecto_individual_ajax(Request $Request)
+    {
+        return HelpersGenerales::formateResponseToVue(true, 'Se cargo proeycto', $this->ProyectoRepo->find($Request->get('id')));
     }
 }

@@ -66,7 +66,7 @@ class Proyecto extends Model
     public function getRouteAttribute()
     {
 
-        return route('get_pagina_proyecto_individual', [str_replace(" ", "_", $this->name), $this->id]);
+        return route('get_pagina_proyecto_individual', [HelpersGenerales::helper_convertir_cadena_para_url($this->name), $this->id]);
     }
 
     public function getDescriptionParrafoAttribute()

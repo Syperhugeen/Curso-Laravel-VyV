@@ -4,6 +4,7 @@ import Skeleton from 'react-loading-skeleton';
 
 import DefaultLayout from '../components/layout';
 import SectionBlog from '../components/sectionBlog';
+import Data from '../config/data';
 
 const BlogIndividual = () => {
   const Id = useParams().id;
@@ -14,7 +15,7 @@ const BlogIndividual = () => {
   const fetcData = () => {
     setLoading(true);
 
-    return fetch(`https://psicologojaviermangini.com.uy/get_blog_id?id=${Id}`)
+    return fetch(`${Data.path_url}/get_projecto_individual_ajax?id=${Id}`)
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -85,10 +86,8 @@ const BlogIndividual = () => {
       {!loading && (
         <SectionBlog cantidad="4" evitarIds={Id}>
           {' '}
-          <h2 className="mb-5 text-center ">Más artículos relacionados</h2>
-          <p className="col-12 text-center mb-5">
-            Artículos que pueden ayudarte mientras te decidís a contactarme
-          </p>
+          <h2 className="mb-5 text-center mb-5 ">Más proyectos relacionados</h2>
+         
         </SectionBlog>
       )}
     </DefaultLayout>

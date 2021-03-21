@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import Blog from './blog';
+import Dara from '../config/data';
 
 const SectionBlog = (props) => {
   const [loading, setLoading] = useState(false);
@@ -26,7 +27,7 @@ const SectionBlog = (props) => {
 
     const CANTIDAD = props.cantidad;
 
-    return fetch(`/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`)
+    return fetch(`${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`)
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
