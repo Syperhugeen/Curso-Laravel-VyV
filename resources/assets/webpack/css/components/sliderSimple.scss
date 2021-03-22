@@ -1,5 +1,5 @@
 @import './../templateDeColores/colores.scss';
-.slider-simpl-contenedor {
+.slider {
   position: relative;
   width: 100%;
 }
@@ -8,36 +8,41 @@
   position: absolute;
   right: 2%;
   top: 50%;
-  color:$text-gray-light;
+  color: $text-gray-light;
   border-radius: 100%;
   padding: 20px;
-  background-color: rgba(59, 59, 59, 0.5);
-  border:solid 1px transparent;
+  background-color: transparent;
+  border: solid 1px transparent;
+  z-index: 10;
+  font-size: 2rem;
+  outline: transparent !important;
+  margin-top: -40px;
+  opacity: 0.4;
 }
 
 .slider-simple-before {
   position: absolute;
   left: 2%;
   top: 50%;
-  color:$text-gray-light;
+  color: $text-gray-light;
   border-radius: 100%;
-  border:solid 1px transparent;
+  background-color: transparent;
+  border: solid 1px transparent;
+  z-index: 10;
   padding: 20px;
-  background-color: rgba(59, 59, 59, 0.5);
+  font-size: 2rem;
+  outline: transparent !important;
+  margin-top: -40px;
+  opacity: 0.4;
 }
 
-.slider-simple-transition-enter {
-}
-.slider-simple-transition-enter.slider-simple-transition-enter-active {
-  opacity: 1;
-
-  transition-property: opacity;
-}
-.slider-simple-transition-leave {
-  opacity: 0.5;
-
-  transition-property: transform, opacity;
-}
-.slider-simple-transition-leave.slider-simple-transition-leave-active {
+.slide {
   opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1);
 }
