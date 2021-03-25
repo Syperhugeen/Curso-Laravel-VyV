@@ -11,7 +11,7 @@ const sectionHome1 = () => (
             <strong>¿Qué hacemos?</strong>
           </div>
           <h2 className="mb-5 text-center text-wrap">
-            Diseño, consultaría y planificación de proyectos de ingeniería
+            Diseño, consultoría y planificación de proyectos de ingeniería
             civil.
           </h2>
         </div>
@@ -19,22 +19,22 @@ const sectionHome1 = () => (
         <Item
           abierto={false}
           name="Diseño estructural y cálculos de ingeniería para obras"
-          description="Explicar un poquito más sobre -> Diseño estructural y cálculos de ingeniería para obras"
+          description="Diseñamos, calculamos y realizamos las verificaciones de la estructura que desee."
         />
         <Item
           abierto={false}
           name="Consultoría y asesoramiento en obras"
-          description="Explicar un poquito más sobre ->"
+          description="Realizamos o ajustamos su proyecto para que sea lo más rentable posible y se lleve a cabo con la mayor rapidez que se pueda lograr."
         />
         <Item
           abierto={false}
           name="Planificación y gerenciamiento en proyectos de ing. civil"
-          description="Explicar un poquito más sobre ->"
+          description="En V&V trabajamos y operamos conjuntamente con estudios de Arquitectura que cuentan con profesionales de alto nivel, para realizar proyectos que satisfagan al cliente de la mejor manera y complementan nuestros Servicios de Ingeniería."
         />
         <Item
           abierto={false}
           name="Asistencia técnica en problemas de ingeniería  civil"
-          description="Explicar un poquito más sobre ->"
+          description="Respondemos sus dudas sobre su obra o proyecto y le brindaremos soluciones prácticas, precisas, confiables e innovadoras."
         />
 
         <div className="col-12 my-4 text-center">

@@ -15,11 +15,14 @@ const Contacto = () => {
     <DefaultLayout>
       <SectionBlog cantidad="8">
         {' '}
-        <h1 className="my-5 text-center decoracionHeaders">Mi blog</h1>
+        <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+          <strong>Trabajos realizados</strong>
+        </div>
+        <h1 className="mb-3 text-center ">
+          Por qué contarte si te lo podemos mostrar{' '}
+        </h1>
         <p className="col-12 text-center mb-5">
-          Escribo con el fin de enseñarte sobre las cuestiones más comunes que
-          sufren los seres humanos hoy en día. Además te doy tips para que
-          puedas tener un vida plena.
+          Mirá nuestros últimos proyectos realizados.
         </p>
       </SectionBlog>
     </DefaultLayout>

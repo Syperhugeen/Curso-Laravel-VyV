@@ -12,9 +12,9 @@ const Baner = () => (
   <section className="w-100  bg-gray-1">
     <Slider />
     <div className="container d-flex flex-column align-items-center my-5 py-5">
-    <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
-            <strong>¿Qué somos?</strong>
-          </div>
+      <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+        <strong>¿Qué somos?</strong>
+      </div>
       <h1 className="mb-5 text-center  text-wrap">
         Estudio de ingeniería experto en Steel Framing
       </h1>
@@ -30,12 +30,12 @@ const Baner = () => (
         </div>
         <div className="col-12 col-lg-6 px-2">
           <p>
-            Somo expertos en realizar{' '}
-            <strong> proyectos en Steel Framing</strong> y además{' '}
-            <strong>tenemos planes de formación enfocados</strong> a arquitectos
-            e ingenieros en los cuales compartimos las buenas prácticas y
-            procedimientos a la hora de construir con Stell Framing.
-            {` `}
+            En Veiga Ventós (V & V) ingeniería estamos especializado en
+            cálculos, diseño, planificación y gerenciamiento de obras de{' '}
+            <strong>ingeniería en steel framing</strong>. Trabajamos y operamos
+            conjuntamente con estudios de arquitectura, para realizar proyectos
+            que satisfagan al cliente de la mejor manera y que complementen
+            nuestros servicios de ingeniería.
           </p>
         </div>
       </div>
