@@ -16,7 +16,7 @@
           <li><a href="{{route('get_pagina_empresa')}}">ACERCA DE V&amp;V</a></li>
           <li><a href="{{route('get_pagina_servicios')}}">SERVICIOS</a></li>
           <li><a href="{{route('get_pagina_proyecto_listado')}}">PROYECTOS</a></li>
-          <li><a href="{{route('get_pagina_noticias_listado')}}">PUBLICACIONES</a></li>
+          {{-- <li><a href="{{route('get_pagina_noticias_listado')}}">PUBLICACIONES</a></li> --}}
           <li><a href="{{route('get_pagina_contacto')}}">CONTACTO</a></li>
 
 
@@ -29,23 +29,23 @@
               <h3>Inicio de sesión</h3>
               @include('formularios.auth.login_form')
              </div>
-             
+
              {{-- contenido a mostrar de user deplsegado --}}
               @if(!Auth::guest())
-               <div class="contenido-auth-deplegado-navbar">              
+               <div class="contenido-auth-deplegado-navbar">
                  <ul>
                     @if(Auth::user()->role != 'user')
                     <li><a href="{{route('get_datos_home_web')}}">Admin</a></li>
                     @endif
                     <li><a href="{{route('logout')}}">Salir</a></li>
                  </ul>
-              </div> 
+              </div>
              @endif
-             
+
 
           </div>
 
-        </ul>       
+        </ul>
       </div>    <!-- /.navbar-collapse -->
 
 
@@ -54,23 +54,10 @@
     </div> <!-- / container fluid row -->
 
     <!-- errores -->
-    <div class="contendor-contenedor-errores-header">         
-      @include('alerts.Alertas_Todos_Agrupados.alertas_agrupados') 
-    </div> 
+    <div class="contendor-contenedor-errores-header">
+      @include('alerts.Alertas_Todos_Agrupados.alertas_agrupados')
+    </div>
 
     <!-- /.container-fluid -->
   </nav>
   <!-- /nav -->
-
-
-
-
-
-
-
-
-
-
-
-
-

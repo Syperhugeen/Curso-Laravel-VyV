@@ -6,7 +6,7 @@
 @stop
 
 @section('MetaContent')
-  Description Home 
+  Description Home
 @stop
 
 @section('MetaRobot')
@@ -14,7 +14,7 @@
 @stop
 
 
- 
+
 
 @section('content')
 
@@ -24,52 +24,66 @@
  <!--para agregar los márgenes laterales-->
 <div class="container-fluid section-wrapper">
   <div class="section-wrapper-welcome">
-    <div class="row">    
+    <div class="row">
       <div class="col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
 
      {{-- la parte de bienvenidad --}}
      @include('paginas.home.partes.datos_bienvenida')
 
       </div>
-    </div>  
+    </div>
   </div>
 </div>
 
  <!--para agregar los márgenes laterales-->
-<div class="container-fluid section-wrapper" id="section-globitos">
-  <div class="row">    
+ {{-- <div class="container-fluid section-wrapper" id="section-globitos">
+  <div class="row">
     <div class="col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
 
-     {{-- la parte de los globitos --}}
+
      @include('paginas.home.partes.globitos')
 
-    </div>  
+    </div>
+  </div>
+</div>
+--}}
+
+ <!--para agregar los márgenes laterales-->
+ <div class="container-fluid section-wrapper" id="section-servicios">
+  <div class="row">
+    <div class="col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
+
+     {{-- la parte de proyectos  --}}
+     @include('paginas.home.partes.servicios')
+
+
+    </div>
   </div>
 </div>
 
- <!--para agregar los márgenes laterales-->
+
 <div class="container-fluid section-wrapper" id="section-ultimos-proyectos">
-  <div class="row">    
+  <div class="row">
     <div class="col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
 
      {{-- la parte de proyectos  --}}
      @include('paginas.home.partes.proyectos')
 
 
-    </div>  
+    </div>
   </div>
 </div>
 
  <!--para agregar los márgenes laterales-->
 <div class="container-fluid section-wrapper" id="section-ultimas-publicaciones">
-  <div class="row">    
+  <div class="row">
     <div class="col-md-10 col-md-push-1 col-lg-8 col-lg-push-2">
 
      {{-- la parte de publicaciones  --}}
      @include('paginas.home.partes.publicaciones')
 
 
-    </div>  
+    </div>
   </div>
 </div>
 

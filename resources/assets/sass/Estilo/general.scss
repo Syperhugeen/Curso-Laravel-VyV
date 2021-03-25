@@ -1,52 +1,47 @@
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * 		E S T I L O   G E N E R A L 							   *
 *			P A R A   A R M A R   L A   E S T R U C T U R A        *
 *					D E L   S I T I O  W E B                       *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-
-
-
 /* R E S E T  B R O W S E R  S T Y L E: resetear los inherit styles del browser (si es que los tiene) */
-*{  margin:0;  padding:0;  border:0;}
-
-
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 /* A L T U R A  D E  L A  N A V B A R  (escribir aquí la altura que queremos que tenga) */
-$navbar-altura:100px;
-$navbar-altura-xs:68px;
+$navbar-altura: 100px;
+$navbar-altura-xs: 68px;
 
 /*---esto se cambia automáticamente acorde a la altura ingresada de la Navbar
 para que el contenido comience luego de la Navbar y no se pierda nada detrás de ella---*/
-  body{   	padding-top:$navbar-altura;  }
-  @media (max-width:767px) {body{    padding-top:$navbar-altura-xs;  }}
-
-
-
-
-
+body {
+  padding-top: $navbar-altura;
+}
+@media (max-width: 767px) {
+  body {
+    padding-top: $navbar-altura-xs;
+  }
+}
 
 /* B O D Y   W R A P P E R */
 
 .global-wrapper {
-  display:block;
-  overflow-x:hidden;
-  padding-top:$navbar-altura;
-  margin-top:-$navbar-altura;
+  display: block;
+  overflow-x: hidden;
+  padding-top: $navbar-altura;
+  margin-top: -$navbar-altura;
 }
-@media (max-width:767px){.global-wrapper{
-  padding-top:$navbar-altura-xs;
-  margin-top:-$navbar-altura-xs;}}
-
-
-
-
-
+@media (max-width: 767px) {
+  .global-wrapper {
+    padding-top: $navbar-altura-xs;
+    margin-top: -$navbar-altura-xs;
+  }
+}
 
 /* S E C C I O N E S  d e  C A D A  P Á G I N A */
-
 
 /* SECTIONS #IDs */
 
@@ -54,60 +49,59 @@ para que el contenido comience luego de la Navbar y no se pierda nada detrás de
 #section-globitos,
 #section-ultimas-publicaciones,
 #section-ultimos-proyectos,
-#section-metodos{
-  padding-top:$navbar-altura;  margin-top:-$navbar-altura;}
+#section-metodos {
+  padding-top: $navbar-altura;
+  margin-top: -$navbar-altura;
+}
 
-@media (max-width:767px){
-#section-globitos,
-#section-ultimas-publicaciones,
-#section-ultimos-proyectos,
-#section-metodos{
-  padding-top:$navbar-altura-xs;  margin-top:-$navbar-altura-xs;}}
-
+@media (max-width: 767px) {
+  #section-globitos,
+  #section-ultimas-publicaciones,
+  #section-ultimos-proyectos,
+  #section-metodos {
+    padding-top: $navbar-altura-xs;
+    margin-top: -$navbar-altura-xs;
+  }
+}
 
 /*---WRAPPER para envolver cada sección dentro de cada página; esta clase se le adjudica
 al container-fluid que adentro contiene los rows y las columns que agregan los márgenes laterales---*/
-.section-wrapper{ /*envolvente de cada sección de cada página*/
-  padding-top:30px;
-  padding-bottom:30px;
+.section-wrapper {
+  /*envolvente de cada sección de cada página*/
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.section-special{ /*cambiar a ".section-special-3" como el color que usará de background*/
-  background-color:$color-3;
-  color:$color-white;
+.section-special {
+  /*cambiar a ".section-special-3" como el color que usará de background*/
+  background-color: $color-3;
+  color: $color-white;
 }
-.section-special2{ /*cambiar a ".section-special-grey0" como el color que usará de background*/
-  background-color:$color-grey0;
-  color:$color-grey1;
+.section-special2 {
+  /*cambiar a ".section-special-grey0" como el color que usará de background*/
+  background-color: $color-grey0;
+  color: $color-grey1;
 }
 
 /*---para agregarle espaciado entre rows o items acorde a mi criterio---*/
-.space-top{
-  padding-top:30px;
+.space-top {
+  padding-top: 30px;
 }
-.space-bottom{
-  padding-bottom:30px;
+.space-bottom {
+  padding-bottom: 30px;
 }
-
-
-
-
-
-
-
-
 
 /* P E R S O N I F I C A N D O   E L E M E N T O S */
 
- /*---CENTRAR UNA COLUMNA dentro de un row---*/
-.col-centered{
-    text-align:center;
-    float: none;
-    margin: 0 auto;
+/*---CENTRAR UNA COLUMNA dentro de un row---*/
+.col-centered {
+  text-align: center;
+  float: none;
+  margin: 0 auto;
 }
 
 /*--- DESTACADO --- | luego agregar diferentes clases de destacado, usando diferentes colores y diseños*/
-.destacado{
-  padding:5px 0 5px 30px;
-  border-left:10px solid $color-grey0;
+.destacado {
+  padding: 5px 0 5px 30px;
+  border-left: 10px solid $color-grey0;
 }

@@ -2,26 +2,26 @@
  *		N A V I G A T I O N   B A R     (user)     *
  * * * * * * * * * * * * * * * * * * * * * * * * * */
 
- #mynavbar{
+#mynavbar {
 }
-
 
 /* dimensiones de la navbar y visibilidad */
 .navbar {
-  border-bottom: 5px solid #DCB13F;
+  border-bottom: 5px solid #dcb13f;
   border-radius: 0px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-@media (max-width: 399px){.navbar{
-  display:block;
-  }}
-@media (min-width: 768px){.navbar{
-  height:100px;
-  }}
-
-
-
+@media (max-width: 399px) {
+  .navbar {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    height: 100px;
+  }
+}
 
 /*--- COLORES NAVBAR Y LINKS ---*/
 .navbar-default {
@@ -33,38 +33,46 @@
   color: $color-grey1;
 }
 .navbar-default .navbar-nav > li > a {
-  display:inline-block;
+  display: inline-block;
   color: $color-grey1;
-  -webkit-transition: transform .3s ease;
-  -moz-transition: transform .3s ease;
-  transition: transform .3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-
-
 /*--- LINKS DE LA NAVBAR (tamaños acorde al width) ---*/
-@media (min-width: 768px) {.navbar-default .navbar-nav > li > a {
-  border-bottom: 5px solid $color-3;
-  margin-top:25px;
-  line-height: 40px;
-  }}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    border-bottom: 5px solid $color-3;
+    margin-top: 25px;
+    line-height: 40px;
+  }
+}
 
-@media (max-width: 991px) {.navbar-default .navbar-nav > li > a {
-    font-size:80%;
-    }}
-@media (min-width: 992px) and (max-width: 1199px) {.navbar-default .navbar-nav > li > a {
-    font-size:90%;
-    padding-left:10px;
-    padding-right:10px;
-    }}
-@media (min-width: 1200px) and (max-width: 1350px) {.navbar-default .navbar-nav > li > a {
-    font-size:90%;
-    padding-left:10px;
-    padding-right:10px;
-    }}
-@media (min-width: 1351px) {.navbar-default .navbar-nav > li > a {
-    font-size:100%;
-    }}
+@media (max-width: 991px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1351px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 100%;
+  }
+}
 
 /*--- LINKS DE LA NAVBAR (efectos hover) ---*/
 .navbar-default .navbar-nav > li:not(.active) > a:hover,
@@ -79,35 +87,38 @@
 .navbar-default .navbar-nav > li.active > a:focus {
   color: $color-3;
   text-shadow: 0 0 5px $color-3, 0 0 10px $color-3;
-  background-color:transparent;
+  background-color: transparent;
 }
-@media (max-width: 767px) {.navbar-default .navbar-nav > .active > a:after{
-  left: 0;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-left-color: $color-3;
-  border-width: 10px;
-  margin-top: -10px;
-}}
-@media (min-width: 768px) {.navbar-default .navbar-nav > .active > a:after{
-  bottom: 0;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: $color-3;
-  border-width: 10px;
-  margin-left: -10px;
-}}
-
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > .active > a:after {
+    left: 0;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: $color-3;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > .active > a:after {
+    bottom: 0;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: $color-3;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
 
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -119,13 +130,13 @@
   border-color: $color-1;
 }
 
-
-
 /*--- botoncito de la Navbar (hamburguer menú) ---*/
-@media (max-width: 767px){.navbar-default .navbar-toggle {
-  margin-top:15px;
-  margin-bottom:15px;
-}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-toggle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: $color-1;
@@ -145,7 +156,6 @@
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
- 
   color: $color-2;
   background-color: $color-1;
 }
@@ -172,9 +182,6 @@
   }
 }
 
-
-
-
 /*--- customización de extras de la Navbar, botones, dropdown menú, etc. ---*/
 .navbar-default .navbar-link {
   color: $color-1;
@@ -191,16 +198,16 @@
   color: $color-3;
 }
 .dropdown-menu {
-background-color: $color-2;
-margin: 0;
-border: 0px solid $color-1;
-  }
+  background-color: $color-2;
+  margin: 0;
+  border: 0px solid $color-1;
+}
 .dropdown-menu .divider {
   background-color: $color-3;
 }
 .dropdown-menu > li > a {
-    color: $color-1;
-  }
+  color: $color-1;
+}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: $color-2;
@@ -212,9 +219,6 @@ border: 0px solid $color-1;
   color: $color-1;
   background-color: transparent;
 }
-
-
-
 
 /* NAVBAR BRAND - L O G O */
 .navbar-brand {
@@ -237,97 +241,81 @@ border: 0px solid $color-1;
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
-    margin-top:12px;
-  }}
+    margin-top: 12px;
+  }
+}
 
 @media (min-width: 992px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
-    margin-top:6px;
-  }}
-
-.navbar-logo{
-height: 40px;
+    margin-top: 6px;
+  }
 }
-@media (min-width: 992px) {.navbar-logo{
-height: 50px;
-}}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar-logo {
+  height: 40px;
+}
+@media (min-width: 992px) {
+  .navbar-logo {
+    height: 50px;
+  }
+}
 
 /* ¿esto qué era? */
 
-.Default-header{  
+.Default-header {
   width: 100%;
-  background-color:$Color-Gris-CasiBlanco;
-  position:fixed;
+  background-color: $Color-Gris-CasiBlanco;
+  position: fixed;
   height: 60px;
-  top:0; 
-  padding: 20px 0;   
-  border:solid 1px transparent;
-  border-bottom-color: $Color-Gris-Claro-Para-Bordes; 
-  background-color:$institucional4 ;
-  @include flexbox; 
+  top: 0;
+  padding: 20px 0;
+  border: solid 1px transparent;
+  border-bottom-color: $Color-Gris-Claro-Para-Bordes;
+  background-color: $institucional4;
+  @include flexbox;
   @include flex-direction(row);
   @include align-items(center);
-  z-index: 999;  
-}  
-
-  .Default-header-logo{
-    height: 36px;
-    width: 36px;
-    margin:0 3px;
-    border-radius: 8px;
-  }
-
-  .Default-header-titulo{
-    font-size: 16px;
-    color: $Color-texto-gris-Mercadolibre;
-    margin-left: 5px;
-  }
-
-
-  .nav-links{
-    padding: 4px;
-    @include flexbox;
-    @include align-items(center);
-    @include flex-direction(row);
-    border-radius: 4px;
-   
-  }
-
-    ul.nav-links>a>li{
-      padding:10px;
-      color: $institucional1;
-      border-radius: 4px; 
-    }
-    ul.nav-links>a>li:hover{
-      color: $institucional3;
-      background-color: $institucional1;
-    }
-
-
-
-
-
-/*--- contenido de INICIO DE SESIÓN ---*/
-.contenido-inicio-de-sesion-navbar{
-  width: 230px;  
+  z-index: 999;
 }
 
-.contenido-auth-deplegado-navbar{
+.Default-header-logo {
+  height: 36px;
+  width: 36px;
+  margin: 0 3px;
+  border-radius: 8px;
+}
+
+.Default-header-titulo {
+  font-size: 16px;
+  color: $Color-texto-gris-Mercadolibre;
+  margin-left: 5px;
+}
+
+.nav-links {
+  padding: 4px;
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(row);
+  border-radius: 4px;
+}
+
+ul.nav-links > a > li {
+  padding: 10px;
+  color: $institucional1;
+  border-radius: 4px;
+}
+ul.nav-links > a > li:hover {
+  color: $institucional3;
+  background-color: $institucional1;
+}
+
+/*--- contenido de INICIO DE SESIÓN ---*/
+.contenido-inicio-de-sesion-navbar {
+  width: 230px;
+}
+
+.contenido-auth-deplegado-navbar {
   width: 230px;
 }

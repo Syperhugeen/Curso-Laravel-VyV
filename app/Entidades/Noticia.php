@@ -2,16 +2,13 @@
 
 namespace App\Entidades;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Helpers\HelpersGenerales;
-
-
-
+use Illuminate\Database\Eloquent\Model;
 
 class Noticia extends Model
 {
 
-    protected $table ='noticias';
+    protected $table = 'noticias';
 
     /**
      * The attributes that are mass assignable.
@@ -19,14 +16,6 @@ class Noticia extends Model
      * @var array
      */
     protected $fillable = ['name', 'description'];
-
-
-
-
-
-
-
-
 
     /**
      * PAra busqueda por nombre
@@ -37,42 +26,36 @@ class Noticia extends Model
         /// trim() se utiliza para eliminar los espacios.
         ////Like se usa para busqueda incompletas
         /////%% es para los espacios adelante y atras
-        if (trim($name) !="")
-        {                        
-           $query->where('name', "LIKE","%$name%"); 
+        if (trim($name) != "") {
+            $query->where('name', "LIKE", "%$name%");
         }
-        
+
     }
 
     public function scopeActive($query)
     {
-                               
-           $query->where('estado', "si"); 
-                
-    }
 
+        $query->where('estado', "si");
+
+    }
 
     public function getUrlImgAttribute()
     {
-        
-        return url().'/imagenes/'.$this->img;
-    }
 
+        return /*url().*/'https://www.veigaventos.com/imagenes/' . $this->img;
+    }
 
     public function getRouteAttribute()
     {
-        
+
         return route('get_pagina_noticia_individual', [str_replace(" ", "_", $this->name), $this->id]);
     }
 
     public function getDescriptionAjustadaAttribute()
-    {         
-         $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares($this->description);
+    {
+        $text = HelpersGenerales::helper_convertir_caractereres_entidades_blog_o_similares($this->description);
 
-         return   $text;  
+        return $text;
     }
 
-    
-
-    
 }
