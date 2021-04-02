@@ -3381,54 +3381,6 @@
             "install-path": "../sebastian/version"
         },
         {
-            "name": "styde/html",
-            "version": "1.0.13",
-            "version_normalized": "1.0.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/StydeNet/html.git",
-                "reference": "80be04abedf45bd134de14226f6ff2bcdcb03406"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StydeNet/html/zipball/80be04abedf45bd134de14226f6ff2bcdcb03406",
-                "reference": "80be04abedf45bd134de14226f6ff2bcdcb03406",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "5.1.*",
-                "laravelcollective/html": "5.1.*",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "~2.1"
-            },
-            "time": "2016-10-27T19:50:29+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Styde\\Html\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Duilio Palacios",
-                    "email": "admin@styde.net"
-                }
-            ],
-            "description": "Build form fields, menus, alert messages and other view components quickly",
-            "support": {
-                "issues": "https://github.com/StydeNet/html/issues",
-                "source": "https://github.com/StydeNet/html/tree/laravel5.1"
-            },
-            "install-path": "../styde/html"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.12",
             "version_normalized": "5.4.12.0",

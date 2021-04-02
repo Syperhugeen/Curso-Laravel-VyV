@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8c3e91f5d54ba56a2f0e31180dbde6d",
+    "content-hash": "5063ae428e98114f45dad2e882a15fe1",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1720,51 +1720,6 @@
                 "source": "https://github.com/bobthecow/psysh/tree/master"
             },
             "time": "2016-03-09T05:03:14+00:00"
-        },
-        {
-            "name": "styde/html",
-            "version": "1.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/StydeNet/html.git",
-                "reference": "80be04abedf45bd134de14226f6ff2bcdcb03406"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StydeNet/html/zipball/80be04abedf45bd134de14226f6ff2bcdcb03406",
-                "reference": "80be04abedf45bd134de14226f6ff2bcdcb03406",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "5.1.*",
-                "laravelcollective/html": "5.1.*",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "~2.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Styde\\Html\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Duilio Palacios",
-                    "email": "admin@styde.net"
-                }
-            ],
-            "description": "Build form fields, menus, alert messages and other view components quickly",
-            "support": {
-                "issues": "https://github.com/StydeNet/html/issues",
-                "source": "https://github.com/StydeNet/html/tree/laravel5.1"
-            },
-            "time": "2016-10-27T19:50:29+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
