@@ -5,7 +5,9 @@ import Baner from '../components/baner';
 import BanerContacto from '../components/banerContacto';
 import Section1 from '../components/sectionHome1';
 import SectionBlog from '../components/sectionBlog';
+import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import Data from '../config/data';
+import ServicioData from '../data/servicioHomeData';
 
 const Home = () => {
   const prevScrollY = useRef(0);
@@ -59,6 +61,7 @@ const Home = () => {
     <DefaultLayout>
       <Baner />
       <Section1 />
+      <SectionImgFondo data={ServicioData} />
       <BanerContacto text1="Contactame ahora mismo" text2="¡Sin compromiso!" />
       {sectionBlogComponente != false ? sectionBlogComponente : ''}
       <BanerContacto
