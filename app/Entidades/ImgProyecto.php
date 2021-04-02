@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class ImgProyecto extends Model
 {
-    protected $table = 'imgs_proyectos';
+    protected $table   = 'imgs_proyectos';
+    protected $appends = ['url_img'];
 
     /**
      * The attributes that are mass assignable.
@@ -20,5 +21,4 @@ class ImgProyecto extends Model
 
         return 'https://www.veigaventos.com/imagenes/' . $this->img;
     }
-
 }

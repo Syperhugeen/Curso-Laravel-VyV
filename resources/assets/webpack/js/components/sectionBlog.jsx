@@ -28,7 +28,8 @@ const SectionBlog = (props) => {
     const CANTIDAD = props.cantidad;
 
     return fetch(
-      `${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`
+      `${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`,
+      { mode: 'no-cors' }
     )
       .then((response) => {
         if (!response.ok) {
@@ -48,8 +49,6 @@ const SectionBlog = (props) => {
       })
       .catch((error) => {
         setLoading(false);
-
-        
       });
   };
 

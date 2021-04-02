@@ -8,7 +8,7 @@ const Data = {
   facebook_link: 'https://www.facebook.com/javierjesusmangini/',
   address: 'Canadá 6253',
   business_hours: 'lunes a viernes de 9 a 18 hs',
-  path_url:'https://newvyv.mwebs.com.uy'
+  path_url:''
 };
 
 export default Data;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import Skeleton from 'react-loading-skeleton';
 import '../../css/components/sliderSimple.scss';
-const SliderSimple = ({ images }) => {
+const SliderSimple = ({ images, height, opacity }) => {
   // takes in images as props
   const [current, setCurrent] = useState(0); // create state to keep track of images index, set the default index to 0
 
@@ -68,11 +68,19 @@ const SliderSimple = ({ images }) => {
                 className={index === current ? 'slide active' : 'slide'}
               >
                 {index === current && (
-                  <img className="img-fluid" src={img} alt={index} />
+                  <img
+                    className="img-background"
+                    style={{ height: height }}
+                    alt=""
+                    src={img}
+                    alt={index}
+                  />
                 )}
               </div>
             );
           })}
+
+          <div className="opasity-layer" style={{ opacity: opacity }}></div>
 
           <button className="slider-simple-next" onClick={slideRight}>
             {<FaArrowAltCircleRight />}
