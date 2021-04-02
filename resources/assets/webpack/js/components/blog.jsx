@@ -20,7 +20,7 @@ const Blog = (props) => {
 
           <Link
             className="btn btn-primary"
-            to={`/Publicacion/${Post.name.replace(ValidarURL, '-')}/${Post.id}`}
+            to={`/proyectos/${Post.name.replace(ValidarURL, '-')}/${Post.id}`}
           >
             Leer más
           </Link>

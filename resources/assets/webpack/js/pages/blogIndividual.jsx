@@ -53,17 +53,14 @@ const BlogIndividual = () => {
     <DefaultLayout>
       <>
         {loading && (
-          <div className="w-100 mb-5 p-3 ">
-            <div className="w-100 mb-5 ">
-              <Skeleton count={4} />
-            </div>
-
-            <div className="w-100 mb-5 ">
-              <Skeleton count={4} />
-            </div>
-
-            <div className="w-100 mb-5 ">
-              <Skeleton count={4} />
+          <div
+            className="w-100 mb-5 d-flex flex-row align-items-center justify-content-center bg-dark p-5 "
+            style={{ height: `70vh` }}
+          >
+            <div className="w-100  ">
+              <div className="row mx-0 w-100">
+                <p className="col-12 my-5 text-white text-center">Cargando...</p>
+              </div>
             </div>
           </div>
         )}
@@ -73,8 +70,8 @@ const BlogIndividual = () => {
             images={blog.imagenesproyecto.map(function (img) {
               return img.url_img;
             })}
-            height={`50vh`}
-            opacity={`0.5`}
+            height={`70vh`}
+            opacity={`0.3`}
           />
         )}
 
@@ -109,33 +106,41 @@ const BlogIndividual = () => {
                   />
 
                   <div className="row justify-content-center mx-0">
-                    <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
-                      <span className="text-primary">
-                        <FaCalendarAlt />
-                      </span>
+                    <div className="col-6 col-lg-3 mb-3 mb-lg-0 ">
+                      <div className=" bg-gray-2 text-center py-2 contenedor-blog-atributos h-100">
+                        <span className="text-primary">
+                          <FaCalendarAlt />
+                        </span>
 
-                      {`  ${blog.fecha} `}
+                        {`  ${blog.fecha} `}
+                      </div>
                     </div>
-                    <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
-                      <span className="text-primary">
-                        <FaMapMarkerAlt />
-                      </span>
+                    <div className="col-6 col-lg-3 mb-3 mb-lg-0  ">
+                      <div className=" bg-gray-2 text-center py-2 contenedor-blog-atributos h-100">
+                        <span className="text-primary">
+                          <FaMapMarkerAlt />
+                        </span>
 
-                      {`  ${blog.ubicacion} `}
+                        {`  ${blog.ubicacion} `}
+                      </div>
                     </div>
-                    <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
-                      <span className="text-primary">
-                        <FaHammer />
-                      </span>
+                    <div className="col-6 col-lg-3 mb-3 mb-lg-0  ">
+                      <div className=" bg-gray-2 text-center py-2 contenedor-blog-atributos h-100">
+                        <span className="text-primary">
+                          <FaHammer />
+                        </span>
 
-                      {`  ${blog.metodo_de_construccion} `}
+                        {`  ${blog.metodo_de_construccion} `}
+                      </div>
                     </div>
-                    <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
-                      <span className="text-primary">
-                        <FaIdBadge />
-                      </span>
+                    <div className="col-6 col-lg-3 mb-3 mb-lg-0  ">
+                      <div className=" bg-gray-2 text-center py-2 contenedor-blog-atributos h-100">
+                        <span className="text-primary">
+                          <FaIdBadge />
+                        </span>
 
-                      {`  ${blog.autores} `}
+                        {`  ${blog.autores} `}
+                      </div>
                     </div>
                   </div>
 

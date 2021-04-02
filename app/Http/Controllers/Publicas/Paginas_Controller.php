@@ -27,25 +27,56 @@ class Paginas_Controller extends Controller
         $this->EmpresaRepo  = $EmpresaRepo;
     }
 
-    //Contacto
+    //Contacto viejo que redirecciona al nuevo
     public function get_pagina_contacto()
     {
-        return view('paginas.contacto.contacto');
+        return redirect()->route('get_new_contactar');
+    }
+
+    public function get_new_contactar()
+    {
+        $Data = [
+            'title'       => 'Contactar',
+            'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
     //Empresa
     public function get_pagina_empresa()
     {
-        $Empresa = $this->EmpresaRepo->getEmpresaDatos();
+        return redirect()->route('get_new_empresa');
+    }
 
-        return view('paginas.empresa.empresa', compact('Empresa'));
+    public function get_new_empresa()
+    {
+        $Data = [
+            'title'       => 'Acerca de V & V | Estudio de ingeniería',
+            'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
     //servicios
     public function get_pagina_servicios()
     {
 
-        return view('paginas.servicios.servicios');
+        return redirect()->route('get_pagina_new_servicios');
+    }
+
+    public function get_pagina_new_servicios()
+    {
+        $Data = [
+            'title'       => 'Servicios',
+            'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
     //Noticias
@@ -90,14 +121,27 @@ class Paginas_Controller extends Controller
     //Proyectos
     public function get_pagina_proyecto_listado(Request $Request)
     {
-        $Proyectos = $this->ProyectoRepo->getEntidadActivasPaginadas($Request, 6);
+        return redirect()->route('get_pagina_new_proyecto_listado');
+    }
 
-        return view('paginas.proyecto.proyecto_listado', compact('Proyectos'));
+    public function get_pagina_new_proyecto_listado()
+    {
+        $Data = [
+            'title'       => 'Proyectos',
+            'description' => 'Trabajos de  V & V ',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
     public function get_pagina_proyecto_individual($name, $id)
     {
+        return redirect()->route('get_pagina_new_proyecto_individual', [$name, $id]);
+    }
 
+    public function get_pagina_new_proyecto_individual($name, $id)
+    {
         $Proyecto = $this->ProyectoRepo->find($id);
 
         // vieja // return view('paginas.proyecto.proyecto_individual', compact('Proyecto'));

@@ -18,7 +18,7 @@ const Contacto = () => {
       window.scrollTo(0, 0);
     }
     // Update the document title using the browser API
-    document.title = `Contactar a Javier Mangini`;
+    document.title = `Contactar`;
   });
   return (
     <DefaultLayout>

@@ -23,7 +23,7 @@ const App = () => (
           <Route exact path="/servicios" component={Servicios} />
           <Route
             exact
-            path="/Publicacion/:name/:id"
+            path="/proyectos/:name/:id"
             component={BlogIndividual}
           />
         </ErrorWrapper>
