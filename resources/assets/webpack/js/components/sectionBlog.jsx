@@ -27,7 +27,9 @@ const SectionBlog = (props) => {
 
     const CANTIDAD = props.cantidad;
 
-    return fetch(`${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`)
+    return fetch(
+      `${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`
+    )
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -46,6 +48,8 @@ const SectionBlog = (props) => {
       })
       .catch((error) => {
         setLoading(false);
+
+        
       });
   };
 

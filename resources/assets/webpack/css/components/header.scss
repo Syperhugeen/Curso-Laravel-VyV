@@ -1,10 +1,14 @@
 @import './../templateDeColores/colores.scss';
 
-$HEADER_ALTURA: 60px;
+$HEADER_ALTURA: 80px;
 $BORDE_GROSOR: 4px;
 
 .header {
   height: $HEADER_ALTURA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 
 .header-logo-img {
@@ -21,7 +25,7 @@ $BORDE_GROSOR: 4px;
   text-transform: uppercase;
 
   text-align: center;
-  color: $text-gray;
+  color: $text-white;
   height: 100%;
   line-height: $HEADER_ALTURA - 2 * $BORDE_GROSOR;
 

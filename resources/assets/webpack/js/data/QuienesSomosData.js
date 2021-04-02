@@ -1,0 +1,15 @@
+import Img from '../../img/Home/Portadas/somo-v-y-v-portada-home.jpg';
+
+const Data = {
+  header: 'h1',
+  position: 'left',
+  minHeight: '100vh',
+  img: Img,
+  titulo: 'Veiga Ventós',
+  text: 'Estudio de ingeniería civil',
+  callToAction: 'Entrar en contacto',
+  link: '/contactar',
+  opacity_value:0.3
+};
+
+export default Data;

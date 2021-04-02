@@ -24,11 +24,18 @@ module.exports = {
     path: path.resolve(__dirname, 'public/'),
     filename: 'js/[name].[contenthash].js',
     chunkFilename: 'js/[id].[chunkhash].js',
-    publicPath: '/',
+    publicPath: '/'
   },
   mode: 'development',
   devServer: {
-    contentBase: './public',
+    contentBase: path.resolve(__dirname, 'public/'),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers':
+        'X-Requested-With, content-type, Authorization',
+      https: true,
+    },
   },
 
   module: {

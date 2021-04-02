@@ -9,6 +9,7 @@ const Contacto = lazy(() => import('../pages/contacto'));
 const Blog = lazy(() => import('../pages/blog'));
 const SobreMi = lazy(() => import('../pages/sobreMi'));
 const BlogIndividual = lazy(() => import('../pages/blogIndividual'));
+const Servicios = lazy(() => import('../pages/servicios'));
 
 const App = () => (
   <Router>
@@ -19,6 +20,7 @@ const App = () => (
           <Route exact path="/contactar" component={Contacto} />
           <Route exact path="/proyectos" component={Blog} />
           <Route exact path="/sobre-v-y-v" component={SobreMi} />
+          <Route exact path="/servicios" component={Servicios} />
           <Route
             exact
             path="/Publicacion/:name/:id"

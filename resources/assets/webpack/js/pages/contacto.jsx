@@ -9,6 +9,8 @@ import DefaultLayout from '../components/layout';
 import FormularioContacto from '../components/formularioContacto';
 import Data from '../config/data';
 import ContactoTeam from '../components/contactoTeam';
+import SectionImgFondo from '../components/sectionConImagenDeFondo';
+import DataPortada from '../data/DataDePaginas/contactar';
 
 const Contacto = () => {
   useEffect(() => {
@@ -20,6 +22,7 @@ const Contacto = () => {
   });
   return (
     <DefaultLayout>
+      <SectionImgFondo data={DataPortada}/>
       <div className="container">
         <h1 className=" text-center my-5">¿Hablamos?</h1>
         <p className="text-center mb-4">

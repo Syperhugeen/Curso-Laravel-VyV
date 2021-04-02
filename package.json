@@ -7,7 +7,7 @@
     "format": "prettier --write {*.js,resources/assets/webpack/js/**/*.{js,jsx}}",
     "lint": "eslint {*.js,resources/assets/webpack/js/**/*.{js,jsx}} --fix"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "http://vyv.test/",
   "author": "Mauricio Costanzo",
   "license": "MIT",
   "devDependencies": {

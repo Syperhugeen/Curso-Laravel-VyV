@@ -42,7 +42,7 @@ const Header = (props) => (
                 to="/proyectos"
                 className="nav-class"
                 activeClassName="nav-active-class"
-                exact
+                
               >
                 Proyectos
               </NavLink>
@@ -51,7 +51,7 @@ const Header = (props) => (
                 to="/sobre-v-y-v"
                 className="nav-class"
                 activeClassName="nav-active-class"
-                exact
+                
               >
                 Sobre v&v
               </NavLink>

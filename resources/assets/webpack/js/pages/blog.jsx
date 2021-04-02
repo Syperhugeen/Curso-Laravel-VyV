@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import DefaultLayout from '../components/layout';
 import SectionBlog from '../components/sectionBlog';
+import SectionImgFondo from '../components/sectionConImagenDeFondo';
+import DataPortada from '../data/DataDePaginas/proyectos';
 
 const Contacto = () => {
   useEffect(() => {
@@ -13,6 +15,7 @@ const Contacto = () => {
 
   return (
     <DefaultLayout>
+      <SectionImgFondo data={DataPortada}/>
       <SectionBlog cantidad="8">
         {' '}
         <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">

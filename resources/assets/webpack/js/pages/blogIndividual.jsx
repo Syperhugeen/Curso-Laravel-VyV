@@ -84,35 +84,32 @@ const BlogIndividual = () => {
                 <div className="row justify-content-center mx-0">
                   <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
                     <span className="text-primary">
-                    <FaCalendarAlt/> 
+                      <FaCalendarAlt />
                     </span>
-                    
-                   {`  ${blog.fecha} `}
+
+                    {`  ${blog.fecha} `}
                   </div>
                   <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
                     <span className="text-primary">
-                    <FaMapMarkerAlt/> 
+                      <FaMapMarkerAlt />
                     </span>
-                    
-                   {`  ${blog.ubicacion} `}
+
+                    {`  ${blog.ubicacion} `}
                   </div>
                   <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
                     <span className="text-primary">
-                    <FaHammer/> 
+                      <FaHammer />
                     </span>
-                    
-                   {`  ${blog.metodo_de_construccion} `}
+
+                    {`  ${blog.metodo_de_construccion} `}
                   </div>
                   <div className="col-6 col-lg-3 mb-3 mb-lg-0 contenedor-blog-atributos bg-gray-2 text-center py-2">
                     <span className="text-primary">
-                    <FaIdBadge/> 
+                      <FaIdBadge />
                     </span>
-                    
-                   {`  ${blog.autores} `}
+
+                    {`  ${blog.autores} `}
                   </div>
-
-
-
                 </div>
 
                 <div
@@ -128,7 +125,6 @@ const BlogIndividual = () => {
         <SectionBlog cantidad="4" evitarIds={Id}>
           {' '}
           <h2 className="mb-5 text-center mb-5 ">Más proyectos relacionados</h2>
-         
         </SectionBlog>
       )}
     </DefaultLayout>

@@ -6,6 +6,9 @@ import Data from '../config/data';
 import { Link } from 'react-router-dom';
 import '../../css/helpers/video.scss';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
+import SectionImgFondo from '../components/sectionConImagenDeFondo';
+import DataPortada from '../data/DataDePaginas/sobre';
+
 
 const SobreMi = () => {
   useEffect(() => {
@@ -17,6 +20,7 @@ const SobreMi = () => {
 
   return (
     <DefaultLayout>
+      <SectionImgFondo data={DataPortada}/>
       <div className="container">
         <h1 className="text-center col-12 my-5">Sobre</h1>
 
