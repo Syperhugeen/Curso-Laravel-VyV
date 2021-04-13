@@ -8,7 +8,12 @@ import '../../css/helpers/video.scss';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/sobre';
-
+import {
+  FaMobileAlt,
+  FaWhatsapp,
+  FaEnvelopeOpenText,
+  FaPhone,
+} from 'react-icons/fa';
 
 const SobreMi = () => {
   useEffect(() => {
@@ -20,61 +25,77 @@ const SobreMi = () => {
 
   return (
     <DefaultLayout>
-      <SectionImgFondo data={DataPortada}/>
+      <SectionImgFondo data={DataPortada} />
       <div className="container">
-        <h1 className="text-center col-12 my-5">Sobre</h1>
+        <h1 className="text-center col-12 my-5">Sobre V y V</h1>
 
         <div className="row mx-0">
           <div className="col-12 px-2 px-4">
             <p className="mb-5">
-              ¡Esto es genial! Nos alegra saber que hay más personas a las que
-              también le gusta ver la pagina de "Quiénes somos". Así que si
-              estás aquí, seguramente sea por una de estas razones:
-            </p>
-            <ol>
-              <li className="mb-3">
-                Querés verificar que V&V sea una empresa profesional a la cual
-                le puedas confiar tu proyecto.
-              </li>
-              <li className="mb-5">
-                Tenés curiosidad por conocer un poco más sobre V&V.
-              </li>
-            </ol>
-            <p className="mb-4">
-              Si estás en el primer grupo, nuestra experiencia nos dicta, que la
-              mejor manera de aclarar tus dudas es que tengas una conversación
-              con nosotros. Para eso llamá a al celular{' '}
-              <strong>{Data.cellphone}</strong> o{' '}
-              <Link className="" to="/contactar">
-                contactanos aquí
-              </Link>{' '}
-              y en breve estaremos en contacto.
+              ¡Nos alegra saber que te interesa saber quienes somos!
             </p>
             <p className="mb-5">
-              Si estás en el segundo grupo, mirá el video de aquí abajo en el
-              cual los directores de V & V Mariano y Leandro te presentaran la
-              empresa{' '}
+              Veiga Ventós es un estudio de ingeniería civil fundado en el año x
+              por los hermanos <strong> Mariano y Leandro Veiga Ventós</strong>.{' '}
+              Hemos trabajado en <strong> más de 250 proyectos</strong> y
+              desarrollado un gran expertise dentro del sistema constructivo del
+              Steel Framing. Ofrecemos servicio de{' '}
+              <strong>diseño estructural</strong>,{' '}
+              <strong>soluciones y cálculos de ingeniería para obras</strong> ,
+              así como también <strong>consultoría y asesoramiento</strong>{' '}
+              profesional en <strong>ingeniería civil</strong>.
             </p>
-          </div>
-        </div>
-      </div>
 
-      <div className="w-100 my-5 py-5 bg-dark">
-        <div className="container  py-4 py-lg-2">
-          <div className="col-12 d-flex flex-column align-items-center mb-5">
-            <img src={Logo} alt="" className="img-fluid" />
-          </div>
-          <div className="col-12 ">
-            <div className="video-responsive shadow  px-0">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Wf1vV9v28z8"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <p className="mb-4">
+              Nuestra búsqueda y compromiso está orientada al crecimiento
+              organizacional por medio de la transparencia y el profesionalismo
+              y de esta forma buscamos nuevos proyectos y dispuestos.
+            </p>
+            <p className="mb-5">
+              Estamos disponibles para hablar y comunicarnos por medio de
+              cualquiera de los siguientes canales:
+            </p>
+
+            <ol className="mb-2">
+              <li className="mb-4">
+                {'Teléfono '}
+                {<FaPhone />}
+                <strong>{` ${Data.phone}`}</strong>o al {<FaMobileAlt />}{' '}
+                <strong>{` ${Data.cellphone}`}</strong>
+                {`. Atendemos de  `}
+                <strong>{` ${Data.business_hours}`}</strong>
+                {`. `}
+              </li>
+
+              <li className="mb-4">
+                {' Mensajes de texto '}
+                {<FaMobileAlt />}
+
+                <strong>{` ${Data.cellphone}`}</strong>
+                {`  o por Whatsapp tocando
+          este botón `}
+                <a href={Data.whatsapp_link} className="btn btn-success">
+                  {` Enviar mensaje por whatsapp `}
+                  {<FaWhatsapp />}
+                </a>
+              </li>
+
+              <li className="mb-4">
+                {' Email '}
+                {<FaEnvelopeOpenText />}
+                {' a '}
+                <strong>{` ${Data.email}`}</strong>
+                {` o bien rellená el formulario `}
+                <Link exact to="/contactar" className="">
+                  que está en este link
+                </Link>{' '}
+                .
+              </li>
+            </ol>
+
+            <p className="my-5">
+              Seguí nuestros proyectos en <a href="">Instagram</a>.
+            </p>
           </div>
         </div>
       </div>
