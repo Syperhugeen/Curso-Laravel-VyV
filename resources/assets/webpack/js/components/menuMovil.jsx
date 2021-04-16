@@ -44,6 +44,14 @@ const MenuMovil = () => {
         >
           Sobre v&v
         </NavLink>
+        <NavLink
+          exact
+          to="/contactar"
+          className="nav-class-menu-movil"
+          activeClassName="nav-active-class-menu-movil"
+        >
+          Contacto
+        </NavLink>
       </nav>
     </div>
   );

@@ -10,10 +10,9 @@ const SectionServicios = () => (
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
             <strong>¿Qué hacemos?</strong>
           </div>
-          <h2 className="mb-0 text-center text-wrap">
-            Diseño, consultoría y planificación de proyectos de ingeniería
-            civil.
-          </h2>
+          <h1 className="mb-0 text-center text-wrap">
+            Conozca nuestros servicios en ingeniería civil
+          </h1>
         </div>
       </div>
     </div>

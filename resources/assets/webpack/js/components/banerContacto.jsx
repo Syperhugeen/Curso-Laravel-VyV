@@ -20,10 +20,10 @@ const BanerContacto = (props) => (
             </div>
             <div className=" col-12 col-lg-6 p-1 mb-2 mb-lg-0">
               <h2 className="h2 text-secondary  mb-1 text-center text-lg-left">
-                Cotizá tu proyecto ahora
+                Cotice su proyecto ahora
               </h2>
               <p className="text-secondary  mb-0 mb-lg-0 text-center text-lg-left">
-                Sin compromisos. Te hacemos la cotización en un tiempo record.
+                Sin compromisos. Le hacemos la cotización en un tiempo record.
               </p>
             </div>
             <div className="col-12 col-lg-4">

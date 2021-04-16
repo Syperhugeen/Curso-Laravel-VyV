@@ -5,9 +5,9 @@ const Data = {
   position: 'left',
   minHeight: '100vh',
   img: Img,
-  titulo: 'Proyectos',
-  text: 'Proyectos que hemos realizado',
-  callToAction: 'Ver todos los proyectos',
+  titulo: 'Proyectos y novedades V & V',
+  text: 'Portfolio de trabajos realizados',
+  callToAction: 'Ver últimos proyectos',
   link: '/proyectos',
   opacity_value: 0.3,
 };

@@ -13,6 +13,7 @@ import {
   FaWhatsapp,
   FaEnvelopeOpenText,
   FaPhone,
+  FaInstagram,
 } from 'react-icons/fa';
 
 const SobreMi = () => {
@@ -27,13 +28,10 @@ const SobreMi = () => {
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
       <div className="container">
-        <h1 className="text-center col-12 my-5">Sobre V y V</h1>
+        <h1 className="text-center col-12 my-5">Sobre Veiga & Ventós</h1>
 
         <div className="row mx-0">
           <div className="col-12 px-2 px-4">
-            <p className="mb-5">
-              ¡Nos alegra saber que te interesa saber quienes somos!
-            </p>
             <p className="mb-5">
               Veiga Ventós es un estudio de ingeniería civil fundado en el año x
               por los hermanos <strong> Mariano y Leandro Veiga Ventós</strong>.{' '}
@@ -49,11 +47,11 @@ const SobreMi = () => {
             <p className="mb-4">
               Nuestra búsqueda y compromiso está orientada al crecimiento
               organizacional por medio de la transparencia y el profesionalismo
-              y de esta forma buscamos nuevos proyectos y dispuestos.
+              y y con estos mismos atributos es que buscamos asumir nuevos
+              proyectos y desafíos de ingeniería civil.
             </p>
             <p className="mb-5">
-              Estamos disponibles para hablar y comunicarnos por medio de
-              cualquiera de los siguientes canales:
+              Estamos disponibles en cualquiera de los siguiente canales:
             </p>
 
             <ol className="mb-2">
@@ -94,7 +92,7 @@ const SobreMi = () => {
             </ol>
 
             <p className="my-5">
-              Seguí nuestros proyectos en <a href="">Instagram</a>.
+              Seguí nuestros proyectos en <a href=""> {<FaInstagram />}</a>.
             </p>
           </div>
         </div>

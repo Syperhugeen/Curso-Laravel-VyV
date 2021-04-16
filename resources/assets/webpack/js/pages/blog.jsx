@@ -15,14 +15,14 @@ const Contacto = () => {
 
   return (
     <DefaultLayout>
-      <SectionImgFondo data={DataPortada}/>
+      <SectionImgFondo data={DataPortada} />
       <SectionBlog cantidad="8">
         {' '}
         <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
           <strong>Trabajos realizados</strong>
         </div>
         <h1 className="mb-3 text-center ">
-          Por qué contarte si te lo podemos mostrar{' '}
+          Portfolio de trabajos y artículos Veiga & Ventós
         </h1>
         <p className="col-12 text-center mb-5">
           Mirá nuestros últimos proyectos realizados.

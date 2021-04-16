@@ -4,6 +4,8 @@ import {
   FaWhatsapp,
   FaEnvelopeOpenText,
   FaPhone,
+  FaPaperPlane,
+  FaMapMarkerAlt,
 } from 'react-icons/fa';
 import DefaultLayout from '../components/layout';
 import FormularioContacto from '../components/formularioContacto';
@@ -22,54 +24,65 @@ const Contacto = () => {
   });
   return (
     <DefaultLayout>
-      <SectionImgFondo data={DataPortada}/>
+      <SectionImgFondo data={DataPortada} />
       <div className="container">
         <h1 className=" text-center my-5">¿Hablamos?</h1>
         <p className="text-center mb-4">
-          Hay un equipo listo para <strong>cotizar tu proyecto</strong> o para
-          atender cualquier consulta.
+          Hay un equipo listo para <strong>cotizar su proyecto</strong> y
+          atender sus consultas.
         </p>
         <div className="w-100 d-flex flex-column align-items-center mb-4">
           {<ContactoTeam />}
         </div>
-        <h2 className="h2 text-center mb-5">
-          Podés contactarte de 3 maneras diferentes.
-        </h2>
 
-        <ol>
-          <li className="mb-4">
-            {' Llamá al '}
-            {<FaPhone />}
-            <strong>{` ${Data.phone}`}</strong>o al {<FaMobileAlt />}{' '}
-            <strong>{` ${Data.cellphone}`}</strong>
-            {`. Atendemos de  `}
-            <strong>{` ${Data.business_hours}`}</strong>
-            {`. `}
-          </li>
+        <p className="mb-5 text-center">
+          Canales y vías de comunicación V & V:
+        </p>
 
-          <li className="mb-4">
-            {' Enviá un mensaje de texto al'}
-            {<FaMobileAlt />}
+        <div className="row justify-content-center">
+          <ol className="col-12 col-lg-10">
+            <li className="mb-4">
+              {'Estamos ubicados en Carrasco. '}
+              {<FaMapMarkerAlt />}
+              <strong>{` ${Data.address}`}</strong>
+              {`. Atendemos de  `}
+              <strong>{` ${Data.business_hours}`}</strong>
+              {`. `}
+            </li>
+            <li className="mb-4">
+              {'Teléfono '}
+              {<FaPhone />}
+              <strong>{` ${Data.phone}`}</strong>. Celular {<FaMobileAlt />}{' '}
+              <strong>{` ${Data.cellphone}`}</strong>
+              {`. `}
+            </li>
 
-            <strong>{` ${Data.cellphone}`}</strong>
-            {`  o por Whatsapp tocando
+            <li className="mb-4">
+              {' Mensajes de texto '}
+              {<FaMobileAlt />}
+
+              <strong>{` ${Data.cellphone}`}</strong>
+              {`  o por Whatsapp tocando
           este botón `}
-            <a href={Data.whatsapp_link} className="btn btn-success">
-              {` Enviar mensaje por whatsapp `}
-              {<FaWhatsapp />}
-            </a>
-          </li>
+              <a href={Data.whatsapp_link} className="btn btn-success">
+                {` Enviar mensaje por whatsapp `}
+                {<FaWhatsapp />}
+              </a>
+            </li>
 
-          <li className="mb-4">
-            {' Enviá un email '}
-            {<FaEnvelopeOpenText />}
-            {' a '}
-            <strong>{` ${Data.email}`}</strong>
-
-            {` o bien rellená el
-          formulario de aquí abajo. `}
-          </li>
-        </ol>
+            <li className="mb-4">
+              {' Email '}
+              {<FaEnvelopeOpenText />} <strong>{` ${Data.email} `}</strong>.
+            </li>
+            <li className="mb-4">
+              {<FaPaperPlane />}{' '}
+              {` Para enviarnos un mensaje personalizado, rellene
+            el siguiente formulario y será correspondido a la brevedad por
+            nuestro equipo de trabajo`}
+              .
+            </li>
+          </ol>
+        </div>
       </div>
 
       <FormularioContacto />

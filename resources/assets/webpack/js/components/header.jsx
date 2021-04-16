@@ -6,7 +6,7 @@ import MenuMovil from '../components/menuMovil';
 
 const Header = (props) => (
   <header id="header-nav" className="w-100 header  shadow-sm ">
-    <div className="container d-flex flex-column align-items-center h-100">
+    <div className=" d-flex flex-column align-items-center h-100">
       <div className="col-12  row mx-0 align-items-center h-100 ">
         <div className="col-4 col-md-3  col-lg-2 d-flex flex-column align-items-start justify-content-center ">
           <Link to="/">
@@ -52,6 +52,14 @@ const Header = (props) => (
                 activeClassName="nav-active-class"
               >
                 Sobre v&v
+              </NavLink>
+              <NavLink
+                exact
+                to="/contactar"
+                className="nav-class"
+                activeClassName="nav-active-class"
+              >
+                Contacto
               </NavLink>
             </nav>
             <div className="px-2">

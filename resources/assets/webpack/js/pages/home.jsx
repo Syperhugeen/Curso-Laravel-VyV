@@ -18,7 +18,7 @@ const Home = () => {
   const [muestra, setMuestra] = useState(false);
 
   const scrollRef = useRef(null);
-  useScrollSnap({ ref: scrollRef, duration: 100, delay: 50 });
+  useScrollSnap({ ref: scrollRef, duration: 10, delay: 20 });
 
   useEffect(() => {
     // Update the document title using the browser API
@@ -30,10 +30,10 @@ const Home = () => {
       <div ref={scrollRef}>
         <SectionImgFondo data={QuienesSomosData} />
         <SectionImgFondo data={ServicioData} />
+        <SectionImgFondo data={ProyectosData} />
       </div>
 
       <BanerContacto text1="Contactame ahora mismo" text2="¡Sin compromiso!" />
-      <SectionImgFondo data={ProyectosData} />
     </DefaultLayout>
   );
 };

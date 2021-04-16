@@ -40,8 +40,8 @@ const Servicios = () => {
         <div className="container py-4 px-3 px-lg-4 ">
           <h2 className="">Diseño estructural</h2>
           <h3 className="mb-4 h4">
-            Estructuración, predimensionado y análisis - Determinación de la
-            concepción estructural eficiente
+            Estructuración, predimensionado y análisis - determinacion y
+            concpción del modelo estructural eficiente
           </h3>
           <ul className="mb-3">
             <li>Definición de estructura</li>
@@ -80,7 +80,7 @@ const Servicios = () => {
           }}
         />
         <div className="container py-4 px-3 px-lg-4 ">
-          <h2 className="">Consultoría y asesoramiento</h2>
+          <h2 className="">Asesoramiento en ingeniería civil</h2>
           <h3 className="mb-4 h4">
             Evaluación de estructuras existentes, elaboración de informes y
             asistencia en dirección de obra.
@@ -93,7 +93,7 @@ const Servicios = () => {
 
           <div className="">
             <Link exact to="/contactar" className="btn btn-primary  ">
-              Contactar por consultoría y asesoramiento
+              Contactar por asesoriamiento en ingenierpia civil
             </Link>
           </div>
         </div>

@@ -61,7 +61,7 @@ const SectionBlog = (props) => {
       <div className="container d-flex flex-column align-items-center my-5">
         {props.children}
 
-        <div className="row">{blogsYaIterados}</div>
+        <div className="row col-12 col-lg-8 mx-0">{blogsYaIterados}</div>
 
         {loading && (
           <div className="w-100 mb-5 ">

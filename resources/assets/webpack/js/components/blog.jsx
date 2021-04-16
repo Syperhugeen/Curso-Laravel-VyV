@@ -5,9 +5,8 @@ import ValidarURL from '../helpers/validarUrl';
 const Blog = (props) => {
   const Post = props.blog;
 
-  
   return (
-    <div className="col-6 col-lg-3 mb-4 px-2">
+    <div className="col-12 mb-4 ">
       <div className="w-100 shadow h-100">
         <img
           className="blog-card-img"
