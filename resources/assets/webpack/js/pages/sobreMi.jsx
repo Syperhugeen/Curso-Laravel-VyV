@@ -92,7 +92,7 @@ const SobreMi = () => {
             </ol>
 
             <p className="my-5">
-              Seguí nuestros proyectos en <a href=""> {<FaInstagram />}</a>.
+              Siga nuestros proyectos en <a href=""> {<FaInstagram />}</a>.
             </p>
           </div>
         </div>
