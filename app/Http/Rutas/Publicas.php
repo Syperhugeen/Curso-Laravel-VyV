@@ -25,6 +25,11 @@ Route::get('/contactar', [
     'as'   => 'get_new_contactar']
 );
 
+Route::get('/cotizar-proyecto', [
+    'uses' => 'Publicas\Paginas_Controller@get_cotizar',
+    'as'   => 'get_cotizar']
+);
+
 //Empresa
 Route::get('/Empresa', [
     'uses' => 'Publicas\Paginas_Controller@get_pagina_empresa',

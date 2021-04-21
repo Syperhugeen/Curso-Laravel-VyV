@@ -42,7 +42,7 @@ const MenuMovil = () => {
           activeClassName="nav-active-class-menu-movil"
           exact
         >
-          Sobre v&v
+          Sobre V & V
         </NavLink>
         <NavLink
           exact
@@ -51,6 +51,15 @@ const MenuMovil = () => {
           activeClassName="nav-active-class-menu-movil"
         >
           Contacto
+        </NavLink>
+
+        <NavLink
+          exact
+          to="/cotizar-proyecto"
+          className="nav-class-menu-movil"
+          activeClassName="nav-active-class-menu-movil"
+        >
+          Cotizar proyecto
         </NavLink>
       </nav>
     </div>

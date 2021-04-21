@@ -27,7 +27,7 @@ const BanerContacto = (props) => (
               </p>
             </div>
             <div className="col-12 col-lg-4">
-              <Link to="/contactar">
+              <Link to="/cotizar-proyecto">
                 <div className="btn btn-outline-primary btn-lg  w-100 text-uppercase">
                   Cotizar proyecto
                 </div>

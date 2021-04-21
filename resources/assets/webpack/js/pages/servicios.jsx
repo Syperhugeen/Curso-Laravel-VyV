@@ -41,7 +41,7 @@ const Servicios = () => {
           <h2 className="">Diseño estructural</h2>
           <h3 className="mb-4 h4">
             Estructuración, predimensionado y análisis - determinacion y
-            concpción del modelo estructural eficiente
+            concepción del modelo estructural eficiente
           </h3>
           <ul className="mb-3">
             <li>Definición de estructura</li>

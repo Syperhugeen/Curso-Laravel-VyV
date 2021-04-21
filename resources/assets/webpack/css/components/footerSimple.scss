@@ -1,0 +1,15 @@
+@import './../templateDeColores/colores.scss';
+.footer-p {
+  font-size: 17px !important;
+}
+
+.footer-simple-link {
+  border-left: solid 3px transparent;
+  padding-left: 6px;
+  color: $text-gray !important;
+}
+
+.footer-simple-link__active {
+  border-left: solid 3px $primary;
+  color: $primary !important;
+}

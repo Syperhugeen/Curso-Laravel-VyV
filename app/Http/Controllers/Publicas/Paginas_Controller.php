@@ -61,6 +61,17 @@ class Paginas_Controller extends Controller
         return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
+    public function get_cotizar()
+    {
+        $Data = [
+            'title'       => 'Cotizar proyecto',
+            'description' => 'Le hacemos el presupuesto de su proyecto de ingeniería con celeridad.',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
+    }
+
     //servicios
     public function get_pagina_servicios()
     {

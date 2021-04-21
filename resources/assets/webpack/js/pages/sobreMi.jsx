@@ -8,6 +8,7 @@ import '../../css/helpers/video.scss';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/sobre';
+import ImagensBanerOficina from '../../img/Oficina/baner.jpg';
 import {
   FaMobileAlt,
   FaWhatsapp,
@@ -27,8 +28,8 @@ const SobreMi = () => {
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
-      <div className="container">
-        <h1 className="text-center col-12 my-5">Sobre Veiga & Ventós</h1>
+      <div className="container py-5">
+        <h1 className="text-center col-12 mb-5">Sobre Veiga & Ventós</h1>
 
         <div className="row mx-0">
           <div className="col-12 px-2 px-4">
@@ -50,11 +51,32 @@ const SobreMi = () => {
               y y con estos mismos atributos es que buscamos asumir nuevos
               proyectos y desafíos de ingeniería civil.
             </p>
-            <p className="mb-5">
+          </div>
+        </div>
+      </div>
+
+      <SectionImgFondo
+        data={{
+          header: 'h2',
+          position: 'center',
+          minHeight: '50vh',
+          img: ImagensBanerOficina,
+          titulo: '',
+          text: '',
+          callToAction: '',
+          link: '',
+          opacity_value: 0.2,
+        }}
+      />
+
+      <div className="container py-5 ">
+        <div className="row mx-0">
+          <div className="col-12 px-2 px-4">
+            <p className="mb-5 text-center">
               Estamos disponibles en cualquiera de los siguiente canales:
             </p>
 
-            <ol className="mb-2">
+            <ol className="mb-2 bg-gray-2 p-3 pl-5">
               <li className="mb-4">
                 {'Teléfono '}
                 {<FaPhone />}
@@ -78,7 +100,7 @@ const SobreMi = () => {
                 </a>
               </li>
 
-              <li className="mb-4">
+              <li className="mb-0">
                 {' Email '}
                 {<FaEnvelopeOpenText />}
                 {' a '}
@@ -91,8 +113,9 @@ const SobreMi = () => {
               </li>
             </ol>
 
-            <p className="my-5">
-              Siga nuestros proyectos en <a href=""> {<FaInstagram />}</a>.
+            <p className="my-5 text-center">
+              Siga nuestros proyectos en{' '}
+              <a href={Data.instagram_link}>{<FaInstagram />}</a>
             </p>
           </div>
         </div>

@@ -65,7 +65,7 @@ const Header = (props) => (
             <div className="px-2">
               <Link
                 exact
-                to="/contactar"
+                to="/cotizar-proyecto"
                 className="btn btn-primary btn-lg text-uppercase"
               >
                 cotizar proyecto

@@ -1,9 +1,9 @@
-import Img from '../../../img/Home/Portadas/PortadasDePaginas/sobre.jpg';
+import Img from '../../../img/Home/Portadas/PortadasDePaginas/cotizar.jpg';
 
 const Data = {
   header: 'h1',
   position: 'center',
-  minHeight: '45vh',
+  minHeight: '60vh',
   img: Img,
   titulo: '',
   text: '',

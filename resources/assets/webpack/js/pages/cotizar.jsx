@@ -12,7 +12,7 @@ import FormularioContacto from '../components/formularioContacto';
 import Data from '../config/data';
 import ContactoTeam from '../components/contactoTeam';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
-import DataPortada from '../data/DataDePaginas/contactar';
+import DataPortada from '../data/DataDePaginas/cotizar';
 
 const Contacto = () => {
   useEffect(() => {
@@ -20,23 +20,23 @@ const Contacto = () => {
       window.scrollTo(0, 0);
     }
     // Update the document title using the browser API
-    document.title = `Contactar`;
+    document.title = `Cotizar proyecto`;
   });
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
       <div className="container">
-        <h1 className=" text-center my-5">¿Hablamos?</h1>
+        <h1 className=" text-center my-5">Cotizar proyecto</h1>
         <p className="text-center mb-4">
-          Hay un equipo listo para <strong>cotizar su proyecto</strong> y
-          atender sus consultas.
+          Hay un equipo listo para <strong>cotizar su proyecto</strong>.
         </p>
         <div className="w-100 d-flex flex-column align-items-center mb-4">
           {<ContactoTeam />}
         </div>
 
         <p className="mb-5 text-center">
-          Canales y vías de comunicación Veiga & Ventós
+          Contactanos por alguna de estás vías de comunicación y le cotizaremos
+          su proyecto con celeridad.
         </p>
 
         <div className="row justify-content-center">
