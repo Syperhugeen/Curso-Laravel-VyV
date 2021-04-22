@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import Logo from '../../img/Iconos/presupuesto.png';
 
 const BanerContacto = (props) => (
-  <div className="w-100 py-5 bg-dark">
+  <div className="w-100 py-5 ">
     <div className="container py-4 p-lg-2">
       <div className="row mx-0 justify-content-center">
         <div className="col-12 col-lg-10 text-left align-self-center text-intro p-lg-4">
@@ -20,10 +20,11 @@ const BanerContacto = (props) => (
             </div>
             <div className=" col-12 col-lg-6 p-1 mb-2 mb-lg-0">
               <h2 className="h2 text-secondary  mb-1 text-center text-lg-left">
-                Cotice su proyecto ahora
+                Cotice su proyecto
               </h2>
               <p className="text-secondary  mb-0 mb-lg-0 text-center text-lg-left">
-                Sin compromisos. Le hacemos la cotización en un tiempo record.
+                Comuniquese con un especialista y obtenga una cotización para su
+                proyecto
               </p>
             </div>
             <div className="col-12 col-lg-4">

@@ -72,9 +72,7 @@ const SobreMi = () => {
       <div className="container py-5 ">
         <div className="row mx-0">
           <div className="col-12 px-2 px-4">
-            <p className="mb-5 text-center">
-              Estamos disponibles en cualquiera de los siguiente canales:
-            </p>
+            <p className="mb-5 h1 text-center">Contacto</p>
 
             <ol className="mb-2 bg-gray-2 p-3 pl-5">
               <li className="mb-4">

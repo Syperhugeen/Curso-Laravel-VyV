@@ -144,7 +144,7 @@ const Servicios = () => {
           }}
         />
         <div className="container py-4 px-3 px-lg-4 ">
-          <h2 className="">Proyectos</h2>
+          <h2 className="">V&V Proyectos</h2>
           <h3 className="mb-4 h5">
             Elaboración y gerenciamiento de proyectos de inversión en ingeniería
             civil.

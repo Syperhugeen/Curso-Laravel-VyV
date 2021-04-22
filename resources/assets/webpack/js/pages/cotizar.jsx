@@ -28,16 +28,13 @@ const Contacto = () => {
       <div className="container">
         <h1 className=" text-center my-5">Cotizar proyecto</h1>
         <p className="text-center mb-4">
-          Hay un equipo listo para <strong>cotizar su proyecto</strong>.
+          Hay un equipo listo para trabajar su proyecto.
         </p>
         <div className="w-100 d-flex flex-column align-items-center mb-4">
           {<ContactoTeam />}
         </div>
 
-        <p className="mb-5 text-center">
-          Contactanos por alguna de estás vías de comunicación y le cotizaremos
-          su proyecto con celeridad.
-        </p>
+        <p className="mb-5 h2 text-center">Contacto</p>
 
         <div className="row justify-content-center">
           <ol className="col-12 col-lg-10">
