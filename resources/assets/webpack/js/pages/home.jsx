@@ -34,6 +34,7 @@ const Home = () => {
         <BanerContacto
           text1="Contactame ahora mismo"
           text2="¡Sin compromiso!"
+          ok
         />
       </div>
     </DefaultLayout>

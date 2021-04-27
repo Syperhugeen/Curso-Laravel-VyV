@@ -36,50 +36,12 @@ const Contacto = () => {
 
         <p className="mb-5 h2 text-center">Contacto</p>
 
-        <div className="row justify-content-center">
-          <ol className="col-12 col-lg-10">
-            <li className="mb-4">
-              {'Estamos ubicados en Carrasco. '}
-              {<FaMapMarkerAlt />}
-              <strong>{` ${Data.address}`}</strong>
-              {`. Atendemos de  `}
-              <strong>{` ${Data.business_hours}`}</strong>
-              {`. `}
-            </li>
-            <li className="mb-4">
-              {'Teléfono '}
-              {<FaPhone />}
-              <strong>{` ${Data.phone}`}</strong>. Celular {<FaMobileAlt />}{' '}
-              <strong>{` ${Data.cellphone}`}</strong>
-              {`. `}
-            </li>
-
-            <li className="mb-4">
-              {' Mensajes de texto '}
-              {<FaMobileAlt />}
-
-              <strong>{` ${Data.cellphone}`}</strong>
-              {`  o por Whatsapp tocando
-          este botón `}
-              <a href={Data.whatsapp_link} className="btn btn-success">
-                {` Enviar mensaje por whatsapp `}
-                {<FaWhatsapp />}
-              </a>
-            </li>
-
-            <li className="mb-4">
-              {' Email '}
-              {<FaEnvelopeOpenText />} <strong>{` ${Data.email} `}</strong>.
-            </li>
-            <li className="mb-4">
-              {<FaPaperPlane />}{' '}
-              {` Para enviarnos un mensaje personalizado, rellene
-            el siguiente formulario y será correspondido a la brevedad por
-            nuestro equipo de trabajo`}
-              .
-            </li>
-          </ol>
-        </div>
+        <p className="text-center ">
+          Para cotizar un proyecto con nosotros comuniquese directamente al
+          098188129 - De lo contrario puede enviarnos un mail a
+          info@veigaventos.com y un especialista se pondrá en contacto directo
+          con usted a la brevedad
+        </p>
       </div>
 
       <FormularioContacto />
