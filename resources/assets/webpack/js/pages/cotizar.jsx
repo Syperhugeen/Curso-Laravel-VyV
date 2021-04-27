@@ -40,7 +40,7 @@ const Contacto = () => {
           Para cotizar un proyecto con nosotros comuniquese directamente al
           098188129 - De lo contrario puede enviarnos un mail a
           info@veigaventos.com y un especialista se pondrá en contacto directo
-          con usted a la brevedad
+          con usted a la brevedad.
         </p>
       </div>
 
