@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import Blog from './blog';
+import BlogDestacado from './blogDestacado';
 import Data from '../config/data';
 
 const SectionBlog = (props) => {
@@ -8,9 +9,13 @@ const SectionBlog = (props) => {
   const [blogs, setBlogs] = useState([]);
   const [loadMore, setLoadMore] = useState(true);
 
-  const blogsYaIterados = blogs.map((blog, index) => (
-    <Blog blog={blog} key={blog.id} />
-  ));
+  const blogsYaIterados = blogs.map((blog, index) => {
+    return props.destacarPrimero && index == 0 ? (
+      <BlogDestacado blog={blog} key={blog.id} />
+    ) : (
+      <Blog blog={blog} key={blog.id} />
+    );
+  });
 
   const fetcData = () => {
     if (!loadMore) {
@@ -25,7 +30,10 @@ const SectionBlog = (props) => {
 
     idsYaUsados = idsYaUsados.length > 0 ? idsYaUsados.join() : '';
 
-    const CANTIDAD = props.cantidad;
+    const CANTIDAD =
+      props.destacarPrimero && blogs.length == 0
+        ? parseInt(props.cantidad) + 1
+        : props.cantidad;
 
     return fetch(
       `${Data.path_url}/get_trabajos_ajax?ids=${idsYaUsados}&cantidad=${CANTIDAD}`,

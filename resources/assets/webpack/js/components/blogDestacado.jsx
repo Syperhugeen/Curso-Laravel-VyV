@@ -6,12 +6,12 @@ const Blog = (props) => {
   const Post = props.blog;
 
   return (
-    <div className="col-6 col-lg-4 mb-4 ">
+    <div className="col-12 mb-5 ">
       <div className="w-100 shadow h-100">
         <img
           className="blog-card-img"
           style={{
-            height: '35vh',
+            height: '50vh',
           }}
           src={Post.url_img}
           alt={`Foto del post ${Post.name}`}
