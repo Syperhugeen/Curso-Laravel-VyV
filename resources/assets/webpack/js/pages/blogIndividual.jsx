@@ -59,7 +59,7 @@ const BlogIndividual = () => {
           >
             <div className="w-100  ">
               <div className="row mx-0 w-100">
-                <p className="col-12 my-5 text-white text-center">Cargando...</p>
+                <p className="col-12 my-5 text-white text-center">...</p>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ const Data = {
   position: 'left',
   minHeight: '100vh',
   img: Img,
-  titulo: 'Veiga & Ventós',
+  titulo: 'Veiga Ventós',
   text: 'Estudio de Ingeniería Civil',
   callToAction: 'Entrar en contacto',
   link: '/contactar',

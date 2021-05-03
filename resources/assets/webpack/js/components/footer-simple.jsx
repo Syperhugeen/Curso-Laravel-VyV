@@ -8,6 +8,7 @@ import {
   FaEnvelopeOpenText,
   FaInstagram,
   FaLinkedinIn,
+  FaFacebook,
 } from 'react-icons/fa';
 import Data from '../config/data';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
@@ -20,8 +21,8 @@ const Footer = () => {
         <div className="footer-top">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-12 col-lg-3 mb-5 mb-lg-0 ">
-                <div className="d-flex align-items-center flex-column px-5 px-lg-4 h-100 justify-content-center">
+              <div className="col-12 col-lg-3 mb-5 mb-lg-0  d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center flex-column px-5 px-lg-4 justify-content-center">
                   <Link className="" to="/">
                     <img
                       className="img-fluid mb-3"
@@ -29,9 +30,8 @@ const Footer = () => {
                       alt="logo-footer"
                     />
                   </Link>
-                  <p className="footer-p col-10 col-lg-12 text-center text-lg-left">
-                    Veiga & Ventós Estudio de ingeniería civil / Dirección y
-                    participación en proyectos de Ingeniería civil.
+                  <p className="footer-p mb-0 col-10 col-lg-12 text-center text-lg-left">
+                    Veiga Ventos – Estudio de Ingeniería Civil
                   </p>
                 </div>
               </div>
@@ -46,6 +46,7 @@ const Footer = () => {
                     to="/servicios"
                     className="footer-simple-link"
                     activeClassName="footer-simple-link__active"
+                    style={{ fontSize: '19px' }}
                   >
                     Servicios
                   </NavLink>
@@ -56,6 +57,7 @@ const Footer = () => {
                     to="/proyectos"
                     className="footer-simple-link"
                     activeClassName="footer-simple-link__active"
+                    style={{ fontSize: '19px' }}
                   >
                     Proyectos
                   </NavLink>
@@ -67,6 +69,7 @@ const Footer = () => {
                     to="/contactar"
                     className="footer-simple-link"
                     activeClassName="footer-simple-link__active"
+                    style={{ fontSize: '19px' }}
                   >
                     Contacto
                   </NavLink>
@@ -80,9 +83,8 @@ const Footer = () => {
                 <p className="footer-p">
                   <FaMobileAlt /> {`Celular:  ${Data.cellphone}`}
                 </p>
-
                 <p className="footer-p">
-                  <FaPhone /> {`Teléfono: ${Data.phone}`}
+                  <FaMobileAlt /> {`Celular:  ${Data.cellphone2}`}
                 </p>
 
                 <p className="footer-p">
@@ -100,6 +102,10 @@ const Footer = () => {
                 <p className="footer-p">
                   <FaInstagram />
                   <a href={Data.instagram_link}>{` Instagram`}</a>
+                </p>
+                <p className="footer-p">
+                  <FaFacebook />
+                  <a href={Data.facebook_link}>{` Facebook`}</a>
                 </p>
                 <p className="footer-p">
                   <FaLinkedinIn />

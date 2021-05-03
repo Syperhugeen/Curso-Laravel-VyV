@@ -65,7 +65,7 @@ const SectionBlog = (props) => {
   }, []);
 
   return (
-    <section className="w-100 py-5">
+    <section className="w-100 py-5" style={{ minHeight: '40vh' }}>
       <div className="container d-flex flex-column align-items-center my-5">
         {props.children}
 

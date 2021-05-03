@@ -36,7 +36,7 @@ const Contacto = () => {
         </div>
 
         <p className="mb-5 text-center">
-          Canales y vías de comunicación Veiga & Ventós
+          Canales y vías de comunicación de Veiga Ventós
         </p>
 
         <div className="row justify-content-center">
@@ -50,10 +50,10 @@ const Contacto = () => {
               {`. `}
             </li>
             <li className="mb-4">
-              {'Teléfono '}
-              {<FaPhone />}
-              <strong>{` ${Data.phone}`}</strong>. Celular {<FaMobileAlt />}{' '}
-              <strong>{` ${Data.cellphone}`}</strong>
+              {'Celular '}
+              {<FaMobileAlt />}
+              <strong>{` ${Data.cellphone}`}</strong> o {<FaMobileAlt />}{' '}
+              <strong>{` ${Data.cellphone1}`}</strong>
               {`. `}
             </li>
 

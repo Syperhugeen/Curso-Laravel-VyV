@@ -21,6 +21,7 @@ const Servicios = () => {
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
+
       <SectionServicios />
 
       <div className="container w-100 bg-gray-1 px-0  mb-5  shadow">
@@ -54,12 +55,42 @@ const Servicios = () => {
           </p>
           <p>
             Servicios de modelados de estructuras con software BIM (building
-            information modeling) / opcional al cliente.
+            information modeling).
           </p>
 
           <div className="">
             <Link exact to="/contactar" className="btn btn-primary  ">
               Contactar por diseño estructural
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="container w-100 bg-gray-1 px-0  mb-5  shadow">
+        <SectionImgFondo
+          data={{
+            header: 'h2',
+            position: 'center',
+            minHeight: '50vh',
+            img: ImgServicio3,
+            titulo: '',
+            text: '',
+            callToAction: '',
+            link: '',
+            opacity_value: 0.2,
+          }}
+        />
+        <div className="container py-4 px-3 px-lg-4 ">
+          <h2 className="">Ejecutivo de steel framing</h2>
+          <h3 className="mb-4 h5">
+            Comprende, además del diseño estructural, la elaboración de planos
+            de despiece y optimización de todos los elementos. Paneles,
+            entrepisos, cubiertas, cerchas.
+          </h3>
+
+          <div className="">
+            <Link exact to="/contactar" className="btn btn-primary  ">
+              Contactar por ejecutivo de steel framing
             </Link>
           </div>
         </div>
@@ -93,37 +124,7 @@ const Servicios = () => {
 
           <div className="">
             <Link exact to="/contactar" className="btn btn-primary  ">
-              Contactar por asesoriamiento en ingenierpia civil
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="container w-100 bg-gray-1 px-0  mb-5  shadow">
-        <SectionImgFondo
-          data={{
-            header: 'h2',
-            position: 'center',
-            minHeight: '50vh',
-            img: ImgServicio3,
-            titulo: '',
-            text: '',
-            callToAction: '',
-            link: '',
-            opacity_value: 0.2,
-          }}
-        />
-        <div className="container py-4 px-3 px-lg-4 ">
-          <h2 className="">Ejecutivo de steel framing</h2>
-          <h3 className="mb-4 h5">
-            Comprende, además del diseño estructural, la elaboración de planos
-            de despiece y optimización de todos los elementos. Paneles,
-            entrepisos, cubiertas, cerchas.
-          </h3>
-
-          <div className="">
-            <Link exact to="/contactar" className="btn btn-primary  ">
-              Contactar por ejecutivo de steel framing
+              Contactar por asesoriamiento en ingeniería civil
             </Link>
           </div>
         </div>

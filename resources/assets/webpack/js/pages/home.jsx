@@ -31,12 +31,12 @@ const Home = () => {
         <SectionImgFondo data={QuienesSomosData} />
         <SectionImgFondo data={ServicioData} />
         <SectionImgFondo data={ProyectosData} />
-        <BanerContacto
-          text1="Contactame ahora mismo"
-          text2="¡Sin compromiso!"
-          ok
-        />
       </div>
+      <BanerContacto
+        text1="Contactame ahora mismo"
+        text2="¡Sin compromiso!"
+        ok
+      />
     </DefaultLayout>
   );
 };

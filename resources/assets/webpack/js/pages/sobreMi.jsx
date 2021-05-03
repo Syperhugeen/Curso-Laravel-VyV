@@ -28,29 +28,30 @@ const SobreMi = () => {
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
-      <div className="container py-5">
-        <h1 className="text-center col-12 mb-5">Sobre Veiga & Ventós</h1>
+      <div className="w-100 py-5 ">
+        <div className="container  my-5 " style={{ minHeight: '40vh' }}>
+          <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+            <strong>¿Qué somos?</strong>
+          </div>
+          <h1 className="text-center col-12 mb-5">Sobre Veiga & Ventós</h1>
 
-        <div className="row mx-0">
-          <div className="col-12 px-2 px-4">
-            <p className="mb-5">
-              Veiga Ventós es un estudio de ingeniería civil fundado en el año x
-              por los hermanos <strong> Mariano y Leandro Veiga Ventós</strong>.{' '}
-              Hemos trabajado en <strong> más de 250 proyectos</strong> y
-              desarrollado un gran expertise dentro del sistema constructivo del
-              Steel Framing. Ofrecemos servicio de{' '}
-              <strong>diseño estructural</strong>,{' '}
-              <strong>soluciones y cálculos de ingeniería para obras</strong> ,
-              así como también <strong>consultoría y asesoramiento</strong>{' '}
-              profesional en <strong>ingeniería civil</strong>.
-            </p>
+          <div className="row mx-0">
+            <div className="col-12 px-2 px-4">
+              <p className="mb-5">
+                Veiga Ventós es un estudio de ingeniería civil que fundamos en
+                el año 2017 los hermanos{' '}
+                <strong>Mariano y Leandro Veiga Ventós</strong>. Hemos trabajado
+                en más de 300 proyectos y desarrollado un gran expertise dentro
+                del sistema constructivo Steel Framing.
+              </p>
 
-            <p className="mb-4">
-              Nuestra búsqueda y compromiso está orientada al crecimiento
-              organizacional por medio de la transparencia y el profesionalismo
-              y y con estos mismos atributos es que buscamos asumir nuevos
-              proyectos y desafíos de ingeniería civil.
-            </p>
+              <p className="mb-4">
+                Nuestra búsqueda y compromiso son orientados al crecimiento
+                organizacional por medio de la transparencia, los valores y el
+                profesionalismo. Con estos atributos es que llevamos adelante
+                los nuevos proyectos y desafíos de ingeniería civil.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -76,9 +77,9 @@ const SobreMi = () => {
 
             <ol className="mb-2 bg-gray-2 p-3 pl-5">
               <li className="mb-4">
-                {'Teléfono '}
-                {<FaPhone />}
-                <strong>{` ${Data.phone}`}</strong>o al {<FaMobileAlt />}{' '}
+                {'Celular '}
+                {<FaMobileAlt />}
+                <strong>{` ${Data.cellphone2}`}</strong> o al {<FaMobileAlt />}{' '}
                 <strong>{` ${Data.cellphone}`}</strong>
                 {`. Atendemos de  `}
                 <strong>{` ${Data.business_hours}`}</strong>

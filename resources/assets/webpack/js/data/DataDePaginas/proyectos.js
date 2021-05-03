@@ -9,7 +9,7 @@ const Data = {
   text: '',
   callToAction: '',
   link: '',
-  opacity_value:0.3
+  opacity_value: 0.3,
 };
 
 export default Data;

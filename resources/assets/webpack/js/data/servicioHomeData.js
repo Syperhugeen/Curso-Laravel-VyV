@@ -6,8 +6,7 @@ const Data = {
   minHeight: '100vh',
   img: Img,
   titulo: 'Servicios',
-  text:
-    'Proyectos de Ing. Civil / Diseño estructural / asesoramiento de obras y más',
+  text: 'Proyectos de Ing. Civil / Diseño estructural / Asesoramiento y más',
   callToAction: 'Conozca nuestros servicios',
   link: '/servicios',
   opacity_value: 0.4,
