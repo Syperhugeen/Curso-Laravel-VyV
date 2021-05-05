@@ -17,7 +17,7 @@ const item = (props) => {
   };
 
   return (
-    <div className="col-3 mb-4 ">
+    <div className="col-6 col-md-3 mb-4 ">
       <div
         onClick={() => {
           setAbierto((abierto = !abierto));

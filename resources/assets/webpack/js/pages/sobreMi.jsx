@@ -33,12 +33,12 @@ const SobreMi = () => {
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
-      <div className="w-100 py-5 ">
+      <div className="w-100 py-5 bg-light">
         <div className="container  mt-5 mb-3 " style={{ minHeight: '40vh' }}>
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
             <strong>¿Qué somos?</strong>
           </div>
-          <h1 className="text-center col-12 mb-5">Sobre Veiga & Ventós</h1>
+          <h1 className="text-center col-12 mb-5">Sobre Veiga Ventós</h1>
 
           <div className="row mx-0">
             <div className="col-12 px-2 px-4">
@@ -61,7 +61,7 @@ const SobreMi = () => {
         </div>
       </div>
 
-      <div className="w-100 py-3 mb-4 ">
+      <div className="w-100 py-5  ">
         <div className="container  ">
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
             <strong>¿Quiénes somos?</strong>
