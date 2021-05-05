@@ -1,15 +1,15 @@
 .item-contenedor {
-  border: 6px solid transparent;
+  border-top: 6px solid transparent;
 }
 
 .item-contenedor__active {
-  border-top-color: $secondary;
+  border-top-color: $primary;
 }
 
 .item-description {
-  font-weight: regular;
   line-height: 1.6;
-  font-size: 1.2em;
+  font-size: 14px !important;
   color: #847a7a !important;
   text-align: justify;
+  text-align: center;
 }

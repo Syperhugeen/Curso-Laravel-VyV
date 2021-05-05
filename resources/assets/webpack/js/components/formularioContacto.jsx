@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 import '../../css/components/contacto.scss';
+import { FaCheckCircle } from 'react-icons/fa';
 
-const formularioContacto = () => {
+const formularioContacto = (props) => {
   const [values, setValues] = useState({
     name: '',
     nameValidation: '',
@@ -87,7 +88,7 @@ const formularioContacto = () => {
         body: JSON.stringify(values),
       });
       const response = await rawResponse.json();
-      //99 
+      //99
 
       if (response.Validacion) {
         setSubmitted(true);
@@ -102,10 +103,13 @@ const formularioContacto = () => {
   };
 
   return submitted ? (
-    <h1 className="text-center my-5 py-5 text-success">
-      {' '}
-      Mensaje enviado correctamente 🙂 Te responderé en cuestión de minutos{' '}
-    </h1>
+    <>
+      <h1 className="text-center  mt-5 mb-2  py-5 text-success">
+        {' '}
+        Mensaje enviado correctamente <FaCheckCircle />
+      </h1>
+      <p className="text-center mb-5">En breve te responderemos. </p>
+    </>
   ) : (
     <div className="w-100 my-5  d-flex flex-column align-items-center px-3 ">
       <div className="container row mx-0 bg-light p-1 p-lg-5 shadow-sm">
@@ -190,6 +194,27 @@ const formularioContacto = () => {
             </small>
           )}
         </div>
+        {props.with_file && (
+          <div className="col-12 mb-4">
+            <fieldset className="float-label">
+              <input
+                name="message"
+                type="file"
+                className="form-control"
+                value={values.message}
+                onChange={handlerChange}
+                required
+              />
+
+              <label htmlFor="message">Mensaje</label>
+            </fieldset>
+            {values.messageValidation === false && (
+              <small className="col-12 text-danger font-weight-bold">
+                Escribe algo solo con letras y números.
+              </small>
+            )}
+          </div>
+        )}
 
         <div className="col-12  col-lg-6 mb-4">
           {errors.length > 0 && (

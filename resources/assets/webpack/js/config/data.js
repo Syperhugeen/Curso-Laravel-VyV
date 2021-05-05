@@ -8,6 +8,7 @@ const Data = {
   whatsapp_link2: 'https://api.whatsapp.com/send?phone=59899108520&text=Hola!',
   instagram_link: '',
   facebook_link: '',
+  linkedin_link: '',
   address: 'Canadá 6263',
   business_hours: 'lunes a viernes de 9 a 18 hs',
   path_url: '',

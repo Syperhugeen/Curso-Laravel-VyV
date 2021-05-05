@@ -6,6 +6,7 @@ import Data from '../config/data';
 import { Link } from 'react-router-dom';
 import '../../css/helpers/video.scss';
 import Logo from '../../img/logo-v-y-v-ingenieria.png';
+import Team from '../components/team';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/sobre';
 import ImagensBanerOficina from '../../img/Oficina/baner.jpg';
@@ -16,6 +17,10 @@ import {
   FaPhone,
   FaInstagram,
 } from 'react-icons/fa';
+
+import FotoAnalia from './../../img/Contacto/analia.jpg';
+import FotoLenadro from './../../img/Contacto/leandro.jpg';
+import FotoMariano from './../../img/Contacto/mariano.jpg';
 
 const SobreMi = () => {
   useEffect(() => {
@@ -29,7 +34,7 @@ const SobreMi = () => {
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
       <div className="w-100 py-5 ">
-        <div className="container  my-5 " style={{ minHeight: '40vh' }}>
+        <div className="container  mt-5 mb-3 " style={{ minHeight: '40vh' }}>
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
             <strong>¿Qué somos?</strong>
           </div>
@@ -52,6 +57,57 @@ const SobreMi = () => {
                 los nuevos proyectos y desafíos de ingeniería civil.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-100 py-3 mb-4 ">
+        <div className="container  ">
+          <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
+            <strong>¿Quiénes somos?</strong>
+          </div>
+          <h2 className="text-center  col-12 mb-5">Equipo de Veiga Ventós</h2>
+          <div className="row mx-0">
+            <Team
+              abierto={false}
+              data={{
+                name: 'Mariano',
+                img: FotoMariano,
+                cargo: 'Director',
+                description: 'Contar algo sobre Mariano',
+                link_linkedin: 'https://www.linkedin.com/',
+              }}
+            />
+            <Team
+              abierto={false}
+              data={{
+                name: 'Leandro',
+                img: FotoLenadro,
+                cargo: 'Director',
+                description: 'Contar algo sobre Leandro',
+                link_linkedin: 'https://www.linkedin.com/',
+              }}
+            />
+            <Team
+              abierto={false}
+              data={{
+                name: 'Analía',
+                img: FotoAnalia,
+                cargo: 'Ingeniera',
+                description: 'Contar algo sobre Analía',
+                link_linkedin: 'https://www.linkedin.com/',
+              }}
+            />
+            <Team
+              abierto={false}
+              data={{
+                name: 'Maxi',
+                img: FotoAnalia,
+                cargo: 'Ingeniera',
+                description: 'Contar algo sobre Maxi',
+                link_linkedin: 'https://www.linkedin.com/',
+              }}
+            />
           </div>
         </div>
       </div>

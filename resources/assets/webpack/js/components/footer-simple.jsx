@@ -109,7 +109,7 @@ const Footer = () => {
                 </p>
                 <p className="footer-p">
                   <FaLinkedinIn />
-                  <a href={Data.instagram_link}>{` Linkedin`}</a>
+                  <a href={Data.linkedin_link}>{` Linkedin`}</a>
                 </p>
               </div>
             </div>
