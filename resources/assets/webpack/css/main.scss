@@ -60,3 +60,8 @@ ul {
 .letter-space-lg {
   letter-spacing: 5px;
 }
+
+ul > li::marker {
+  color: $primary;
+  font-size: 1em;
+}
