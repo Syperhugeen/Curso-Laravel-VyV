@@ -35,7 +35,7 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-10 col-lg-3 px-5 px-lg-4 mb-5 mb-lg-0 ">
+              <div className="col-10 col-lg-3 px-3 px-lg-4 mb-5 mb-lg-0 ">
                 <h3 className="mb-5 footer-titulo-seccion pt-lg-3">
                   Rutas de interés
                 </h3>
@@ -75,7 +75,7 @@ const Footer = () => {
                   </NavLink>
                 </p>
               </div>
-              <div className="col-10 col-lg-3 px-5 px-lg-4 mb-5 mb-lg-0 ">
+              <div className="col-10 col-lg-3 px-3 px-lg-4 mb-5 mb-lg-0 ">
                 <h3 className="mb-5 pt-lg-3 footer-titulo-seccion">
                   Datos de contacto
                 </h3>
@@ -87,7 +87,7 @@ const Footer = () => {
                   <FaMobileAlt /> {`Celular:  ${Data.cellphone2}`}
                 </p>
 
-                <p className="footer-p">
+                <p className="footer-p ">
                   <FaWhatsapp />
                   {' Whatsapp: '}
                   <a href={Data.whatsapp_link}>{` ${Data.cellphone}`}</a>
@@ -97,7 +97,7 @@ const Footer = () => {
                   {` Email:  ${Data.email}`}
                 </p>
               </div>
-              <div className="col-10 col-lg-3 px-5 px-lg-4 mb-0 ">
+              <div className="col-10 col-lg-3 px-3 px-lg-4 mb-0 ">
                 <h3 className="mb-5 pt-lg-3 footer-titulo-seccion">Social</h3>
                 <p className="footer-p">
                   <FaInstagram />

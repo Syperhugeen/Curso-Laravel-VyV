@@ -1,4 +1,5 @@
 @import './../templateDeColores/colores.scss';
+@import '../breakpoints/breakpoints.scss';
 
 $HEADER_ALTURA: 80px;
 $BORDE_GROSOR: 4px;
@@ -12,9 +13,17 @@ $BORDE_GROSOR: 4px;
 }
 
 .header-logo-img {
-  height: $HEADER_ALTURA;
-  width: auto;
+  width: 100%;
+  height: auto;
   padding: 5px 0;
+}
+
+@media (min-width: $md) {
+  .header-logo-img {
+    height: $HEADER_ALTURA;
+    width: auto;
+    padding: 5px 0;
+  }
 }
 
 .nav-class-wraper {
