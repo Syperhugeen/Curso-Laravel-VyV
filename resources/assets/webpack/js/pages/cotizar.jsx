@@ -37,10 +37,11 @@ const Contacto = () => {
         <p className="mb-5 h2 text-center">Contacto</p>
 
         <p className="text-center ">
-          Para cotizar un proyecto con nosotros comuniquese directamente al
-          098188129 - De lo contrario puede enviarnos un mail a
-          info@veigaventos.com y un especialista se pondrá en contacto directo
-          con usted a la brevedad.
+          Para cotizar un proyecto con nosotros comuniquese directamente al{' '}
+          <FaMobileAlt />
+          {Data.cellphone} - De lo contrario puede enviarnos un mail a{' '}
+          <FaEnvelopeOpenText /> {Data.email} y un especialista se pondrá en
+          contacto directo con usted a la brevedad.
         </p>
       </div>
 

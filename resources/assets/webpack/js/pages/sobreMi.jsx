@@ -62,7 +62,7 @@ const SobreMi = () => {
       </div>
 
       <div className="w-100 py-5  ">
-        <div className="container  ">
+        <div className="container  my-5">
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
             <strong>¿Quiénes somos?</strong>
           </div>

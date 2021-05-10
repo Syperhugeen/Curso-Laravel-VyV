@@ -40,7 +40,7 @@ const Contacto = () => {
         </p>
 
         <div className="row justify-content-center">
-          <ol className="col-12 col-lg-10">
+          <ol className="pl-5 px-lg-2 col-lg-10">
             <li className="mb-4">
               {'Estamos ubicados en Carrasco. '}
               {<FaMapMarkerAlt />}
@@ -53,7 +53,7 @@ const Contacto = () => {
               {'Celular '}
               {<FaMobileAlt />}
               <strong>{` ${Data.cellphone}`}</strong> o {<FaMobileAlt />}{' '}
-              <strong>{` ${Data.cellphone1}`}</strong>
+              <strong>{` ${Data.cellphone2}`}</strong>
               {`. `}
             </li>
 
