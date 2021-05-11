@@ -109,6 +109,14 @@ const SobreMi = () => {
               }}
             />
           </div>
+          <div className="row mx-0 ">
+            <div className="col-12 mt-5 text-center">
+              ¡Sumate al equipo!{' '}
+              <Link exact to="/se-parte-de-veiga-ventos" className="">
+                Envianos tu curriculum aquí
+              </Link>{' '}
+            </div>
+          </div>
         </div>
       </div>
 

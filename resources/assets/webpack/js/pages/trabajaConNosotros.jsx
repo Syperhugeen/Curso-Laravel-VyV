@@ -20,13 +20,13 @@ const Contacto = () => {
       window.scrollTo(0, 0);
     }
     // Update the document title using the browser API
-    document.title = `Cotizar proyecto`;
+    document.title = `Formá parte del equipo de Veiga Ventós`;
   });
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
       <div className="container">
-        <h1 className=" text-center my-5">Cotizar proyecto</h1>
+        <h1 className=" text-center my-5">Formá parte de Veiga Ventós</h1>
         <p className="text-center mb-4">
           Hay un equipo listo para trabajar su proyecto.
         </p>
@@ -34,18 +34,14 @@ const Contacto = () => {
           {<ContactoTeam />}
         </div>
 
-        <p className="mb-5 h2 text-center">Contacto</p>
-
         <p className="text-center ">
-          Para cotizar un proyecto con nosotros comuniquese directamente al{' '}
-          <FaMobileAlt />
-          {Data.cellphone} - De lo contrario puede enviarnos un mail a{' '}
-          <FaEnvelopeOpenText /> {Data.email} y un especialista se pondrá en
-          contacto directo con usted a la brevedad.
+          ¿Te gustaría desarrollarte creando proyectos de ingeniería civil?{' '}
+          Dejanos tus datos junto a tu curriculum vitae, y serás un candidato
+          con preferencia cuando surgan oportunidades.
         </p>
       </div>
 
-      <FormularioContacto title="Formulario de cotización de proyecto" />
+      <FormularioContacto title="Formulario para enviar CV" with_file={true} />
     </DefaultLayout>
   );
 };

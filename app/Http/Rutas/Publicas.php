@@ -30,6 +30,11 @@ Route::get('/cotizar-proyecto', [
     'as'   => 'get_cotizar']
 );
 
+Route::get('/se-parte-de-veiga-ventos', [
+    'uses' => 'Publicas\Paginas_Controller@get_trabaja_con_nosotros',
+    'as'   => 'get_trabaja_con_nosotros']
+);
+
 //Empresa
 Route::get('/Empresa', [
     'uses' => 'Publicas\Paginas_Controller@get_pagina_empresa',

@@ -72,6 +72,17 @@ class Paginas_Controller extends Controller
         return view('paginas.webpack_compilado.index', compact('Data'));
     }
 
+    public function get_trabaja_con_nosotros()
+    {
+        $Data = [
+            'title'       => 'Formá parte del equipo de Veiga Ventós',
+            'description' => 'Si estás buscando desarrollarte creando proyectos de ingeniería civil, Veiga y Véntos es el lugar correcto para crecer.',
+            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+        ];
+
+        return view('paginas.webpack_compilado.index', compact('Data'));
+    }
+
     //servicios
     public function get_pagina_servicios()
     {
@@ -138,7 +149,7 @@ class Paginas_Controller extends Controller
     public function get_pagina_new_proyecto_listado()
     {
         $Data = [
-            'title'       => 'Proyectos',
+            'title'       => 'Proyectos de Veiga Vnetós',
             'description' => 'Trabajos de  V & V ',
             'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
         ];

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import '../../css/components/contacto.scss';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaCloudUploadAlt } from 'react-icons/fa';
 
 const formularioContacto = (props) => {
   const [values, setValues] = useState({
@@ -13,6 +13,7 @@ const formularioContacto = (props) => {
     celularValidation: '',
     message: '',
     messageValidation: '',
+    file: '',
   });
 
   const rules = {
@@ -47,6 +48,18 @@ const formularioContacto = (props) => {
     }));
   };
 
+  const handlerChangeFile = (e) => {
+    let files = e.target.files || e.dataTransfer.files;
+    if (!files.length) return;
+
+    alert('se activo');
+
+    setValues((prevState) => ({
+      ...prevState,
+      file: files[0],
+    }));
+  };
+
   const submitCheck = () => {
     let validation = true;
     const propiedades = Object.keys(rules);
@@ -75,8 +88,11 @@ const formularioContacto = (props) => {
     const csrfToken = document.head.querySelector('[name~=csrf-token][content]')
       .content;
 
+    const url =
+      props.url && props.url != '' ? props.url : '/post_contacto_form';
+
     try {
-      const rawResponse = await fetch('/post_contacto_form', {
+      const rawResponse = await fetch(url, {
         method: 'POST',
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'same-origin',
@@ -113,7 +129,7 @@ const formularioContacto = (props) => {
   ) : (
     <div className="w-100 my-5  d-flex flex-column align-items-center px-3 ">
       <div className="container row mx-0 bg-light p-1 p-lg-5 shadow-sm">
-        <h3 className="h5 col-12 my-4">Formulario de contacto</h3>
+        <h3 className="h5 col-12 my-4">{props.title}</h3>
 
         <div className="col-6 mb-4">
           <fieldset className="float-label ">
@@ -196,22 +212,20 @@ const formularioContacto = (props) => {
         </div>
         {props.with_file && (
           <div className="col-12 mb-4">
-            <fieldset className="float-label">
-              <input
-                name="message"
-                type="file"
-                className="form-control"
-                value={values.message}
-                onChange={handlerChange}
-                required
-              />
+            <input
+              name="file"
+              type="file"
+              id="file-upload"
+              className="d-none"
+              onChange={handlerChangeFile}
+              required
+            />
 
-              <label htmlFor="message">Mensaje</label>
-            </fieldset>
-            {values.messageValidation === false && (
-              <small className="col-12 text-danger font-weight-bold">
-                Escribe algo solo con letras y números.
-              </small>
+            <label htmlFor="file-upload" className="btn btn-outline-secondary">
+              <FaCloudUploadAlt /> Adjuntar archivo
+            </label>
+            {values.file != '' && (
+              <div> Hay un archivo pre cargado listo para ser adjuntado.</div>
             )}
           </div>
         )}

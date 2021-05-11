@@ -85,7 +85,7 @@ const Contacto = () => {
         </div>
       </div>
 
-      <FormularioContacto />
+      <FormularioContacto title="Formulario de contacto" />
     </DefaultLayout>
   );
 };
