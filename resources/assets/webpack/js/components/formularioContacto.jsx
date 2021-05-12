@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import '../../css/components/contacto.scss';
-import { FaCheckCircle, FaCloudUploadAlt } from 'react-icons/fa';
+import {
+  FaCheckCircle,
+  FaCloudUploadAlt,
+  FaArrowCircleLeft,
+} from 'react-icons/fa';
 
 const formularioContacto = (props) => {
   const [values, setValues] = useState({
@@ -13,8 +17,9 @@ const formularioContacto = (props) => {
     celularValidation: '',
     message: '',
     messageValidation: '',
-    file: '',
   });
+
+  const [file, setFile] = useState('');
 
   const rules = {
     name: /[A-Za-z ]{3,}/,
@@ -48,16 +53,11 @@ const formularioContacto = (props) => {
     }));
   };
 
-  const handlerChangeFile = (e) => {
+  const handlerChangeFile = async (e) => {
     let files = e.target.files || e.dataTransfer.files;
     if (!files.length) return;
 
-    alert('se activo');
-
-    setValues((prevState) => ({
-      ...prevState,
-      file: files[0],
-    }));
+    setFile(files[0]);
   };
 
   const submitCheck = () => {
@@ -73,6 +73,8 @@ const formularioContacto = (props) => {
         validation = false;
       }
     });
+
+    console.log(values.file);
 
     return validation;
   };
@@ -90,6 +92,8 @@ const formularioContacto = (props) => {
 
     const url =
       props.url && props.url != '' ? props.url : '/post_contacto_form';
+
+    formData.append('myFile', files[0]);
 
     try {
       const rawResponse = await fetch(url, {
@@ -125,6 +129,14 @@ const formularioContacto = (props) => {
         Mensaje enviado correctamente <FaCheckCircle />
       </h1>
       <p className="text-center mb-5">En breve te responderemos. </p>
+
+      <div className="row justify-content-center mb-5">
+        <Link className="" to="/">
+          <div className="btn btn-primary btn-lg ">
+            <FaArrowCircleLeft /> Regresar
+          </div>
+        </Link>
+      </div>
     </>
   ) : (
     <div className="w-100 my-5  d-flex flex-column align-items-center px-3 ">
@@ -222,10 +234,14 @@ const formularioContacto = (props) => {
             />
 
             <label htmlFor="file-upload" className="btn btn-outline-secondary">
-              <FaCloudUploadAlt /> Adjuntar archivo
+              <FaCloudUploadAlt /> Adjuntar CV
             </label>
-            {values.file != '' && (
-              <div> Hay un archivo pre cargado listo para ser adjuntado.</div>
+            {file != '' && (
+              <div>
+                <div>Hay un archivo pre cargado listo para ser adjuntado.</div>
+                <div>Nombre: {file.name}</div>
+                <div>Type: {file.type}</div>
+              </div>
             )}
           </div>
         )}

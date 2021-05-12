@@ -41,7 +41,11 @@ const Contacto = () => {
         </p>
       </div>
 
-      <FormularioContacto title="Formulario para enviar CV" with_file={true} />
+      <FormularioContacto
+        title="Formulario para enviar CV"
+        url="/post_envio_solicitud_trabajo_form"
+        with_file={true}
+      />
     </DefaultLayout>
   );
 };

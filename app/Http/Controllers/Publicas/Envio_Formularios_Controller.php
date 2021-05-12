@@ -54,42 +54,18 @@ class Envio_Formularios_Controller extends Controller
         $entidad = '';
         $manager = new envio_solicitud_trabajo_manager($entidad, $Request->all());
 
-        //si la peticion es por ajax
-        if ($Request->ajax()) {
-
-            if ($manager->isValid()) {
-
-                //envio el email de la solciitud de trabajo
-                $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
-
-                return response()->json(
-                    [
-                        'validation' => true,
-                        'mensaje'    => 'Solicitud de trabajo enviada correctamente. En breve nos contactaremos con usted.',
-
-                    ]);
-            } else {
-                return response()->json(
-                    [
-                        'validation' => false,
-                        'mensaje'    => 'Verifica lo siguiente:' . $manager->getErrors(),
-
-                    ]);
-
-            }
-        }
-
-        // si no es ajax
         if ($manager->isValid()) {
 
             //envio el email de la solciitud de trabajo
             $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
 
-            return redirect()->route('get_home')
-                ->with('alert', 'Solicitud de trabajo enviada correctamente. En breve nos contactaremos con usted. ');
+            return HelpersGenerales::formateResponseToVue(true, 'Solicitud de contacto enviada con exíto.');
+
+        } else {
+
+            return HelpersGenerales::formateResponseToVue(false, 'Upssssss! algo está mal', $manager->getErrors());
         }
 
-        return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
 
     /**
