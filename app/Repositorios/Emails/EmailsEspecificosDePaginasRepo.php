@@ -28,10 +28,8 @@ class EmailsEspecificosDePaginasRepo
         $nombre   = $Request->get('name');
         $email    = $Request->get('email');
         $mensaje  = $Request->get('message');
-        $archivo  = $Request->all();
+        $archivo  = $Request->file('file');
         $telefono = $Request->get('celular');
-
-        dd($archivo);
 
         Mail::send('emails.solicitud_trabajo',
 

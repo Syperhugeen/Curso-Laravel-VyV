@@ -74,14 +74,14 @@ const formularioContacto = (props) => {
       }
     });
 
-    console.log(values.file);
-
     return validation;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const checkInputs = submitCheck();
+
+    setErrors([]);
 
     if (checkInputs === false) {
     }
@@ -93,7 +93,18 @@ const formularioContacto = (props) => {
     const url =
       props.url && props.url != '' ? props.url : '/post_contacto_form';
 
-    formData.append('myFile', files[0]);
+    var formData = new FormData();
+
+    Object.entries(values).forEach(([key, value]) => {
+      console.log(key, ':', value);
+      formData.append(key, value);
+    });
+
+    formData.append('file', file);
+
+    console.log(file);
+
+    let data = formData;
 
     try {
       const rawResponse = await fetch(url, {
@@ -102,10 +113,10 @@ const formularioContacto = (props) => {
         credentials: 'same-origin',
         headers: {
           Accept: 'application/json',
-          'Content-Type': 'application/json',
+
           'X-CSRF-Token': csrfToken,
         },
-        body: JSON.stringify(values),
+        body: data,
       });
       const response = await rawResponse.json();
       //99
