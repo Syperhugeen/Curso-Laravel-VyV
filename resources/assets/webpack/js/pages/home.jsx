@@ -21,6 +21,9 @@ const Home = () => {
   useScrollSnap({ ref: scrollRef, duration: 10, delay: 20 });
 
   useEffect(() => {
+    if (window.scrollY != 0) {
+      window.scrollTo(0, 0);
+    }
     // Update the document title using the browser API
     document.title = `Estudio de ingeniería en Uruguay | V & V`;
   });

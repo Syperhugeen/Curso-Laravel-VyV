@@ -23,19 +23,17 @@ class EmailsEspecificosDePaginasRepo
     /**
      * Email De Contacto De usuario Conectado
      */
-    public function EnviarEmailDeSolicitudDeTrabajo($Request)
+    public function EnviarEmailDeSolicitud($request, $Subject)
     {
-        $nombre   = $Request->get('name');
-        $email    = $Request->get('email');
-        $mensaje  = $Request->get('message');
-        $archivo  = $Request->file('file');
-        $telefono = $Request->get('celular');
+        $nombre  = $request->get('name');
+        $email   = $request->get('email');
+        $archivo = $request->file('file');
 
         Mail::send('emails.solicitud_trabajo',
 
             //con esta funcion le envia los datos a la vista.
-            compact('nombre', 'email', 'mensaje', 'telefono'),
-            function ($m) use ($nombre, $email, $archivo) {
+            compact('request'),
+            function ($m) use ($nombre, $email, $archivo, $Subject) {
 
                 $m->from($email, $nombre);
 
@@ -46,41 +44,13 @@ class EmailsEspecificosDePaginasRepo
                         'mime' => $archivo->getMimeType()]);
                 }
 
-                $m->to( /*$this->getEmpresa()
-                ->email*/'mauricio@worldmaster.com.uy',
-                    $this->getEmpresa()
-                        ->name)->subject('Solicitud de trabajo de ' . $nombre);
-            }
-        );
-
-    }
-
-    public function EnviarEmailDeSolicitudDeCotizacion($Request)
-    {
-        $nombre   = $Request->get('name');
-        $email    = $Request->get('email');
-        $mensaje  = $Request->get('mensaje');
-        $archivo  = $Request->file('file');
-        $telefono = $Request->get('telefono');
-
-        Mail::send('emails.solicitud_cotizacion',
-
-            //con esta funcion le envia los datos a la vista.
-            compact('nombre', 'email', 'mensaje', 'telefono'),
-            function ($m) use ($nombre, $email, $archivo) {
-
-                $m->from($email, $nombre);
-
-                $m->attach($archivo->getRealPath(), [
-                    'as'   => $archivo->getClientOriginalName(),
-                    'mime' => $archivo->getMimeType()]);
-
                 $m->to($this->getEmpresa()
                         ->email,
                     $this->getEmpresa()
-                        ->name)->subject('Solicitud de cotización de ' . $nombre);
+                        ->name)->subject($Subject);
             }
         );
 
     }
+
 }

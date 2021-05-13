@@ -45,7 +45,11 @@ const Contacto = () => {
         </p>
       </div>
 
-      <FormularioContacto title="Formulario de cotización de proyecto" />
+      <FormularioContacto
+        title="Formulario de cotización de proyecto"
+        url="/post_envio_solicitud_cotizacion_proyecto_form"
+        with_file={true}
+      />
     </DefaultLayout>
   );
 };

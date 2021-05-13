@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../css/components/contacto.scss';
+import Sweetalert from 'sweetalert';
 import {
   FaCheckCircle,
   FaCloudUploadAlt,
@@ -124,6 +125,12 @@ const formularioContacto = (props) => {
       if (response.Validacion) {
         setSubmitted(true);
         setLoading(false);
+        Sweetalert({
+          title: '¡Buen trabajo!',
+          text: '¡Mensaje enviado con éxito!',
+          icon: 'success',
+          button: 'Seguir navegando',
+        });
       } else {
         setLoading(false);
         setErrors(Object.values(response.Data));
@@ -135,18 +142,20 @@ const formularioContacto = (props) => {
 
   return submitted ? (
     <>
-      <h1 className="text-center  mt-5 mb-2  py-5 text-success">
-        {' '}
-        Mensaje enviado correctamente <FaCheckCircle />
-      </h1>
-      <p className="text-center mb-5">En breve te responderemos. </p>
+      <div className="my-5 p-4 bg-gray-1 border border-primary">
+        <h1 className="text-center h4 mb-2  text-success">
+          {' '}
+          Mensaje enviado correctamente <FaCheckCircle />
+        </h1>
+        <p className="text-center mb-5">En breve te responderemos. </p>
 
-      <div className="row justify-content-center mb-5">
-        <Link className="" to="/">
-          <div className="btn btn-primary btn-lg ">
-            <FaArrowCircleLeft /> Regresar
-          </div>
-        </Link>
+        <div className="row justify-content-center">
+          <Link className="" to="/">
+            <div className="btn btn-primary btn-lg ">
+              <FaArrowCircleLeft /> Regresar
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   ) : (

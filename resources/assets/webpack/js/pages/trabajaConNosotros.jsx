@@ -27,12 +27,6 @@ const Contacto = () => {
       <SectionImgFondo data={DataPortada} />
       <div className="container">
         <h1 className=" text-center my-5">Formá parte de Veiga Ventós</h1>
-        <p className="text-center mb-4">
-          Hay un equipo listo para trabajar su proyecto.
-        </p>
-        <div className="w-100 d-flex flex-column align-items-center mb-4">
-          {<ContactoTeam />}
-        </div>
 
         <p className="text-center ">
           ¿Te gustaría desarrollarte creando proyectos de ingeniería civil?{' '}

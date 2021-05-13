@@ -27,37 +27,73 @@ class Envio_Formularios_Controller extends Controller
         $this->EmailsEspecificosDePaginasRepo = $EmailsEspecificosDePaginasRepo;
     }
 
+    public function dataFooterEmail()
+    {
+        return [
+
+            [
+                'url'  => route('get_new_empresa'),
+                'name' => 'Acerca de Veiga y Ventós',
+            ],
+            [
+                'url'  => route('get_pagina_new_servicios'),
+                'name' => 'Servicios',
+            ],
+            [
+                'url'  => route('get_pagina_new_proyecto_listado'),
+                'name' => 'Proyectos realizados',
+            ],
+            [
+                'url'  => route('get_new_contactar'),
+                'name' => 'Contactar',
+            ],
+
+        ];
+    }
+
     public function post_contacto_form(Request $Request)
     {
-        $entidad = '';
-        $manager = new envio_contacto_manager($entidad, $Request->all());
+
+        $manager = new envio_contacto_manager(null, $Request->all());
+
+        //Agrego Data para el email
+        $Request->attributes->add(['Color_principal' => '#4a9fff']);
+        $Request->attributes->add(['Logo_url' => 'https://www.veigaventos.com/imagenes/Empresa/logo_cuadrado.png']);
+        $Request->attributes->add(['Color_fondo' => 'transparent']);
+        $Request->attributes->add(['Titulo' => 'Contacto de ' . $Request->get('name')]);
+        $Request->attributes->add(['EmpresaName' => 'Estudio de ingeniería Veiga y Ventós']);
+        $Request->attributes->add(['Data_footer' => $this->dataFooterEmail()]);
 
         if ($manager->isValid()) {
 
             //envio el email de la solciitud de trabajo
-            $this->EmailsRepo->EnvioEmailDeContacto($Request);
+            $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitud($Request, 'Contacto por web de  ' . $Request->get('name'));
 
             return HelpersGenerales::formateResponseToVue(true, 'Solicitud de contacto enviada con exíto.');
 
         } else {
 
             return HelpersGenerales::formateResponseToVue(false, 'Upssssss! algo está mal', $manager->getErrors());
-
         }
-
-        return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
 
     public function post_envio_solicitud_trabajo_form(Request $Request)
     {
 
-        $entidad = '';
-        $manager = new envio_solicitud_trabajo_manager($entidad, $Request->all());
+        $manager = new envio_solicitud_trabajo_manager(null, $Request->all());
+
+        //Agrego Data para el email
+        $Request->attributes->add(['Color_principal' => '#4a9fff']);
+        $Request->attributes->add(['Logo_url' => 'https://www.veigaventos.com/imagenes/Empresa/logo_cuadrado.png']);
+        $Request->attributes->add(['Color_fondo' => 'transparent']);
+        $Request->attributes->add(['Titulo' => $Request->get('name') . ' CV.']);
+        $Request->attributes->add(['EmpresaName' => 'Estudio de ingeniería Veiga y Ventós']);
+        $Request->attributes->add(['Data_footer' => $this->dataFooterEmail()]);
 
         if ($manager->isValid()) {
 
             //envio el email de la solciitud de trabajo
-            $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeTrabajo($Request);
+            $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitud($Request, 'CV de ' . $Request->get('name'));
 
             return HelpersGenerales::formateResponseToVue(true, 'Solicitud de contacto enviada con exíto.');
 
@@ -73,46 +109,27 @@ class Envio_Formularios_Controller extends Controller
      */
     public function post_envio_solicitud_cotizacion_proyecto_form(Request $Request)
     {
+        $manager = new envio_contacto_manager(null, $Request->all());
 
-        $entidad = '';
-        $manager = new envio_solicitud_trabajo_manager($entidad, $Request->all());
-
-        //si la peticion es por ajax
-        if ($Request->ajax()) {
-
-            if ($manager->isValid()) {
-
-                //envio el email de la solciitud de trabajo
-                $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeCotizacion($Request);
-
-                return response()->json(
-                    [
-                        'validation' => true,
-                        'mensaje'    => 'Solicitud de cotización de proyecto enviada correctamente. En breve nos contactaremos con usted. ',
-
-                    ]);
-            } else {
-                return response()->json(
-                    [
-                        'validation' => false,
-                        'mensaje'    => 'Verifica lo siguiente:' . $manager->getErrors(),
-
-                    ]
-                );
-
-            }
-        }
+        //Agrego Data para el email
+        $Request->attributes->add(['Color_principal' => '#4a9fff']);
+        $Request->attributes->add(['Logo_url' => 'https://www.veigaventos.com/imagenes/Empresa/logo_cuadrado.png']);
+        $Request->attributes->add(['Color_fondo' => 'transparent']);
+        $Request->attributes->add(['Titulo' => 'Cotizar proyecto para ' . $Request->get('name')]);
+        $Request->attributes->add(['EmpresaName' => 'Estudio de ingeniería Veiga y Ventós']);
+        $Request->attributes->add(['Data_footer' => $this->dataFooterEmail()]);
 
         if ($manager->isValid()) {
 
             //envio el email de la solciitud de trabajo
-            $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitudDeCotizacion($Request);
+            $this->EmailsEspecificosDePaginasRepo->EnviarEmailDeSolicitud($Request, 'Cotizar proyecto a  ' . $Request->get('name'));
 
-            return redirect()->route('get_home')
-                ->with('alert', 'Solicitud de cotización de proyecto enviada correctamente. En breve nos contactaremos con usted. ');
+            return HelpersGenerales::formateResponseToVue(true, 'Solicitud de contacto enviada con exíto.');
+
+        } else {
+
+            return HelpersGenerales::formateResponseToVue(false, 'Upssssss! algo está mal', $manager->getErrors());
         }
-
-        return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
 
 }
