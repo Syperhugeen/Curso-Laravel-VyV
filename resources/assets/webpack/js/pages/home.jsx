@@ -11,7 +11,6 @@ import ServicioData from '../data/servicioHomeData';
 import QuienesSomosData from '../data/QuienesSomosData';
 import ProyectosData from '../data/ProyectosData';
 import useScrollSnap from 'react-use-scroll-snap';
-import scrollSanpPolyfill from 'css-scroll-snap-polyfill';
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -23,9 +22,7 @@ const Home = () => {
     }
     // Update the document title using the browser API
     document.title = `Estudio de ingeniería en Uruguay | V & V`;
-
-    scrollSanpPolyfill();
-  });
+  }, []);
 
   return (
     <DefaultLayout>
