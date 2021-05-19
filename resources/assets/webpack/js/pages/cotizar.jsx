@@ -34,7 +34,7 @@ const Contacto = () => {
           {<ContactoTeam />}
         </div>
 
-        <p className="mb-5 h2 text-center">Contacto</p>
+        <p className="mb-5 h2 text-center text-dark">Contacto</p>
 
         <p className="text-center ">
           Para cotizar un proyecto con nosotros comuniquese directamente al{' '}
