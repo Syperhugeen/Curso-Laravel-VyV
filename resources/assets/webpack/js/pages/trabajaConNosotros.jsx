@@ -31,7 +31,7 @@ const Contacto = () => {
         <p className="text-center ">
           ¿Te gustaría desarrollarte creando proyectos de ingeniería civil?{' '}
           Dejanos tus datos junto a tu curriculum vitae, y serás un candidato
-          con preferencia cuando surgan oportunidades.
+          con preferencia cuando surjan oportunidades.
         </p>
       </div>
 

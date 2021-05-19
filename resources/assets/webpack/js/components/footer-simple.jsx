@@ -17,8 +17,8 @@ import '../../css/components/footerSimple.scss';
 const Footer = () => {
   return (
     <>
-      <footer className="py-5 border-top bg-dark border-primary">
-        <div className="footer-top">
+      <footer className="py-5 border-top bg-dark border-primary footer-container row mx-0 align-items-center justify-content-center">
+        <div className="footer-top w-100">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-12 col-lg-3 mb-5 mb-lg-0  d-flex align-items-center justify-content-center">
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="w-100 py-3 bg-gray-9">
+      <div className="w-100 py-3 bg-gray-9 footer-container-firma row mx-0 align-items-center justify-content-center">
         <div className="container">
           <div className="row">
             <div className="col-12">

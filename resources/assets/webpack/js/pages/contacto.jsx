@@ -27,20 +27,20 @@ const Contacto = () => {
       <SectionImgFondo data={DataPortada} />
       <div className="container">
         <h1 className=" text-center my-5">¿Hablamos?</h1>
-        <p className="text-center mb-4">
+        <p className="text-center mb-5">
           Hay un equipo listo para <strong>cotizar su proyecto</strong> y
           atender sus consultas.
         </p>
-        <div className="w-100 d-flex flex-column align-items-center mb-4">
+        <div className="w-100 d-flex flex-column align-items-center mb-5">
           {<ContactoTeam />}
         </div>
 
-        <p className="mb-5 text-center">
+        <p className="mb-5 pb-2 text-center">
           Canales y vías de comunicación de Veiga Ventós
         </p>
 
         <div className="row justify-content-center">
-          <ol className="pl-5 px-lg-2 col-lg-10">
+          <ul className="pl-5 px-lg-2 col-lg-10">
             <li className="mb-4">
               {'Estamos ubicados en Carrasco. '}
               {<FaMapMarkerAlt />}
@@ -81,7 +81,7 @@ const Contacto = () => {
             nuestro equipo de trabajo`}
               .
             </li>
-          </ol>
+          </ul>
         </div>
       </div>
 

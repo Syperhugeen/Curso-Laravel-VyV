@@ -40,15 +40,15 @@ const Contacto = () => {
           Para cotizar un proyecto con nosotros comuniquese directamente al{' '}
           <FaMobileAlt />
           {Data.cellphone} - De lo contrario puede enviarnos un mail a{' '}
-          <FaEnvelopeOpenText /> {Data.email} y un especialista se pondrá en
-          contacto directo con usted a la brevedad.
+          <FaEnvelopeOpenText /> {Data.email} o llenar el siguiente formulario y
+          un especialista se pondrá en contacto directo con usted a la brevedad.
         </p>
       </div>
 
       <FormularioContacto
         title="Formulario de cotización de proyecto"
         url="/post_envio_solicitud_cotizacion_proyecto_form"
-        with_file={true}
+        with_file={false}
       />
     </DefaultLayout>
   );

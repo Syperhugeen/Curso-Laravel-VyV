@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Logo from '../../img/Iconos/presupuesto.png';
+import '../../css/components/contactoBaner.scss';
 
 const BanerContacto = (props) => (
-  <div className="w-100 py-5 ">
+  <div
+    className="row mx-0 w-100 py-5 baner-contacto-contenedor align-items-center"
+    style={{ scrollSnapAlign: 'start' }}
+  >
     <div className="container py-4 p-lg-2">
       <div className="row mx-0 justify-content-center">
         <div className="col-12 col-lg-10 text-left align-self-center text-intro p-lg-4">
@@ -28,7 +32,7 @@ const BanerContacto = (props) => (
               </p>
             </div>
             <div className="col-12 col-lg-4">
-              <Link to="/cotizar-proyecto">
+              <Link exact to="/cotizar-proyecto">
                 <div className="btn btn-outline-primary btn-lg  w-100 text-uppercase">
                   Cotizar proyecto
                 </div>

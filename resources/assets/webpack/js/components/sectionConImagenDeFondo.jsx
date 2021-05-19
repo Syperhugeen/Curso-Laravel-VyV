@@ -20,7 +20,7 @@ const SectionConImagenDeFondo = (props) => {
       : 'align-items-end';
 
   return (
-    <section className="w-100  bg-gray-1 position-relative">
+    <section className="w-100  bg-gray-1 position-relative ">
       <div className="contenedor d-flex flex-row align-items-center justify-content-center">
         <div className="py-3 py-5 w-100">
           <div
@@ -51,6 +51,7 @@ const SectionConImagenDeFondo = (props) => {
 
             {Data.link != '' && (
               <Link
+                exact
                 to={Data.link}
                 className="btn btn-primary btn-xl text-uppercase"
               >

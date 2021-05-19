@@ -5,7 +5,7 @@ import Data from '../config/data';
 
 const Footer = () => {
   return (
-    <footer className="w-100 position-relative">
+    <footer className="w-100 position-relative contenedor-footer">
       <div className="w-100 py-5  bg-gray-1">
         <div className="container">
           <div className="row">

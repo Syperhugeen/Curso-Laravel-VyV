@@ -11,12 +11,9 @@ import ServicioData from '../data/servicioHomeData';
 import QuienesSomosData from '../data/QuienesSomosData';
 import ProyectosData from '../data/ProyectosData';
 import useScrollSnap from 'react-use-scroll-snap';
+import scrollSanpPolyfill from 'css-scroll-snap-polyfill';
 
 const Home = () => {
-  const prevScrollY = useRef(0);
-  const [goingUp, setGoingUp] = useState(false);
-  const [muestra, setMuestra] = useState(false);
-
   const scrollRef = useRef(null);
   useScrollSnap({ ref: scrollRef, duration: 10, delay: 20 });
 
@@ -26,6 +23,8 @@ const Home = () => {
     }
     // Update the document title using the browser API
     document.title = `Estudio de ingeniería en Uruguay | V & V`;
+
+    scrollSanpPolyfill();
   });
 
   return (
@@ -34,12 +33,11 @@ const Home = () => {
         <SectionImgFondo data={QuienesSomosData} />
         <SectionImgFondo data={ServicioData} />
         <SectionImgFondo data={ProyectosData} />
+        <BanerContacto
+          text1="Contactame ahora mismo"
+          text2="¡Sin compromiso!"
+        />
       </div>
-      <BanerContacto
-        text1="Contactame ahora mismo"
-        text2="¡Sin compromiso!"
-        ok
-      />
     </DefaultLayout>
   );
 };

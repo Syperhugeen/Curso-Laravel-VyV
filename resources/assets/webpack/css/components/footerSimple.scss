@@ -1,4 +1,20 @@
 @import './../templateDeColores/colores.scss';
+@import '../breakpoints/breakpoints.scss';
+@import '../breakpoints/containeMaxWidth';
+
+@media (min-width: $lg) {
+  .footer-container {
+    height: 45vh;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .footer-container-firma {
+    height: 10vh;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
 
 .footer-titulo-seccion {
   font-size: 26px;

@@ -42,19 +42,16 @@ const SobreMi = () => {
 
           <div className="row mx-0">
             <div className="col-12 px-2 px-4">
-              <p className="mb-5">
+              <p className="mb-5 text-center">
                 Veiga Ventós es un estudio de ingeniería civil que fundamos en
                 el año 2017 los hermanos{' '}
                 <strong>Mariano y Leandro Veiga Ventós</strong>. Hemos trabajado
                 en más de 300 proyectos y desarrollado un gran expertise dentro
-                del sistema constructivo Steel Framing.
-              </p>
-
-              <p className="mb-4">
-                Nuestra búsqueda y compromiso son orientados al crecimiento
-                organizacional por medio de la transparencia, los valores y el
-                profesionalismo. Con estos atributos es que llevamos adelante
-                los nuevos proyectos y desafíos de ingeniería civil.
+                del sistema constructivo Steel Framing. Nuestra búsqueda y
+                compromiso esta orientado al crecimiento organizacional por
+                medio de la transparencia y el profesionalismo y con estos
+                mismos valores y atributos llevamos adelante cada uno de
+                nuestros proyectos y desafíos de ingeniería civil.
               </p>
             </div>
           </div>
@@ -137,9 +134,11 @@ const SobreMi = () => {
       <div className="container py-5 ">
         <div className="row mx-0">
           <div className="col-12 px-2 px-4">
-            <p className="mb-5 h1 text-center">Contacto</p>
+            <p className="mb-5 h1 text-center text-dark">
+              <b>Contacto</b>
+            </p>
 
-            <ol className="mb-2 bg-gray-2 p-3 pl-5">
+            <ul className="mb-2  p-3 pl-5">
               <li className="mb-4">
                 {'Celular '}
                 {<FaMobileAlt />}
@@ -174,7 +173,7 @@ const SobreMi = () => {
                 </Link>{' '}
                 .
               </li>
-            </ol>
+            </ul>
 
             <p className="my-5 text-center">
               Siga nuestros proyectos en{' '}
