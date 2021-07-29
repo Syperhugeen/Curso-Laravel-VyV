@@ -5,6 +5,8 @@ import '../../css/components/sectionConImagenDeFondo.scss';
 const SectionConImagenDeFondo = (props) => {
   const Data = props.data;
 
+  const Width = window.screen.width;
+
   const positionText =
     Data.position === 'left'
       ? ''
@@ -53,7 +55,9 @@ const SectionConImagenDeFondo = (props) => {
               <Link
                 exact
                 to={Data.link}
-                className="btn btn-primary btn-xl text-uppercase"
+                className={`${
+                  Width > 600 ? 'btn-xl' : ''
+                } btn btn-primary  text-uppercase`}
               >
                 {Data.callToAction}
               </Link>
@@ -66,6 +70,7 @@ const SectionConImagenDeFondo = (props) => {
         src={Data.img}
         style={{ height: Data.minHeight }}
         alt=""
+        height={Data.minHeight}
       />
       <div
         className="opasity-layer"

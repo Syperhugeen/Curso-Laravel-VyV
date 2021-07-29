@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <DefaultLayout>
-      <div ref={scrollRef}>
+      <div className="w-100" ref={scrollRef}>
         <SectionImgFondo data={QuienesSomosData} />
         <SectionImgFondo data={ServicioData} />
         <SectionImgFondo data={ProyectosData} />

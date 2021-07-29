@@ -58,6 +58,20 @@ const SobreMi = () => {
         </div>
       </div>
 
+      <SectionImgFondo
+        data={{
+          header: 'h2',
+          position: 'center',
+          minHeight: '50vh',
+          img: ImagensBanerOficina,
+          titulo: '',
+          text: '',
+          callToAction: '',
+          link: '',
+          opacity_value: 0.2,
+        }}
+      />
+
       <div className="w-100 py-5  ">
         <div className="container  my-5">
           <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
@@ -116,20 +130,6 @@ const SobreMi = () => {
           </div>
         </div>
       </div>
-
-      <SectionImgFondo
-        data={{
-          header: 'h2',
-          position: 'center',
-          minHeight: '50vh',
-          img: ImagensBanerOficina,
-          titulo: '',
-          text: '',
-          callToAction: '',
-          link: '',
-          opacity_value: 0.2,
-        }}
-      />
 
       <div className="container py-5 ">
         <div className="row mx-0">
