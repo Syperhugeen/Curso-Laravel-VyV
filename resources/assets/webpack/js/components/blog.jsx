@@ -25,7 +25,7 @@ const Blog = (props) => {
           />
         </Link>
         <div className="w-100 py-4 p-3">
-          <h5 className="h5 mb-2">{`${Post.name.slice(0, 30)} ...`}</h5>
+          <h5 className="h6 mb-3">{`${Post.name.slice(0, 30)} ...`}</h5>
 
           <Link
             className="btn btn-primary"
