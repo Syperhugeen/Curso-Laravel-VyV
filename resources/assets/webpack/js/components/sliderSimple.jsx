@@ -41,7 +41,8 @@ const SliderSimple = ({ images, height, opacity }) => {
   return (
     <>
       {!loaded ? (
-        <div className="container my-3 pt-4" style={{ height: height }}>
+        <div className="container my-3 pt-5" style={{ height: height }}>
+          <div className="pt-3 w-100"></div>
           <div className="w-100 mt-5 mb-2 ">
             <Skeleton count={1} />
           </div>
