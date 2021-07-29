@@ -41,7 +41,20 @@ const SliderSimple = ({ images, height, opacity }) => {
   return (
     <>
       {!loaded ? (
-        <div className="container my-3" style={{ height: height }}></div>
+        <div className="container my-3" style={{ height: height }}>
+          <div className="w-100 mb-2 ">
+            <Skeleton count={3} />
+          </div>
+          <div className="w-100 mb-2 ">
+            <Skeleton count={3} />
+          </div>
+          <div className="w-100 mb-2 ">
+            <Skeleton count={3} />
+          </div>
+          <div className="w-100 mb-2 ">
+            <Skeleton count={3} />
+          </div>
+        </div>
       ) : (
         <div className="slider">
           <button className="slider-simple-before" onClick={slideLeft}>
