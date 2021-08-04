@@ -21,6 +21,7 @@ import {
 import FotoAnalia from './../../img/Contacto/analia.jpg';
 import FotoLenadro from './../../img/Contacto/leandro.jpg';
 import FotoMariano from './../../img/Contacto/mariano.jpg';
+import FotoMaxi from './../../img/Contacto/maxi.jpg';
 
 const SobreMi = () => {
   useEffect(() => {
@@ -84,9 +85,10 @@ const SobreMi = () => {
               data={{
                 name: 'Mariano',
                 img: FotoMariano,
-                cargo: 'Director',
-                description: 'Contar algo sobre Mariano',
-                link_linkedin: 'https://www.linkedin.com/',
+                cargo: 'Ing Civil',
+                description: 'Fundador y Director de Veiga Ventós',
+                link_linkedin:
+                  'https://www.linkedin.com/in/mariano-veiga-2154a9b3/',
               }}
             />
             <Team
@@ -94,9 +96,10 @@ const SobreMi = () => {
               data={{
                 name: 'Leandro',
                 img: FotoLenadro,
-                cargo: 'Director',
-                description: 'Contar algo sobre Leandro',
-                link_linkedin: 'https://www.linkedin.com/',
+                cargo: 'Ing Civil',
+                description: 'Fundador y Director de Veiga Ventós',
+                link_linkedin:
+                  'https://www.linkedin.com/company/v-v-ingenieria/?viewAsMember=true',
               }}
             />
             <Team
@@ -104,19 +107,21 @@ const SobreMi = () => {
               data={{
                 name: 'Analía',
                 img: FotoAnalia,
-                cargo: 'Ingeniera',
-                description: 'Contar algo sobre Analía',
-                link_linkedin: 'https://www.linkedin.com/',
+                cargo: 'Arquitecta ',
+                description: '',
+                link_linkedin:
+                  'https://www.linkedin.com/in/anal%C3%ADa-l%C3%B3pez-92257a155/',
               }}
             />
             <Team
               abierto={false}
               data={{
                 name: 'Maxi',
-                img: FotoAnalia,
-                cargo: 'Ingeniera',
-                description: 'Contar algo sobre Maxi',
-                link_linkedin: 'https://www.linkedin.com/',
+                img: FotoMaxi,
+                cargo: 'Arquitecto',
+                description: '',
+                link_linkedin:
+                  'https://www.linkedin.com/company/v-v-ingenieria/?viewAsMember=true',
               }}
             />
           </div>
