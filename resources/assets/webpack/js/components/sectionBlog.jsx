@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import Blog from './blog';
+import Proyecto from './proyecto';
 import BlogDestacado from './blogDestacado';
 import Data from '../config/data';
 
@@ -12,6 +13,8 @@ const SectionBlog = (props) => {
   const blogsYaIterados = blogs.map((blog, index) => {
     return props.destacarPrimero && index == 0 ? (
       <BlogDestacado blog={blog} key={blog.id} />
+    ) : props.formato == 'galeria' ? (
+      <Proyecto blog={blog} key={blog.id} />
     ) : (
       <Blog blog={blog} key={blog.id} />
     );
@@ -66,14 +69,28 @@ const SectionBlog = (props) => {
 
   return (
     <section className="w-100 py-5" style={{ minHeight: '40vh' }}>
-      <div className="container d-flex flex-column align-items-center my-5">
+      <div
+        className={`${
+          props.formato == 'galeria' ? ' ' : 'container'
+        }  d-flex flex-column align-items-center my-5`}
+      >
         {props.children}
 
-        <div className="row col-12 col-lg-8 mx-0">{blogsYaIterados}</div>
+        <div
+          className={`row ${
+            props.formato == 'galeria'
+              ? 'w-100 bg-primary p-1 mt-5'
+              : 'container col-12 col-lg-8 mx-0'
+          }   `}
+        >
+          {blogsYaIterados}
+        </div>
 
         {loading && (
-          <div className="w-100 mb-5 ">
-            <Skeleton count={5} />
+          <div className="container my-5">
+            <div className="w-100 ">
+              <Skeleton count={3} />
+            </div>
           </div>
         )}
 
