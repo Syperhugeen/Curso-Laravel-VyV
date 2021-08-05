@@ -13,12 +13,12 @@ const Proyecto = (props) => {
       className="col-6 col-lg-4 p-1"
       style={loaded ? {} : { display: 'none' }}
     >
-      <div className="w-100 shadow h-100 position-relative img-hover">
+      <div className="w-100 shadow h-100 position-relative ">
         <Link
           to={`/proyectos/${Post.name.replace(ValidarURL, '-')}/${Post.id}`}
         >
           <img
-            className="blog-card-img "
+            className="blog-card-img img-hover"
             style={loaded ? { height: '35vh' } : { display: 'none' }}
             src={Post.url_img}
             alt={`Foto del post ${Post.name}`}
@@ -26,7 +26,7 @@ const Proyecto = (props) => {
           />
         </Link>
         <div style={{ position: 'absolute', bottom: '0', left: '0' }}>
-          <div className="w-100  p-3">
+          <div className=" img-name-layer-opasity p-3">
             <Link
               to={`/proyectos/${Post.name.replace(ValidarURL, '-')}/${Post.id}`}
             >
