@@ -108,7 +108,7 @@ const SobreMi = () => {
                 name: 'Analía',
                 img: FotoAnalia,
                 cargo: 'Arquitecta ',
-                description: '',
+                description: 'Encargada de proyectos',
                 link_linkedin:
                   'https://www.linkedin.com/in/anal%C3%ADa-l%C3%B3pez-92257a155/',
               }}
@@ -119,7 +119,7 @@ const SobreMi = () => {
                 name: 'Maxi',
                 img: FotoMaxi,
                 cargo: 'Arquitecto',
-                description: '',
+                description: 'Encargado de proyectos',
                 link_linkedin:
                   'https://www.linkedin.com/company/v-v-ingenieria/?viewAsMember=true',
               }}

@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Entidades\User;
-use Validator;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
-use App\Repositorios\UserRepo;
 use App\Managers\Users\user_registro;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
 use App\Repositorios\Emails\EmailsRepo;
+use App\Repositorios\UserRepo;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Validator;
 
 class AuthController extends Controller
 {
@@ -23,7 +23,7 @@ class AuthController extends Controller
     | authentication of existing users. By default, this controller uses
     | a simple trait to add these behaviors. Why don't you explore it?
     |
-    */
+     */
 
     use AuthenticatesAndRegistersUsers;
 
@@ -35,10 +35,9 @@ class AuthController extends Controller
      *
      * @return void
      */
-    public function __construct(UserRepo  $UserRepo,
-                               EmailsRepo $EmailsRepo )
-    {
-        $this->UserRepo   = $UserRepo;
+    public function __construct(UserRepo $UserRepo,
+        EmailsRepo $EmailsRepo) {
+        $this->UserRepo = $UserRepo;
         $this->middleware('guest', ['except' => 'getLogout']);
         $this->EmailsRepo = $EmailsRepo;
     }
@@ -52,8 +51,8 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
+            'name'     => 'required|max:255',
+            'email'    => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);
     }
@@ -67,13 +66,11 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
+            'name'     => $data['name'],
+            'email'    => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
     }
-
-
 
     /**
      * Handle a registration request for the application.
@@ -85,26 +82,19 @@ class AuthController extends Controller
     {
 
         $user    = $this->UserRepo->getEntidad();
-        $manager = new user_registro($user,$request->all());
+        $manager = new user_registro($user, $request->all());
 
         //verifica si paso la validación o no
-        if ($manager->isValid())
-        {
-         //me traigo la funcion del repositorio UserRepo y ya Hago el Login de ese Usuario   
-         Auth::login($this->UserRepo->setUserRegistro($user,$request)); 
+        if ($manager->isValid()) {
+            //me traigo la funcion del repositorio UserRepo y ya Hago el Login de ese Usuario
+            Auth::login($this->UserRepo->setUserRegistro($user, $request));
 
-         return redirect()->route('get_home')
-                          ->with('alert' , $user->name . ' Ve a tu Email: ' . $user->email .' y verifica tu cuenta');      
-        }  
+            return redirect()->route('get_home')
+                ->with('alert', $user->name . ' Ve a tu Email: ' . $user->email . ' y verifica tu cuenta');
+        }
 
-        
         return redirect()->back()->withErrors($manager->getErrors())->withInput($manager->getData());
     }
-
-    
-
-
-
 
     /**
      * Get the path to the login route.
@@ -113,6 +103,7 @@ class AuthController extends Controller
      */
     public function loginPath()
     {
+
         return route('auth_login_get');
     }
 
@@ -126,7 +117,7 @@ class AuthController extends Controller
         return route('get_datos_corporativos');
     }
 
-     /**
+    /**
      * Get the failed login message.
      *
      * @return string
@@ -152,7 +143,7 @@ class AuthController extends Controller
         }
 
         $credentials = $this->getCredentials($request);
-        
+
         if (Auth::attempt($credentials, true)) {
             return $this->handleUserWasAuthenticated($request, $throttles);
         }
@@ -170,10 +161,5 @@ class AuthController extends Controller
                 $this->loginUsername() => $this->getFailedLoginMessage(),
             ]);
     }
-
-
-    
-
-    
 
 }

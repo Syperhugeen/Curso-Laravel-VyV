@@ -16,7 +16,7 @@ const Contacto = () => {
   return (
     <DefaultLayout>
       <SectionImgFondo data={DataPortada} />
-      <SectionBlog formato="galeria" cantidad="3" destacarPrimero={false}>
+      <SectionBlog formato="galeria" cantidad="9" destacarPrimero={false}>
         {' '}
         <div className="text-center text-secondary text-uppercase mb-1 letter-space-lg">
           <strong>Trabajos realizados</strong>
