@@ -1,6 +1,10 @@
 @import '../breakpoints/breakpoints.scss';
 @import '../breakpoints/containeMaxWidth';
 
+.baner-contacto-contenedor {
+  height: 100vh;
+}
+
 @media (min-width: $lg) {
   .baner-contacto-contenedor {
     height: 45vh;

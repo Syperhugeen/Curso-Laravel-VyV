@@ -1,3 +1,8 @@
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+
 const Data = {
   name: 'Veiga Ventos ingeniería',
   email: 'info@veigaventos.com',
@@ -16,6 +21,7 @@ const Data = {
   path_url: '',
   analitic_propiedad: 'G-502W399V58',
   set_analitic: function (titulo, path) {
+    gtag('js', new Date());
     gtag('config', this.analitic_propiedad, {
       page_title: titulo,
       page_path: path,

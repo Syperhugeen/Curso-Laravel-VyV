@@ -9,7 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title>{{$Data['title']}}</title>
-    @include('layouts.user_layout.analitics.codigo')
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-502W399V58"
+    ></script>
+
     <meta name="description" content="{{$Data['description']}}" />
     <meta name="robots" content="index,follow" />
     <link rel="shortcut icon" href="{{ asset('imagenes/favicon.ico') }}" />

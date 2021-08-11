@@ -5,10 +5,7 @@ import Logo from '../../img/Iconos/presupuesto.png';
 import '../../css/components/contactoBaner.scss';
 
 const BanerContacto = (props) => (
-  <div
-    className="row mx-0 w-100 py-5 baner-contacto-contenedor align-items-center"
-    style={{ scrollSnapAlign: 'start' }}
-  >
+  <div className="row mx-0 w-100 py-5 baner-contacto-contenedor align-items-center">
     <div className="container py-4 p-lg-2">
       <div className="row mx-0 justify-content-center">
         <div className="col-12 col-lg-10 text-left align-self-center text-intro p-lg-4">
