@@ -38,7 +38,7 @@ class Home_Public_Controller extends Controller
         $Data = [
             'title'       => 'Estudio de ingeniería en Uruguay | V & V',
             'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));

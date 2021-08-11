@@ -38,7 +38,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Contactar',
             'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
@@ -55,7 +55,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Acerca de V & V | Estudio de ingeniería',
             'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
@@ -66,7 +66,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Cotizar proyecto',
             'description' => 'Le hacemos el presupuesto de su proyecto de ingeniería con celeridad.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
@@ -77,7 +77,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Formá parte del equipo de Veiga Ventós',
             'description' => 'Si estás buscando desarrollarte creando proyectos de ingeniería civil, Veiga y Véntos es el lugar correcto para crecer.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
@@ -95,7 +95,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Servicios',
             'description' => 'Brindamos soluciones profesionales, confiables y creativas utilizando diversas técnicas constructivas.',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
@@ -151,7 +151,7 @@ class Paginas_Controller extends Controller
         $Data = [
             'title'       => 'Proyectos de Veiga Vnetós',
             'description' => 'Trabajos de  V & V ',
-            'og_img'      => url() . "/imagenes/Empresa/v-y-v-ingenieria.png",
+            'og_img'      => url() . "/imagenes/Empresa/og.jpg",
         ];
 
         return view('paginas.webpack_compilado.index', compact('Data'));
