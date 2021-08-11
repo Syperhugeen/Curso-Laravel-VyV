@@ -13,7 +13,7 @@ import {
   FaIdBadge,
 } from 'react-icons/fa';
 
-const BlogIndividual = () => {
+const BlogIndividual = (props) => {
   const Id = useParams().id;
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -34,6 +34,7 @@ const BlogIndividual = () => {
         } else {
           setBlog(data.Data);
           document.title = data.Data.name;
+          Data.set_analitic(titulo, props.location.pathname);
         }
         setLoading(false);
       })

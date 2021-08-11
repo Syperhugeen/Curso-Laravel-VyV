@@ -8,14 +8,17 @@ import ImgServicio2 from '../../img/Servicios/consultoria-y-asesoramiento.jpg';
 import ImgServicio3 from '../../img/Servicios/ejecutivo-steel-framing.jpg';
 import ImgServicio4 from '../../img/Servicios/proyectos.jpg';
 import { Link } from 'react-router-dom';
+import Data from '../config/data';
 
-const Servicios = () => {
+const Servicios = (props) => {
   useEffect(() => {
     if (window.scrollY != 0) {
       window.scrollTo(0, 0);
     }
-    // Update the document title using the browser API
-    document.title = `Servicios`;
+
+    let titulo = `Servicios`;
+    document.title = titulo;
+    Data.set_analitic(titulo, props.location.pathname);
   });
 
   return (

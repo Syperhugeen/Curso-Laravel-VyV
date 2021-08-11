@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import DefaultLayout from '../components/layout';
-
 import BanerContacto from '../components/banerContacto';
 
 import SectionBlog from '../components/sectionBlog';
@@ -12,7 +11,7 @@ import QuienesSomosData from '../data/QuienesSomosData';
 import ProyectosData from '../data/ProyectosData';
 import useScrollSnap from 'react-use-scroll-snap';
 
-const Home = () => {
+const Home = (props) => {
   const scrollRef = useRef(null);
   useScrollSnap({ ref: scrollRef, duration: 10, delay: 20 });
 
@@ -21,7 +20,9 @@ const Home = () => {
       window.scrollTo(0, 0);
     }
     // Update the document title using the browser API
-    document.title = `Estudio de ingeniería en Uruguay | V & V`;
+    let titulo = `Estudio de ingeniería en Uruguay | V & V`;
+    document.title = titulo;
+    Data.set_analitic(titulo, props.location.pathname);
   }, []);
 
   return (

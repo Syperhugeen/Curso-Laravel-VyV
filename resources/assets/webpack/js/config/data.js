@@ -14,6 +14,13 @@ const Data = {
   address: 'Canadá 6263',
   business_hours: 'lunes a viernes de 9 a 18 hs',
   path_url: '',
+  analitic_propiedad: 'G-502W399V58',
+  set_analitic: function (titulo, path) {
+    gtag('config', this.analitic_propiedad, {
+      page_title: titulo,
+      page_path: path,
+    });
+  },
 };
 
 export default Data;

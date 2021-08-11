@@ -14,13 +14,15 @@ import ContactoTeam from '../components/contactoTeam';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/cotizar';
 
-const Contacto = () => {
+const Contacto = (props) => {
   useEffect(() => {
     if (window.scrollY != 0) {
       window.scrollTo(0, 0);
     }
-    // Update the document title using the browser API
-    document.title = `Cotizar proyecto`;
+
+    let titulo = `Cotizar proyecto`;
+    document.title = titulo;
+    Data.set_analitic(titulo, props.location.pathname);
   });
   return (
     <DefaultLayout>

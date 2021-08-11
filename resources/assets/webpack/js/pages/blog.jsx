@@ -3,14 +3,17 @@ import DefaultLayout from '../components/layout';
 import SectionBlog from '../components/sectionBlog';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/proyectos';
+import Data from '../config/data';
 
-const Contacto = () => {
+const Contacto = (props) => {
   useEffect(() => {
     if (window.scrollY != 0) {
       window.scrollTo(0, 0);
     }
-    // Update the document title using the browser API
-    document.title = `Proyectos`;
+
+    let titulo = `Proyectos`;
+    document.title = titulo;
+    Data.set_analitic(titulo, props.location.pathname);
   });
 
   return (

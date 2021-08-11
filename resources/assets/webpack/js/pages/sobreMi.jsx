@@ -23,12 +23,15 @@ import FotoLenadro from './../../img/Contacto/leandro.jpg';
 import FotoMariano from './../../img/Contacto/mariano.jpg';
 import FotoMaxi from './../../img/Contacto/maxi.jpg';
 
-const SobreMi = () => {
+const SobreMi = (props) => {
   useEffect(() => {
     if (window.scrollY != 0) {
       window.scrollTo(0, 0);
     }
-    document.title = `Acerca de V & V | Estudio de ingeniería`;
+
+    let titulo = `Acerca de V & V | Estudio de ingeniería`;
+    document.title = titulo;
+    Data.set_analitic(titulo, props.location.pathname);
   });
 
   return (
