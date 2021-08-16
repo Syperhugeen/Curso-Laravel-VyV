@@ -9,7 +9,7 @@ const Data = {
   text: 'Registro de proyectos realizados',
   callToAction: 'Ver últimos proyectos',
   link: '/proyectos',
-  opacity_value: 0.3,
+  opacity_value: 0.1,
 };
 
 export default Data;

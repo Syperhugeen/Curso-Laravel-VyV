@@ -9,7 +9,7 @@ const Blog = (props) => {
 
   return (
     <div
-      className="col-6 col-lg-4 mb-4 "
+      className="col-6 col-lg-3 mb-4 "
       style={loaded ? {} : { display: 'none' }}
     >
       <div className="w-100 shadow h-100">

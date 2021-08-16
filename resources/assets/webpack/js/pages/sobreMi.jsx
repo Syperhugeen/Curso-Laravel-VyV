@@ -53,9 +53,9 @@ const SobreMi = (props) => {
                 en más de 300 proyectos y desarrollado un gran expertise dentro
                 del sistema constructivo Steel Framing. Nuestra búsqueda y
                 compromiso esta orientado al crecimiento organizacional por
-                medio de la transparencia y el profesionalismo y con estos
-                mismos valores y atributos llevamos adelante cada uno de
-                nuestros proyectos y desafíos de ingeniería civil.
+                medio de la transparencia y el profesionalismo. Con estos mismos
+                valores y atributos llevamos adelante cada uno de nuestros
+                proyectos y desafíos de ingeniería civil.
               </p>
             </div>
           </div>

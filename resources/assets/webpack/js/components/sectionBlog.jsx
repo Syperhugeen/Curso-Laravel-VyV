@@ -71,7 +71,7 @@ const SectionBlog = (props) => {
     <section className="w-100 py-5" style={{ minHeight: '40vh' }}>
       <div
         className={`${
-          props.formato == 'galeria' ? ' ' : 'container'
+          props.formato == 'galeria' ? ' ' : ''
         }  d-flex flex-column align-items-center my-5`}
       >
         {props.children}
@@ -80,7 +80,7 @@ const SectionBlog = (props) => {
           className={`row ${
             props.formato == 'galeria'
               ? 'w-100 bg-primary p-1 mt-5'
-              : 'container col-12 col-lg-8 mx-0'
+              : ' col-12  mx-0'
           }   `}
         >
           {blogsYaIterados}

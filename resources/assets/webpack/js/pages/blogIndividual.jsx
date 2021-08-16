@@ -6,6 +6,7 @@ import DefaultLayout from '../components/layout';
 import SectionBlog from '../components/sectionBlog';
 import SliderSimple from '../components/sliderSimple';
 import Data from '../config/data';
+import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import {
   FaCalendarAlt,
   FaMapMarkerAlt,
@@ -56,7 +57,7 @@ const BlogIndividual = (props) => {
         {loading && (
           <div
             className="w-100 mb-5 d-flex flex-row align-items-center justify-content-center bg-dark p-5 "
-            style={{ height: `70vh` }}
+            style={{ height: `80vh` }}
           >
             <div className="w-100  ">
               <div className="row mx-0 w-100"></div>
@@ -65,17 +66,23 @@ const BlogIndividual = (props) => {
         )}
 
         {!loading && blog != null && (
-          <SliderSimple
-            images={blog.imagenesproyecto.map(function (img) {
-              return img.url_img;
-            })}
-            height={`70vh`}
-            opacity={`0.3`}
+          <SectionImgFondo
+            data={{
+              header: 'h2',
+              position: 'center',
+              minHeight: '80vh',
+              img: blog.imagenesproyecto['0'].url_img,
+              titulo: '',
+              text: '',
+              callToAction: '',
+              link: '',
+              opacity_value: 0.3,
+            }}
           />
         )}
 
-        <div className="container d-flex flex-column align-items-center">
-          <div className="col-12 col-lg-10 my-4 p-2 p-lg-5  bg-white rounded">
+        <div className="container ">
+          <div className="col-12  p-2 py-lg-0 bg-white rounded">
             {loading && (
               <div className="w-100 mb-5 ">
                 <div className="w-100 mb-5 ">
@@ -94,17 +101,19 @@ const BlogIndividual = (props) => {
 
             {!loading && blog != null && (
               <div>
-                <h2 className="text-wrap  text-center mb-5 decoracionHeaders">
+                <h2 className="text-wrap  my-5 text-center  decoracionHeaders">
                   {` ${blog.name} `}
                 </h2>
-                <div className="p-2 mb-5 shadow-sm ">
-                  <img
-                    className="img-fluid mb-5"
-                    src={blog.url_img}
-                    alt={`Foto de ${blog.name}`}
+                <div className="p-2  shadow-sm ">
+                  <SliderSimple
+                    images={blog.imagenesproyecto.map(function (img) {
+                      return img.url_img;
+                    })}
+                    height={`80vh`}
+                    opacity={`0.3`}
                   />
 
-                  <div className="row justify-content-center mx-0">
+                  <div className="row justify-content-center mx-0 mt-4">
                     <div className="col-6 col-lg-3 mb-3 mb-lg-0 ">
                       <div className=" bg-gray-2 text-center py-2 contenedor-blog-atributos h-100">
                         <span className="text-primary">
@@ -155,7 +164,7 @@ const BlogIndividual = (props) => {
           </div>
         </div>
         {!loading && (
-          <SectionBlog cantidad="4" evitarIds={Id}>
+          <SectionBlog formato="galeria" cantidad="6" evitarIds={Id}>
             {' '}
             <h2 className="mb-5 text-center mb-5 ">
               Más proyectos relacionados

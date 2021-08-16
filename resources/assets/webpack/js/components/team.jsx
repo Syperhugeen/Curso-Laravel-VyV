@@ -27,13 +27,13 @@ const item = (props) => {
         }  shadow-sm p-3 bg-light w-100 cursor-pointer item-contenedor `}
       >
         <div className="w-100 d-flex align-items-center flex-column mb-3">
-          <div className="text-center mb-3">
+          <div className="w-100 d-flex align-items-center flex-column mb-2">
+            <img src={DATA.img} className="img-fluid rounded-circle" alt="" />
+          </div>
+          <div className="text-left mb-2">
             <small>
               <strong>{DATA.cargo}</strong>
             </small>
-          </div>
-          <div className="w-100 d-flex align-items-center flex-column ">
-            <img src={DATA.img} className="img-fluid rounded-circle" alt="" />
           </div>
           <h3
             className={`${
@@ -51,7 +51,7 @@ const item = (props) => {
           {description}
         </p>
         {DATA.link_linkedin != '' && (
-          <a href={DATA.link_linkedin}>
+          <a href={DATA.link_linkedin} target="_blank">
             {' '}
             <h3 className="text-center text-primary">
               {' '}
