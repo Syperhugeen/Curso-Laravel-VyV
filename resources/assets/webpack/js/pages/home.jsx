@@ -15,7 +15,7 @@ const Home = (props) => {
   const scrollRef = useRef(null);
 
   if (window.screen.width > 500) {
-    useScrollSnap({ ref: scrollRef, duration: 10, delay: 20 });
+    useScrollSnap({ ref: scrollRef, duration: 15, delay: 20 });
   }
 
   useEffect(() => {
