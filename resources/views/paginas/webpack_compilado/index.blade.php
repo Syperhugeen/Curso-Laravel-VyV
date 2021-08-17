@@ -5,4 +5,4 @@
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js');
         });
-      }</script><script defer="defer" src="/js/home.59f7236c36d1d6d80b8e.js"></script><link href="/css/home.b1f4f99014661e0d1eb1.css" rel="stylesheet"></head><body><div id="root"></div><div id="modal-root"></div></body></html>
+      }</script><script defer="defer" src="/js/home.c5bce714aceb8cdd652e.js"></script><link href="/css/home.b1f4f99014661e0d1eb1.css" rel="stylesheet"></head><body><div id="root"></div><div id="modal-root"></div></body></html>
