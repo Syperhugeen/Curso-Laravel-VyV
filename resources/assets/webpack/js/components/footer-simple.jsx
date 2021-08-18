@@ -90,7 +90,10 @@ const Footer = () => {
                 <p className="footer-p ">
                   <FaWhatsapp />
                   {' Whatsapp: '}
-                  <a href={Data.whatsapp_link}>{` ${Data.cellphone}`}</a>
+                  <a
+                    target="_blank"
+                    href={Data.whatsapp_link}
+                  >{` ${Data.cellphone}`}</a>
                 </p>
                 <p className="footer-p">
                   <FaEnvelopeOpenText />
@@ -101,15 +104,18 @@ const Footer = () => {
                 <h3 className="mb-5 pt-lg-3 footer-titulo-seccion">Social</h3>
                 <p className="footer-p">
                   <FaInstagram />
-                  <a href={Data.instagram_link}>{` Instagram`}</a>
+                  <a
+                    target="_blank"
+                    href={Data.instagram_link}
+                  >{` Instagram`}</a>
                 </p>
                 <p className="footer-p">
                   <FaFacebook />
-                  <a href={Data.facebook_link}>{` Facebook`}</a>
+                  <a target="_blank" href={Data.facebook_link}>{` Facebook`}</a>
                 </p>
                 <p className="footer-p">
                   <FaLinkedinIn />
-                  <a href={Data.linkedin_link}>{` Linkedin`}</a>
+                  <a target="_blank" href={Data.linkedin_link}>{` Linkedin`}</a>
                 </p>
               </div>
             </div>

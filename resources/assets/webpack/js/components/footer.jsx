@@ -41,6 +41,7 @@ const Footer = () => {
                 <a
                   className="btn btn-outline-primary   w-100"
                   href={Data.whatsapp_link}
+                  target="_blank"
                 >
                   {' '}
                   {`Whatsapp `} <FaWhatsapp />
