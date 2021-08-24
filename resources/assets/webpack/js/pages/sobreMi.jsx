@@ -53,7 +53,7 @@ const SobreMi = (props) => {
                 en más de 300 proyectos y desarrollado un gran expertise dentro
                 del sistema constructivo Steel Framing. Nuestra búsqueda y
                 compromiso esta orientado al crecimiento organizacional por
-                medio de la transparencia y el profesionalismo. Con estos mismos
+                medio de la transparencia y el profesionalismo. Con estos
                 valores y atributos llevamos adelante cada uno de nuestros
                 proyectos y desafíos de ingeniería civil.
               </p>
@@ -119,7 +119,7 @@ const SobreMi = (props) => {
             <Team
               abierto={false}
               data={{
-                name: 'Maxi',
+                name: 'Maximiliano',
                 img: FotoMaxi,
                 cargo: 'Arquitecto',
                 description: 'Encargado de proyectos',
