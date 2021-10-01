@@ -50,6 +50,7 @@ const item = (props) => {
         <p className={`${abierto ? '  ' : ''} item-description w-100`}>
           {description}
         </p>
+
         {DATA.link_linkedin != '' && (
           <a href={DATA.link_linkedin} target="_blank">
             {' '}

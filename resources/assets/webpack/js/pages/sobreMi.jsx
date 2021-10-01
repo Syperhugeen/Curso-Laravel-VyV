@@ -82,7 +82,7 @@ const SobreMi = (props) => {
             <strong>¿Quiénes somos?</strong>
           </div>
           <h2 className="text-center  col-12 mb-5">Equipo de Veiga Ventós</h2>
-          <div className="row mx-0">
+          <div className="row mx-0 justify-content-around">
             <Team
               abierto={false}
               data={{
@@ -105,17 +105,7 @@ const SobreMi = (props) => {
                   'https://www.linkedin.com/company/v-v-ingenieria/?viewAsMember=true',
               }}
             />
-            <Team
-              abierto={false}
-              data={{
-                name: 'Analía',
-                img: FotoAnalia,
-                cargo: 'Arquitecta ',
-                description: 'Encargada de proyectos',
-                link_linkedin:
-                  'https://www.linkedin.com/in/anal%C3%ADa-l%C3%B3pez-92257a155/',
-              }}
-            />
+
             <Team
               abierto={false}
               data={{
