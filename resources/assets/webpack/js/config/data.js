@@ -26,6 +26,9 @@ const Data = {
       page_title: titulo,
       page_path: path,
     });
+
+    fbq('init', '1296092680814076');
+    fbq('track', 'PageView');
   },
 };
 
