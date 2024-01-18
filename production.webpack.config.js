@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { GenerateSW } = require('workbox-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'resources/assets/webpack/'),
@@ -104,6 +103,5 @@ module.exports = {
       cleanStaleWebpackAssets: true,
       cleanOnceBeforeBuildPatterns: ['js/*', 'css/*', 'assets/*', '!public.js'],
     }),
-    new GenerateSW(),
   ],
 };
