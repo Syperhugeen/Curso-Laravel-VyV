@@ -27,4 +27,4 @@
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/service-worker.js');
         });
-      }</script><script defer="defer" src="/js/home.0ff66a1b2b25568448c6.js"></script><link href="/css/home.133a93b84edbc8e67857.css" rel="stylesheet"></head><body><div id="root"></div><div id="modal-root"></div></body></html>
+      }</script><script defer="defer" src="/js/home.405bb045979a93047b6f.js"></script><link href="/css/home.133a93b84edbc8e67857.css" rel="stylesheet"></head><body><div id="root"></div><div id="modal-root"></div></body></html>

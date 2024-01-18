@@ -11,12 +11,12 @@ const ContactoTeam = (props) => {
       <img
         src={FotoTeam2}
         className="contacto-team-img mr-2"
-        alt="Imagen de Leandro"
+        alt="Imagen de Leandro Veiga Ventós"
       />
       <img
         src={FotoTeam3}
         className="contacto-team-img mr-2"
-        alt="Imagen de Mariano"
+        alt="Imagen de Mariano Veiga Ventós"
       />
     </div>
   );
