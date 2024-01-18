@@ -5,7 +5,6 @@ import DefaultLayout from '../components/layout';
 import Data from '../config/data';
 import { Link } from 'react-router-dom';
 import '../../css/helpers/video.scss';
-import Logo from '../../img/logo-v-y-v-ingenieria.png';
 import Team from '../components/team';
 import SectionImgFondo from '../components/sectionConImagenDeFondo';
 import DataPortada from '../data/DataDePaginas/sobre';
@@ -13,12 +12,11 @@ import ImagensBanerOficina from '../../img/Oficina/baner.jpg';
 import {
   FaMobileAlt,
   FaWhatsapp,
-  FaEnvelopeOpenText,
-  FaPhone,
+  FaEnvelopeOpenText,  
   FaInstagram,
 } from 'react-icons/fa';
 
-import FotoAnalia from './../../img/Contacto/analia.jpg';
+
 import FotoLenadro from './../../img/Contacto/leandro.jpg';
 import FotoMariano from './../../img/Contacto/mariano.jpg';
 import FotoMaxi from './../../img/Contacto/maxi.jpg';
@@ -82,7 +80,7 @@ const SobreMi = (props) => {
             <strong>¿Quiénes somos?</strong>
           </div>
           <h2 className="text-center  col-12 mb-5">Equipo de Veiga Ventós</h2>
-          <div className="row mx-0 justify-content-around">
+          <div className="row mx-0 justify-content-center">
             <Team
               abierto={false}
               data={{
@@ -106,17 +104,7 @@ const SobreMi = (props) => {
               }}
             />
 
-            <Team
-              abierto={false}
-              data={{
-                name: 'Maximiliano',
-                img: FotoMaxi,
-                cargo: 'Arquitecto',
-                description: 'Encargado de proyectos',
-                link_linkedin:
-                  'https://www.linkedin.com/company/v-v-ingenieria/?viewAsMember=true',
-              }}
-            />
+           
           </div>
           <div className="row mx-0 ">
             <div className="col-12 mt-5 text-center">
