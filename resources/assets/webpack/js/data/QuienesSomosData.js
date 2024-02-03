@@ -1,4 +1,4 @@
-import Img from '../../img/Home/Portadas/somo-v-y-v-portada-home.jpg';
+import Img from '../../img/Home/Portadas/v-y-v-portada-home-new.jpg';
 
 const Data = {
   header: 'h1',
