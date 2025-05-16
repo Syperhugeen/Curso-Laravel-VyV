@@ -5,8 +5,8 @@ import '../../css/components/header.scss';
 import MenuMovil from '../components/menuMovil';
 
 const Header = (props) => (
-  <header id="header-nav" className="w-100 header  shadow-sm ">
-    <div className=" d-flex flex-column align-items-center h-100">
+  <header id="header-nav" className="w-100 header bg-dark  shadow-sm ">
+    <div className=" d-flex flex-column align-items-center h-100 ">
       <div className="col-12  row mx-0 align-items-center h-100 ">
         <div className="col-4 col-md-3  col-lg-2 d-flex flex-column align-items-start justify-content-center px-0">
           <Link to="/">
@@ -14,6 +14,7 @@ const Header = (props) => (
               src={Logo}
               alt="Logo de V & V ingeniería. Veiga y Ventos"
               className="header-logo-img"
+              height={50}
             />
           </Link>
         </div>
